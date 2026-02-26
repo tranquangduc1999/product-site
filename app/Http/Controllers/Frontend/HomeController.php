@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Product;
 use App\Models\Post;
 use App\Models\Setting;
-
+use App\Models\Banner;
 class HomeController extends Controller
 {
     public function index()
@@ -20,13 +20,17 @@ class HomeController extends Controller
             ->latest('published_at')
             ->take(3)
             ->get();
-
+        $banners = Banner::where('position', 'homepage')
+            ->where('status', true)
+            ->orderBy('sort_order')
+            ->get();
         $banner = Setting::getValue('homepage_banner');
 
         return view('frontend.home', compact(
             'products',
             'posts',
-            'banner'
+            'banner',
+            'banners',
         ));
     }
 }
