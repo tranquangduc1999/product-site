@@ -20,6 +20,7 @@ class Product extends Model
         'published_at',
         'meta_title',
         'meta_description',
+        'has_variants',
     ];
 
     protected $casts = [
@@ -53,5 +54,14 @@ class Product extends Model
                 $model->slug = Str::slug($model->name);
             }
         });
+    }
+    public function variants()
+    {
+        return $this->hasMany(ProductVariant::class);
+    }
+
+    public function defaultVariant()
+    {
+        return $this->hasOne(ProductVariant::class)->where('is_default', true);
     }
 }

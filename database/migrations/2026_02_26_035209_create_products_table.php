@@ -25,6 +25,7 @@ return new class extends Migration
             $table->dateTime('published_at')->nullable();
             $table->string('meta_title')->nullable();
             $table->text('meta_description')->nullable();
+            $table->boolean('has_variants')->default(false);
             $table->timestamps();
 
             $table->index(['status', 'published_at']);

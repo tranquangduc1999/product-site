@@ -12,7 +12,7 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use Filament\Forms\Components\{TextInput, Textarea, Select, Toggle, RichEditor, FileUpload, DateTimePicker, Section};
+use Filament\Forms\Components\{TextInput, Textarea, Select, Toggle, RichEditor, FileUpload, DateTimePicker, Section,Repeater};
 use Filament\Tables\Columns\{TextColumn, IconColumn, ImageColumn};
 use Filament\Tables\Filters\TernaryFilter;
 class ProductResource extends Resource
@@ -63,6 +63,30 @@ class ProductResource extends Resource
 
                 Toggle::make('status')
                     ->default(true),
+                Toggle::make('has_variants')
+                    ->label('Có biến thể')
+                    ->default(false)
+                    ->live(),
+                Repeater::make('variants')
+                    ->relationship()
+                    ->schema([
+                        TextInput::make('sku')
+                            ->label('SKU'),
+
+                        TextInput::make('price')
+                            ->numeric()
+                            ->label('Giá'),
+
+                        TextInput::make('stock')
+                            ->numeric()
+                            ->label('Tồn kho'),
+
+                        Toggle::make('is_default')
+                            ->label('Mặc định'),
+                    ])
+                    ->visible(fn ($get) => $get('has_variants'))
+                    ->columns(2)
+                    ->columnSpanFull(),
 
                 DateTimePicker::make('published_at'),
             ])->columns(2),

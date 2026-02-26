@@ -7,6 +7,7 @@
     <meta name="description" content="@yield('meta_description', '')">
     <link rel="canonical" href="{{ url()->current() }}">
     @include('frontend.style.css')
+    @stack('styles')
 
     <meta property="og:title" content="@yield('title', config('app.name'))">
     <meta property="og:description" content="@yield('meta_description', '')">
@@ -31,5 +32,6 @@
 
     <x-frontend.footer :footer-content="$footerContent" />
     @include('frontend.style.js')
+    @stack('scripts')
 </body>
 </html>
