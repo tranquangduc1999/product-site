@@ -1,10 +1,34 @@
+<style>
+    .main-menu ul {
+        display: none;
+        position: absolute;
+        background: #fff;
+    }
+
+    .menu-item:hover > .submenu {
+        display: block;
+    }
+</style>
 @if($headerMenu)
-    <ul>
+    <ul class="main-menu">
         @foreach($headerMenu->items as $item)
-            <li>
+            <li class="menu-item">
                 <a href="{{ url($item->url) }}">
                     {{ $item->title }}
                 </a>
+
+                @if($item->children->count())
+                    <ul class="submenu">
+                        @foreach($item->children as $child)
+                            <li>
+                                <a href="{{ url($child->url) }}">
+                                    {{ $child->title }}
+                                </a>
+                            </li>
+                        @endforeach
+                    </ul>
+                @endif
+
             </li>
         @endforeach
     </ul>

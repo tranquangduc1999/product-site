@@ -17,7 +17,10 @@ return new class extends Migration
             $table->foreignId('menu_id')
                 ->constrained()
                 ->cascadeOnDelete();
-
+            $table->foreignId('parent_id')
+                ->nullable()
+                ->constrained('menu_items')
+                ->cascadeOnDelete();
             $table->string('title');
             $table->string('url');
             $table->integer('sort_order')->default(0);

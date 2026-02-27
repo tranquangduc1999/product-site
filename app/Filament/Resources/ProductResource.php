@@ -67,6 +67,9 @@ class ProductResource extends Resource
                     ->label('Có biến thể')
                     ->default(false)
                     ->live(),
+                TextInput::make('stock')
+                    ->numeric()
+                    ->visible(fn ($get) => !$get('has_variants')),
                 Repeater::make('variants')
                     ->relationship()
                     ->schema([

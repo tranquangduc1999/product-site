@@ -26,6 +26,7 @@ return new class extends Migration
             $table->string('meta_title')->nullable();
             $table->text('meta_description')->nullable();
             $table->boolean('has_variants')->default(false);
+            $table->integer('stock')->default(0);
             $table->timestamps();
 
             $table->index(['status', 'published_at']);

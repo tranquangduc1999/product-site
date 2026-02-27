@@ -20,6 +20,7 @@ class Product extends Model
         'published_at',
         'meta_title',
         'meta_description',
+        'stock',
         'has_variants',
     ];
 
@@ -60,6 +61,14 @@ class Product extends Model
         return $this->hasMany(ProductVariant::class);
     }
 
+    public function isInStock(): bool
+    {
+        if ($this->has_variants) {
+            return $this->variants()->sum('stock') > 0;
+        }
+
+        return $this->stock > 0;
+    }
     public function defaultVariant()
     {
         return $this->hasOne(ProductVariant::class)->where('is_default', true);

@@ -22,7 +22,11 @@ class ViewServiceProvider extends ServiceProvider
             // ✅ Load menu
             $headerMenu = Cache::rememberForever('header_menu', function () {
                 return Menu::where('location', 'header')
-                    ->with('items')
+                    ->with(['items' => function ($query) {
+                        $query->whereNull('parent_id')
+                            ->with('children')
+                            ->orderBy('sort_order');
+                    }])
                     ->first();
             });
 
