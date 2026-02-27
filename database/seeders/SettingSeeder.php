@@ -12,20 +12,15 @@ class SettingSeeder extends Seeder
      */
     public function run(): void
     {
-        $settings = [
-            'site_name' => 'My Product Website',
-            'footer_content' => '<p>© 2025 My Company</p>',
-            'homepage_banner' => '',
-        ];
-
-        foreach ($settings as $key => $value) {
-            Setting::updateOrCreate(
-                ['key' => $key],
-                [
-                    'value' => $value,
-                    'type' => 'text',
-                ]
-            );
-        }
+        Setting::firstOrCreate(
+            ['id' => 1],
+            [
+                'site_name' => 'My Product Website',
+                'hotline' => '0123456789',
+                'email' => 'admin@example.com',
+                'meta_title' => 'My Product Website',
+                'meta_description' => 'Website bán sản phẩm chuyên nghiệp',
+            ]
+        );
     }
 }

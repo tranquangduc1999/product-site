@@ -1,3 +1,14 @@
+@if($headerMenu)
+    <ul>
+        @foreach($headerMenu->items as $item)
+            <li>
+                <a href="{{ url($item->url) }}">
+                    {{ $item->title }}
+                </a>
+            </li>
+        @endforeach
+    </ul>
+@endif
 <header class="header">
     <div class="evo-top-header" bis_skin_checked="1">
         <div class="container" bis_skin_checked="1">

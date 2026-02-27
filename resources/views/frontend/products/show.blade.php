@@ -4,6 +4,16 @@
 @section('meta_description', $product->meta_description ?? $product->short_description)
 
 @section('content')
+    <form action="{{ route('cart.add') }}" method="POST">
+        @csrf
+        <input type="hidden" name="product_id" value="{{ $product->id }}">
+        <input type="hidden" name="variant_id" value="{{ $variant->id ?? null }}">
+        <input type="hidden" name="name" value="{{ $product->name }}">
+        <input type="hidden" name="price" value="{{ $variant->price ?? $product->price }}">
+
+        <button type="submit">Thêm vào giỏ</button>
+    </form>
+
     <section class="bread-crumb margin-bottom-10">
         <div class="container" bis_skin_checked="1">
             <ul class="breadcrumb" itemscope="" itemtype="https://schema.org/BreadcrumbList">
