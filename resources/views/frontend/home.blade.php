@@ -4,31 +4,183 @@
 
 @section('content')
     <section class="awe-section-1">
-        <div class="container">
-            <div class="col-lg-3 col-md-3 no-padding"></div>
-            <div class="col-lg-9 col-md-9 no-padding">
-                <div class="home-slider slick-initialized slick-slider">
-                    <div aria-live="polite" class="slick-list draggable">
-                        <div class="slick-track" role="listbox" style="opacity: 1; width: 863px;">
-                            <div class="item slick-slide slick-current slick-active" data-slick-index="0"
-                                 aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00"
+        <div class="home-slider owl-carousel not-dqowl owl-loaded owl-drag" bis_skin_checked="1">
 
-                                 style="width: 863px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;">
-                                <a href="#" class="clearfix" title="Wolf Nội thất" tabindex="0">
-                                    <picture>
-                                        <source media="(min-width: 1200px)"
-                                                srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/slider_1.jpg?v=255">
-                                        <source media="(min-width: 992px)"
-                                                srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/slider_1.jpg?v=255">
-                                        <source media="(min-width: 569px)"
-                                                srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/slider_1.jpg?v=255">
-                                        <source media="(min-width: 480px)"
-                                                srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/slider_1.jpg?v=255">
-                                        <img src="//cdn.hstatic.net/themes/200001110831/1001434972/14/slider_1.jpg?v=255"
-                                             alt="Wolf Nội thất" class="lazy img-responsive center-block loading"
->
-                                    </picture>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="owl-stage-outer" bis_skin_checked="1"><div class="owl-stage" style="transform: translate3d(-4491px, 0px, 0px); transition: 0.25s; width: 8982px;" bis_skin_checked="1"><div class="owl-item cloned" bis_skin_checked="1" style="width: 1497px;"><div class="item" bis_skin_checked="1">
+                            <a href="#" class="clearfix">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_1.jpg?v=230">
+                                    <source media="(min-width: 992px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_1.jpg?v=230">
+                                    <source media="(min-width: 569px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_1.jpg?v=230">
+                                    <source media="(min-width: 480px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_1.jpg?v=230">
+                                    <source media="(min-width: 319px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_1.jpg?v=230">
+                                    <img src="//theme.hstatic.net/1000343108/1000435493/14/slider_1.jpg?v=230" alt="" class="img-responsive center-block">
+                                </picture>
+                            </a>
+                        </div></div><div class="owl-item cloned" bis_skin_checked="1" style="width: 1497px;"><div class="item" bis_skin_checked="1">
+                            <a href="#" class="clearfix">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_2.jpg?v=230">
+                                    <source media="(min-width: 992px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_2.jpg?v=230">
+                                    <source media="(min-width: 569px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_2.jpg?v=230">
+                                    <source media="(min-width: 480px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_2.jpg?v=230">
+                                    <source media="(min-width: 319px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_2.jpg?v=230">
+                                    <img src="//theme.hstatic.net/1000343108/1000435493/14/slider_2.jpg?v=230" alt="" class="img-responsive center-block">
+                                </picture>
+                            </a>
+                        </div></div><div class="owl-item" bis_skin_checked="1" style="width: 1497px;"><div class="item" bis_skin_checked="1">
+                            <a href="#" class="clearfix">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_1.jpg?v=230">
+                                    <source media="(min-width: 992px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_1.jpg?v=230">
+                                    <source media="(min-width: 569px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_1.jpg?v=230">
+                                    <source media="(min-width: 480px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_1.jpg?v=230">
+                                    <source media="(min-width: 319px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_1.jpg?v=230">
+                                    <img src="//theme.hstatic.net/1000343108/1000435493/14/slider_1.jpg?v=230" alt="" class="img-responsive center-block">
+                                </picture>
+                            </a>
+                        </div></div><div class="owl-item active" bis_skin_checked="1" style="width: 1497px;"><div class="item" bis_skin_checked="1">
+                            <a href="#" class="clearfix">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_2.jpg?v=230">
+                                    <source media="(min-width: 992px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_2.jpg?v=230">
+                                    <source media="(min-width: 569px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_2.jpg?v=230">
+                                    <source media="(min-width: 480px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_2.jpg?v=230">
+                                    <source media="(min-width: 319px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_2.jpg?v=230">
+                                    <img src="//theme.hstatic.net/1000343108/1000435493/14/slider_2.jpg?v=230" alt="" class="img-responsive center-block">
+                                </picture>
+                            </a>
+                        </div></div><div class="owl-item cloned" bis_skin_checked="1" style="width: 1497px;"><div class="item" bis_skin_checked="1">
+                            <a href="#" class="clearfix">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_1.jpg?v=230">
+                                    <source media="(min-width: 992px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_1.jpg?v=230">
+                                    <source media="(min-width: 569px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_1.jpg?v=230">
+                                    <source media="(min-width: 480px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_1.jpg?v=230">
+                                    <source media="(min-width: 319px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_1.jpg?v=230">
+                                    <img src="//theme.hstatic.net/1000343108/1000435493/14/slider_1.jpg?v=230" alt="" class="img-responsive center-block">
+                                </picture>
+                            </a>
+                        </div></div><div class="owl-item cloned" bis_skin_checked="1" style="width: 1497px;"><div class="item" bis_skin_checked="1">
+                            <a href="#" class="clearfix">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_2.jpg?v=230">
+                                    <source media="(min-width: 992px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_2.jpg?v=230">
+                                    <source media="(min-width: 569px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_2.jpg?v=230">
+                                    <source media="(min-width: 480px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_2.jpg?v=230">
+                                    <source media="(min-width: 319px)" srcset="//theme.hstatic.net/1000343108/1000435493/14/slider_2.jpg?v=230">
+                                    <img src="//theme.hstatic.net/1000343108/1000435493/14/slider_2.jpg?v=230" alt="" class="img-responsive center-block">
+                                </picture>
+                            </a>
+                        </div></div></div></div><div class="owl-nav" bis_skin_checked="1"><div class="owl-prev" bis_skin_checked="1"><i class="fa fa-angle-left" aria-hidden="true"></i></div><div class="owl-next" bis_skin_checked="1"><i class="fa fa-angle-right" aria-hidden="true"></i></div></div><div class="owl-dots" bis_skin_checked="1"><div class="owl-dot" bis_skin_checked="1"><span></span></div><div class="owl-dot active" bis_skin_checked="1"><span></span></div></div></div>
+        <div class="container" bis_skin_checked="1">
+            <div class="row" bis_skin_checked="1">
+                <div class="col-md-12" bis_skin_checked="1">
+                    <div class="border-bg margin-top-5 hidden-md hidden-lg" bis_skin_checked="1">
+                        <div class="scrollmenu" bis_skin_checked="1">
+                            <div class="navhome" bis_skin_checked="1">
+
+
+
+
+
+                                <a href="/collections/phong-khach">
+                                    <div bis_skin_checked="1">
+                                        <img src="//theme.hstatic.net/1000343108/1000435493/14/loader.svg?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-1.png?v=230" alt="Phòng khách">
+                                    </div>
+                                    <h3>Phòng khách</h3>
                                 </a>
+
+
+                                <a href="/collections/phong-ngu">
+                                    <div bis_skin_checked="1">
+                                        <img src="//theme.hstatic.net/1000343108/1000435493/14/loader.svg?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-2.png?v=230" alt="Phòng ngủ">
+                                    </div>
+                                    <h3>Phòng ngủ</h3>
+                                </a>
+
+
+                                <a href="/collections/phong-bep">
+                                    <div bis_skin_checked="1">
+                                        <img src="//theme.hstatic.net/1000343108/1000435493/14/loader.svg?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-3.png?v=230" alt="Phòng bếp">
+                                    </div>
+                                    <h3>Phòng bếp</h3>
+                                </a>
+
+
+                                <a href="/collections/do-trang-tri">
+                                    <div bis_skin_checked="1">
+                                        <img src="//theme.hstatic.net/1000343108/1000435493/14/loader.svg?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-4.png?v=230" alt="Đồ trang trí">
+                                    </div>
+                                    <h3>Đồ trang trí</h3>
+                                </a>
+
+
+                                <a href="/collections/ghe-sofa">
+                                    <div bis_skin_checked="1">
+                                        <img src="//theme.hstatic.net/1000343108/1000435493/14/loader.svg?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-5.png?v=230" alt="Ghế Sofa">
+                                    </div>
+                                    <h3>Ghế Sofa</h3>
+                                </a>
+
+
+                                <a href="/collections/giuong-ngu">
+                                    <div bis_skin_checked="1">
+                                        <img src="//theme.hstatic.net/1000343108/1000435493/14/loader.svg?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-6.png?v=230" alt="Giường ngủ">
+                                    </div>
+                                    <h3>Giường ngủ</h3>
+                                </a>
+
+
+                                <a href="/collections/tham-trai-san">
+                                    <div bis_skin_checked="1">
+                                        <img src="//theme.hstatic.net/1000343108/1000435493/14/loader.svg?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-7.png?v=230" alt="Thảm trải sàn">
+                                    </div>
+                                    <h3>Thảm trải sàn</h3>
+                                </a>
+
+
+                                <a href="/collections/ghe-thu-gian">
+                                    <div bis_skin_checked="1">
+                                        <img src="//theme.hstatic.net/1000343108/1000435493/14/loader.svg?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-8.png?v=230" alt="Ghế thư giãn">
+                                    </div>
+                                    <h3>Ghế thư giãn</h3>
+                                </a>
+
                             </div>
                         </div>
                     </div>
@@ -37,246 +189,42 @@
         </div>
     </section>
     <section class="awe-section-2">
-        <div class="section_tab_san_pham">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="new_title">
-                            <h2>Sản phẩm mới về</h2>
+        <div class="section_banner_home hidden-xs" bis_skin_checked="1">
+            <div class="container" bis_skin_checked="1">
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-md-3 col-sm-3 box box1" bis_skin_checked="1">
+                        <div class="box-inner" bis_skin_checked="1">
+                            <a href="#">
+                                <img src="//theme.hstatic.net/1000343108/1000435493/14/one_banner_1_image.png?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/one_banner_1_image.png?v=230" alt="Hàng mới về">
+                            </a>
+                            <div class="text" bis_skin_checked="1">
+                                <p>Hàng mới về</p>
+                                <h5>Mẫu Bàn ăn 2018</h5>
+                                <p>Giảm giá đến 20%</p>
+                            </div>
                         </div>
-                        <div class="e-tabs not-dqtab ajax-tab-2" data-section="ajax-tab-2" data-view="grid_4"
->
-                            <div class="content">
-                        <span class="hidden-md hidden-lg button_show_tab">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        </span>
-                                <ul class="tabs tabs-title tab-desktop ajax clearfix evo-close">
-                                    <li class="tab-link has-content current" data-tab="tab-1"
-                                        data-url="/collections/noi-that-go">
-                                        <span title="Nội thất gỗ">Nội thất gỗ</span>
-                                    </li>
-                                    <li class="tab-link " data-tab="tab-2" data-url="/collections/sofa-ghe-thu-gian-nem">
-                                        <span title="Sofa, Ghế thư giãn &amp; Nệm">Sofa, Ghế thư giãn &amp; Nệm</span>
-                                    </li>
-                                    <li class="tab-link " data-tab="tab-3" data-url="/collections/do-trang-tri">
-                                        <span title="Đồ trang trí">Đồ trang trí</span>
-                                    </li>
-                                    <li class="tab-link " data-tab="tab-4" data-url="/collections/do-dung-vai">
-                                        <span title="Đồ dùng vải">Đồ dùng vải</span>
-                                    </li>
-                                </ul>
-                                <div class="tab-1 tab-content current">
-                                    <div class="slick_ajax_tab products-view-grid slick-initialized slick-slider"
->
-                                        <div aria-live="polite" class="slick-list draggable">
-                                            <div class="slick-track" role="listbox"
-                                                 style="opacity: 1; width: 1160px; transform: translate3d(0px, 0px, 0px);"
->
-                                                <div class="item slick-slide slick-current slick-active"
-                                                     data-slick-index="0" aria-hidden="false" tabindex="-1" role="option"
-                                                     aria-describedby="slick-slide30" style="width: 280px;"
->
-                                                    <div class="evo-product-block-item ">
-                                                        <div class="product-img">
-                                                            <div class="product-sale">
-                                                                <span>-16%</span>
-                                                            </div>
-                                                            <a href="/products/giuong-ngu-go-chat-luong-cao-cho-gia-dinh"
-                                                               title="Giường ngủ gỗ chất lượng cao cho gia đình"
-                                                               class="image-resize" tabindex="0">
-                                                                <img class="lazy loaded"
-                                                                     src="//cdn.hstatic.net/products/200001110831/upload_3fe7a64433d046e290922e3a5bd1905c_9204918b69624e53811ffc3f71bf089a_large.jpg"
-                                                                     data-src="//cdn.hstatic.net/products/200001110831/upload_3fe7a64433d046e290922e3a5bd1905c_9204918b69624e53811ffc3f71bf089a_large.jpg"
-                                                                     alt="Giường ngủ gỗ chất lượng cao cho gia đình"
->
-                                                            </a>
-                                                            <form action="/cart/add" method="post"
-                                                                  enctype="multipart/form-data"
-                                                                  class="button-add hidden-sm hidden-xs hidden-md variants form-nut-grid form-ajaxtocart has-validation-callback"
-                                                                  data-id="product-actions-1072137028">
-                                                                <input type="hidden" name="id" value="1163593307"
-                                                                       tabindex="0">
-                                                                <button type="button" title="Mua ngay" class="action"
-                                                                        onclick="buy_now('1163593307')" tabindex="0"><i
-                                                                        class="fa fa-check-square-o" aria-hidden="true"></i>
-                                                                </button>
-                                                                <button type="button" title="Thêm vào giỏ"
-                                                                        class="action add_to_cart" tabindex="0"><i
-                                                                        class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                                                </button>
-                                                            </form>
-                                                        </div>
-                                                        <div class="product-detail clearfix">
-                                                            <div class="pro-brand">
-                                                                Evo Nội thất
-                                                            </div>
-                                                            <h3 class="pro-name">
-                                                                <a href="/products/giuong-ngu-go-chat-luong-cao-cho-gia-dinh"
-                                                                   title="Giường ngủ gỗ chất lượng cao cho gia đình"
-                                                                   tabindex="0">Giường ngủ gỗ chất lượng cao cho gia
-                                                                    đình</a>
-                                                            </h3>
-                                                            <p class="pro-price">
-                                                                1,290,000₫
-                                                                <span class="pro-price-del">
-                                                <del class="compare-price">1,540,000₫</del>
-                                                </span>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="item slick-slide slick-active" data-slick-index="1"
-                                                     aria-hidden="false" tabindex="-1" role="option"
-                                                     aria-describedby="slick-slide31" style="width: 280px;"
->
-                                                    <div class="evo-product-block-item ">
-                                                        <div class="product-img">
-                                                            <a href="/products/giuong-ngu-go-gia-dinh-phun-son-hien-dai"
-                                                               title="Giường ngủ gỗ gia đình phun sơn hiện đại"
-                                                               class="image-resize" tabindex="0">
-                                                                <img class="lazy loaded"
-                                                                     src="//cdn.hstatic.net/products/200001110831/upload_85bed5bdcaf24d27af2b8ad673082647_b981895aacb64bbf8299edc3b48ee6a8_large.jpg"
-                                                                     data-src="//cdn.hstatic.net/products/200001110831/upload_85bed5bdcaf24d27af2b8ad673082647_b981895aacb64bbf8299edc3b48ee6a8_large.jpg"
-                                                                     alt="Giường ngủ gỗ gia đình phun sơn hiện đại"
->
-                                                            </a>
-                                                            <form action="/cart/add" method="post"
-                                                                  enctype="multipart/form-data"
-                                                                  class="button-add hidden-sm hidden-xs hidden-md variants form-nut-grid form-ajaxtocart has-validation-callback"
-                                                                  data-id="product-actions-1072137029">
-                                                                <input type="hidden" name="id" value="1163593308"
-                                                                       tabindex="0">
-                                                                <button type="button" title="Mua ngay" class="action"
-                                                                        onclick="buy_now('1163593308')" tabindex="0"><i
-                                                                        class="fa fa-check-square-o" aria-hidden="true"></i>
-                                                                </button>
-                                                                <button type="button" title="Thêm vào giỏ"
-                                                                        class="action add_to_cart" tabindex="0"><i
-                                                                        class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                                                </button>
-                                                            </form>
-                                                        </div>
-                                                        <div class="product-detail clearfix">
-                                                            <div class="pro-brand">
-                                                                IKEA
-                                                            </div>
-                                                            <h3 class="pro-name">
-                                                                <a href="/products/giuong-ngu-go-gia-dinh-phun-son-hien-dai"
-                                                                   title="Giường ngủ gỗ gia đình phun sơn hiện đại"
-                                                                   tabindex="0">Giường ngủ gỗ gia đình phun sơn hiện đại</a>
-                                                            </h3>
-                                                            <p class="pro-price">
-                                                                18,000,000₫
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="item slick-slide slick-active" data-slick-index="2"
-                                                     aria-hidden="false" tabindex="-1" role="option"
-                                                     aria-describedby="slick-slide32" style="width: 280px;"
->
-                                                    <div class="evo-product-block-item ">
-                                                        <div class="product-img">
-                                                            <a href="/products/giuong-ngu-go-tu-nhien-kieu-dang-hien-dai"
-                                                               title="Giường ngủ gỗ tự nhiên kiểu dáng hiện đại"
-                                                               class="image-resize" tabindex="0">
-                                                                <img class="lazy loaded"
-                                                                     src="//cdn.hstatic.net/products/200001110831/upload_e6efcc253a11454583eda8a301a67b58_085742fcb5d64d64a8054bdf4bbcc6e9_large.jpg"
-                                                                     data-src="//cdn.hstatic.net/products/200001110831/upload_e6efcc253a11454583eda8a301a67b58_085742fcb5d64d64a8054bdf4bbcc6e9_large.jpg"
-                                                                     alt="Giường ngủ gỗ tự nhiên kiểu dáng hiện đại"
->
-                                                            </a>
-                                                            <form action="/cart/add" method="post"
-                                                                  enctype="multipart/form-data"
-                                                                  class="button-add hidden-sm hidden-xs hidden-md variants form-nut-grid form-ajaxtocart has-validation-callback"
-                                                                  data-id="product-actions-1072137030">
-                                                                <input type="hidden" name="id" value="1163593309"
-                                                                       tabindex="0">
-                                                                <button type="button" title="Mua ngay" class="action"
-                                                                        onclick="buy_now('1163593309')" tabindex="0"><i
-                                                                        class="fa fa-check-square-o" aria-hidden="true"></i>
-                                                                </button>
-                                                                <button type="button" title="Thêm vào giỏ"
-                                                                        class="action add_to_cart" tabindex="0"><i
-                                                                        class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                                                </button>
-                                                            </form>
-                                                        </div>
-                                                        <div class="product-detail clearfix">
-                                                            <div class="pro-brand">
-                                                                IKEA
-                                                            </div>
-                                                            <h3 class="pro-name">
-                                                                <a href="/products/giuong-ngu-go-tu-nhien-kieu-dang-hien-dai"
-                                                                   title="Giường ngủ gỗ tự nhiên kiểu dáng hiện đại"
-                                                                   tabindex="0">Giường ngủ gỗ tự nhiên kiểu dáng hiện
-                                                                    đại</a>
-                                                            </h3>
-                                                            <p class="pro-price">
-                                                                16,400,000₫
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="item slick-slide slick-active" data-slick-index="3"
-                                                     aria-hidden="false" tabindex="-1" role="option"
-                                                     aria-describedby="slick-slide33" style="width: 280px;"
->
-                                                    <div class="evo-product-block-item ">
-                                                        <div class="product-img">
-                                                            <a href="/products/tu-bep-bang-go-tu-nhien-nho-gon-da-nang-tien-loi"
-                                                               title="Tủ bếp bằng gỗ tự nhiên nhỏ gọn đa năng tiện lợi"
-                                                               class="image-resize" tabindex="0">
-                                                                <img class="lazy loaded"
-                                                                     src="//cdn.hstatic.net/products/200001110831/upload_52b146daaf3b4d978ff3d7cfaba9e483_55e0ce615b334533ac2f02aebae28ae9_large.jpg"
-                                                                     data-src="//cdn.hstatic.net/products/200001110831/upload_52b146daaf3b4d978ff3d7cfaba9e483_55e0ce615b334533ac2f02aebae28ae9_large.jpg"
-                                                                     alt="Tủ bếp bằng gỗ tự nhiên nhỏ gọn đa năng tiện lợi"
->
-                                                            </a>
-                                                            <form action="/cart/add" method="post"
-                                                                  enctype="multipart/form-data"
-                                                                  class="button-add hidden-sm hidden-xs hidden-md variants form-nut-grid form-ajaxtocart has-validation-callback"
-                                                                  data-id="product-actions-1072137048">
-                                                                <input type="hidden" name="id" value="1163593350"
-                                                                       tabindex="0">
-                                                                <button type="button" title="Mua ngay" class="action"
-                                                                        onclick="buy_now('1163593350')" tabindex="0"><i
-                                                                        class="fa fa-check-square-o" aria-hidden="true"></i>
-                                                                </button>
-                                                                <button type="button" title="Thêm vào giỏ"
-                                                                        class="action add_to_cart" tabindex="0"><i
-                                                                        class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                                                </button>
-                                                            </form>
-                                                        </div>
-                                                        <div class="product-detail clearfix">
-                                                            <div class="pro-brand">
-                                                                Evo Nội thất
-                                                            </div>
-                                                            <h3 class="pro-name">
-                                                                <a href="/products/tu-bep-bang-go-tu-nhien-nho-gon-da-nang-tien-loi"
-                                                                   title="Tủ bếp bằng gỗ tự nhiên nhỏ gọn đa năng tiện lợi"
-                                                                   tabindex="0">Tủ bếp bằng gỗ tự nhiên nhỏ gọn đa năng tiện
-                                                                    lợi</a>
-                                                            </h3>
-                                                            <p class="pro-price">
-                                                                12,500,000₫
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-2 tab-content">
-                                </div>
-                                <div class="tab-3 tab-content">
-                                </div>
-                                <div class="tab-4 tab-content">
-                                </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 box box2" bis_skin_checked="1">
+                        <div class="box-inner" bis_skin_checked="1">
+                            <a href="#">
+                                <img src="//theme.hstatic.net/1000343108/1000435493/14/one_banner_2_image.png?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/one_banner_2_image.png?v=230" alt="Ý tưởng thiết kế nội thất">
+                            </a>
+                            <div class="text" bis_skin_checked="1">
+                                <p>Ý tưởng thiết kế nội thất</p>
+                                <h5>Ghế gỗ - Mẫu bàn mới</h5>
+                                <p>Chỉ từ 1tr VNĐ - Giảm giá 60%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 box box3" bis_skin_checked="1">
+                        <div class="box-inner" bis_skin_checked="1">
+                            <a href="#">
+                                <img src="//theme.hstatic.net/1000343108/1000435493/14/one_banner_3_image.png?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/one_banner_3_image.png?v=230" alt="Thương hiệu mới">
+                            </a>
+                            <div class="text" bis_skin_checked="1">
+                                <p>Thương hiệu mới</p>
+                                <h5>Ghế Copenhagen</h5>
+                                <p>Giảm giá đến 40%</p>
                             </div>
                         </div>
                     </div>
@@ -285,307 +233,1155 @@
         </div>
     </section>
     <section class="awe-section-3">
-        <div class="section_banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-4 col-xs-6 banner-with-effects">
-                        <a href="/collections/all" class="btn_type" rel="nofollow" title="Creative Phòng Ngủ">
-                            <picture>
-                                <source media="(min-width: 1200px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_1.jpg?v=255">
-                                <source media="(min-width: 992px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_1.jpg?v=255">
-                                <source media="(min-width: 569px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_1.jpg?v=255">
-                                <source media="(min-width: 480px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_1.jpg?v=255">
-                                <source media="(min-width: 320px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_1.jpg?v=255">
-                                <img src="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_1.jpg?v=255"
-                                     data-src="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_1.jpg?v=255"
-                                     alt="&lt;span&gt;Creative&lt;/span&gt; Phòng Ngủ"
-                                     class="img-responsive center-block lazy loaded">
-                            </picture>
-                            <div class="figcaption">
-                                <div class="banner-content">
-                                    <span>Creative</span> Phòng Ngủ
-                                </div>
+
+
+
+
+        <div class="section_product" bis_skin_checked="1">
+            <div class="container" bis_skin_checked="1">
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-md-3 hidden-sm hidden-xs" bis_skin_checked="1">
+                        <div class="mainmenu" bis_skin_checked="1">
+                            <span class="edit-span"><i class="fa fa-dashcube" aria-hidden="true"></i> Danh mục sản phẩm</span>
+                            <div class="nav-cate" bis_skin_checked="1">
+                                <ul id="menu2017">
+
+
+
+
+
+
+                                    <li class="dropdown menu-item-count">
+                                        <h3>
+                                            <img src="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-1.png?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-1.png?v=230" alt="Phòng khách">
+                                            <a href="/collections/phong-khach">Phòng khách <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        </h3>
+                                        <div class="subcate gd-menu" bis_skin_checked="1">
+                                            <div class="subcate-flex" bis_skin_checked="1">
+
+
+                                                <aside>
+                                                    <a href="/collections/sofa-ghe-pho-ng-kha-ch" class="">Sofa &amp; ghế phòng khách</a>
+                                                </aside>
+
+
+
+                                                <aside>
+                                                    <a href="/collections/ke-cho-tv-thie-t-bi-die-n-tu" class="">Kệ cho TV &amp; thiết bị điện tử</a>
+                                                </aside>
+
+
+
+                                                <aside>
+                                                    <a href="/collections/ba-n-ca-phe" class="">Bàn cà phê</a>
+                                                </aside>
+
+
+
+                                                <aside>
+                                                    <a href="/collections/ban-goc" class="">Bàn góc</a>
+                                                </aside>
+
+
+
+                                                <aside>
+                                                    <a href="/collections/ghe-luo-i-don-me-m" class="">Ghế lười &amp; đôn mềm</a>
+                                                </aside>
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+
+
+                                    <li class="dropdown menu-item-count">
+                                        <h3>
+                                            <img src="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-2.png?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-2.png?v=230" alt="Phòng ngủ">
+                                            <a href="/collections/phong-ngu">Phòng ngủ <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        </h3>
+                                        <div class="subcate gd-menu" bis_skin_checked="1">
+                                            <div class="subcate-flex" bis_skin_checked="1">
+
+
+                                                <aside>
+                                                    <a href="/collections/giuo-ng-ngu" class="">Giường ngủ</a>
+                                                </aside>
+
+
+
+                                                <aside>
+                                                    <a href="/collections/ba-n-ke-da-u-giuo-ng" class="">Bàn kê đầu giường</a>
+                                                </aside>
+
+
+
+                                                <aside>
+                                                    <a href="/collections/ba-n-trang-die-m" class="">Bàn trang điểm</a>
+                                                </aside>
+
+
+
+                                                <aside>
+                                                    <a href="/collections/chan-ga" class="">Chăn ga</a>
+                                                </aside>
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+
+
+                                    <li class="dropdown menu-item-count">
+                                        <h3>
+                                            <img src="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-3.png?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-3.png?v=230" alt="Phòng bếp">
+                                            <a href="/collections/phong-bep">Phòng bếp <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        </h3>
+                                        <div class="subcate gd-menu" bis_skin_checked="1">
+                                            <div class="subcate-flex" bis_skin_checked="1">
+
+
+                                                <aside>
+                                                    <a href="/collections/ban-an" class="">Bàn ăn</a>
+                                                </aside>
+
+
+
+                                                <aside>
+                                                    <a href="/collections/ghe-an" class="">Ghế ăn</a>
+                                                </aside>
+
+
+
+                                                <aside>
+                                                    <a href="/collections/do-dung-ban-an" class="">Đồ dùng bàn ăn</a>
+                                                </aside>
+
+
+
+                                                <aside>
+                                                    <a href="/collections/dem-ngoi" class="">Đệm ngồi</a>
+                                                </aside>
+
+
+
+                                                <aside>
+                                                    <a href="/collections/tu-ba-t-di-a" class="">Tủ bát đĩa</a>
+                                                </aside>
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+
+
+                                    <li class="dropdown menu-item-count">
+                                        <h3>
+                                            <img src="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-4.png?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-4.png?v=230" alt="Đồ trang trí">
+                                            <a href="/collections/do-trang-tri">Đồ trang trí <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        </h3>
+                                        <div class="subcate gd-menu" bis_skin_checked="1">
+                                            <div class="subcate-flex" bis_skin_checked="1">
+
+
+                                                <aside>
+                                                    <a href="/collections/de-n-pho-ng-kha-ch" class="">Đèn phòng khách</a>
+                                                </aside>
+
+
+
+                                                <aside>
+                                                    <a href="/collections/guong" class="">Gương</a>
+                                                </aside>
+
+
+
+                                                <aside>
+                                                    <a href="/collections/goi-trang-tri" class="">Gối trang trí</a>
+                                                </aside>
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+
+
+                                    <li class="menu-item-count">
+                                        <h3><img src="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-5.png?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-5.png?v=230" alt="Ghế Sofa"><a href="/collections/ghe-sofa">Ghế Sofa</a></h3>
+                                    </li>
+
+
+
+
+                                    <li class="menu-item-count">
+                                        <h3><img src="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-6.png?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-6.png?v=230" alt="Giường ngủ"><a href="/collections/giuong-ngu">Giường ngủ</a></h3>
+                                    </li>
+
+
+
+
+                                    <li class="menu-item-count">
+                                        <h3><img src="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-7.png?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-7.png?v=230" alt="Thảm trải sàn"><a href="/collections/tham-trai-san">Thảm trải sàn</a></h3>
+                                    </li>
+
+
+
+
+                                    <li class="menu-item-count toggleable" style="display: none;">
+                                        <h3><img src="//theme.hstatic.net/1000343108/1000435493/14/loader.svg?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-8.png?v=230" alt="Ghế thư giãn"><a href="/collections/ghe-thu-gian">Ghế thư giãn</a></h3>
+                                    </li>
+
+
+                                    <li class="more"><h3><a><label>Xem thêm ... </label></a></h3></li></ul>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-sm-4 col-xs-6 banner-with-effects">
-                        <a href="/collections/all" class="btn_type" rel="nofollow" title="Stylish Divan Phòng Làm Việc">
-                            <picture>
-                                <source media="(min-width: 1200px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_2.jpg?v=255">
-                                <source media="(min-width: 992px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_2.jpg?v=255">
-                                <source media="(min-width: 569px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_2.jpg?v=255">
-                                <source media="(min-width: 480px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_2.jpg?v=255">
-                                <source media="(min-width: 320px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_2.jpg?v=255">
-                                <img src="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_2.jpg?v=255"
-                                     data-src="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_2.jpg?v=255"
-                                     alt="&lt;span&gt;Stylish Divan&lt;/span&gt; Phòng Làm Việc"
-                                     class="img-responsive center-block lazy loaded">
-                            </picture>
-                            <div class="figcaption">
-                                <div class="banner-content">
-                                    <span>Stylish Divan</span> Phòng Làm Việc
+                    <div class="col-md-9" bis_skin_checked="1">
+                        <div class="row" bis_skin_checked="1">
+                            <div class="col-md-12" bis_skin_checked="1">
+                                <div class="section-head" bis_skin_checked="1">
+                                    <span class="group-icon"><i class="fa fa-dashcube" aria-hidden="true"></i></span>
+                                    <h2>Sản phẩm nổi bật</h2>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12 banner-with-effects">
-                        <a href="/collections/all" class="btn_type" rel="nofollow" title="Stylish Divan Phòng Ngủ">
-                            <picture>
-                                <source media="(min-width: 1200px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_3.jpg?v=255">
-                                <source media="(min-width: 992px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_3.jpg?v=255">
-                                <source media="(min-width: 569px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_3.jpg?v=255">
-                                <source media="(min-width: 480px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_3.jpg?v=255">
-                                <source media="(min-width: 320px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_3.jpg?v=255">
-                                <img src="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_3.jpg?v=255"
-                                     data-src="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_3.jpg?v=255"
-                                     alt="&lt;span&gt;Stylish Divan&lt;/span&gt; Phòng Ngủ"
-                                     class="img-responsive center-block lazy loaded">
-                            </picture>
-                            <div class="figcaption">
-                                <div class="banner-content">
-                                    <span>Stylish Divan</span> Phòng Ngủ
+                            <div class="col-md-12 e-tabs not-dqtab ajax-tab-1" data-section="ajax-tab-1" bis_skin_checked="1">
+                                <div class="content" bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <ul class="tabs tabs-title tab-mobile clearfix hidden-sm hidden-md hidden-lg">
+                                            <li class="prev current"><i class="fa fa-angle-left"></i></li>
+                                            <li class="tab-link tab-title hidden-sm hidden-md hidden-lg current tab-titlexs" data-tab="tab-1">
+
+                                                <span>Phòng khách</span>
+
+                                            </li>
+                                            <li class="next"><i class="fa fa-angle-right"></i></li>
+                                        </ul>
+                                        <ul class="tabs tabs-title tab-desktop ajax clearfix hidden-xs">
+
+                                            <li class="tab-link has-content current" data-tab="tab-1" data-url="/collections/phong-khach">
+                                                <span>Phòng khách</span>
+                                            </li>
+
+                                            <li class="tab-link " data-tab="tab-2" data-url="/collections/phong-ngu">
+                                                <span>Phòng ngủ</span>
+                                            </li>
+
+                                            <li class="tab-link " data-tab="tab-3" data-url="/collections/phong-bep">
+                                                <span>Phòng bếp</span>
+                                            </li>
+
+                                        </ul>
+
+                                        <div class="tab-1 tab-content current" bis_skin_checked="1">
+
+                                            <div class="section-tour-owl2 products products-view-grid owl-carousel owl-loaded owl-drag" data-lg-items="4" data-md-items="4" data-sm-items="3" data-xs-items="2" data-xss-items="2" data-margin="10" data-nav="true" data-dot="false" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                <div class="owl-stage-outer" bis_skin_checked="1"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all; width: 868px;" bis_skin_checked="1"><div class="owl-item active" style="width: 207px; margin-right: 10px;" bis_skin_checked="1"><div class="item" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                <div class="ant-product-item" bis_skin_checked="1">
+                                                                    <div class="product_row" bis_skin_checked="1">
+                                                                        <div class="item" bis_skin_checked="1">
+                                                                            <div class="item-inner" bis_skin_checked="1">
+                                                                                <div class="image-container" bis_skin_checked="1">
+
+
+
+                                                                                    <a href="/products/ke-ti-vi-cobra" class="product-item-photo">
+                                                                                        <img class="product-image-photo img-responsive center-block" src="//product.hstatic.net/1000343108/product/upload_7be42f22bef54b048660e7d8c3eb73a2_large.jpg" data-lazyload="//product.hstatic.net/1000343108/product/upload_7be42f22bef54b048660e7d8c3eb73a2_large.jpg" alt="Kệ ti vi COBRA">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="box-info" bis_skin_checked="1">
+                                                                                    <h2 class="product-item-name">
+                                                                                        <a title="Kệ ti vi COBRA" href="/products/ke-ti-vi-cobra" class="product-item-link">
+                                                                                            Kệ ti vi COBRA
+                                                                                        </a>
+                                                                                    </h2>
+                                                                                    <div class="product-reviews-summary" bis_skin_checked="1">
+                                                                                        <div class="rating-summary" bis_skin_checked="1">
+                                                                                            <div class="haravan-product-reviews-badge" data-id="1017908240" bis_skin_checked="1"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item-price" bis_skin_checked="1">
+                                                                                        <div class="price-box price-final_price" bis_skin_checked="1">
+
+
+						<span class="special-price">
+							<span class="price-container">
+								<span class="price-wrapper">
+									<span class="price">6,300,000₫</span>
+								</span>
+							</span>
+						</span>
+
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="box-hover hidden-sm hidden-xs hidden-md" bis_skin_checked="1">
+                                                                                        <div class="add-to-links" bis_skin_checked="1">
+                                                                                            <div class="actions-primary" bis_skin_checked="1">
+                                                                                                <form action="/cart/add" method="post" class="variants form-nut-grid has-validation-callback" data-id="product-actions-1017908240" enctype="multipart/form-data">
+
+
+                                                                                                    <input type="hidden" name="id" value="1035080072">
+                                                                                                    <button class="tt-btn-addtocart btn-buy btn-cart btn btn-gray left-to add_to_cart" title="Cho vào giỏ hàng">
+                                                                                                        <i class="ion ion-md-cart"></i>
+                                                                                                    </button>
+
+
+                                                                                                </form>
+                                                                                            </div>
+
+                                                                                            <a href="/products/ke-ti-vi-cobra" class="quick-view" title="Xem nhanh">
+                                                                                                <i class="ion ion-ios-search"></i>
+                                                                                            </a>
+
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div><div class="owl-item active" style="width: 207px; margin-right: 10px;" bis_skin_checked="1"><div class="item" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                <div class="ant-product-item" bis_skin_checked="1">
+                                                                    <div class="product_row" bis_skin_checked="1">
+                                                                        <div class="item" bis_skin_checked="1">
+                                                                            <div class="item-inner" bis_skin_checked="1">
+                                                                                <div class="image-container" bis_skin_checked="1">
+
+
+
+                                                                                    <a href="/products/ke-ti-vi-mozart" class="product-item-photo">
+                                                                                        <img class="product-image-photo img-responsive center-block" src="//product.hstatic.net/1000343108/product/upload_324e41dd2c194b99ab53f1e01a7a2e57_large.jpg" data-lazyload="//product.hstatic.net/1000343108/product/upload_324e41dd2c194b99ab53f1e01a7a2e57_large.jpg" alt="Kệ ti vi MOZART">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="box-info" bis_skin_checked="1">
+                                                                                    <h2 class="product-item-name">
+                                                                                        <a title="Kệ ti vi MOZART" href="/products/ke-ti-vi-mozart" class="product-item-link">
+                                                                                            Kệ ti vi MOZART
+                                                                                        </a>
+                                                                                    </h2>
+                                                                                    <div class="product-reviews-summary" bis_skin_checked="1">
+                                                                                        <div class="rating-summary" bis_skin_checked="1">
+                                                                                            <div class="haravan-product-reviews-badge" data-id="1017908243" bis_skin_checked="1"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item-price" bis_skin_checked="1">
+                                                                                        <div class="price-box price-final_price" bis_skin_checked="1">
+
+
+						<span class="special-price">
+							<span class="price-container">
+								<span class="price-wrapper">
+									<span class="price">2,900,000₫</span>
+								</span>
+							</span>
+						</span>
+
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="box-hover hidden-sm hidden-xs hidden-md" bis_skin_checked="1">
+                                                                                        <div class="add-to-links" bis_skin_checked="1">
+                                                                                            <div class="actions-primary" bis_skin_checked="1">
+                                                                                                <form action="/cart/add" method="post" class="variants form-nut-grid has-validation-callback" data-id="product-actions-1017908243" enctype="multipart/form-data">
+
+
+                                                                                                    <input type="hidden" name="id" value="1035080076">
+                                                                                                    <button class="tt-btn-addtocart btn-buy btn-cart btn btn-gray left-to add_to_cart" title="Cho vào giỏ hàng">
+                                                                                                        <i class="ion ion-md-cart"></i>
+                                                                                                    </button>
+
+
+                                                                                                </form>
+                                                                                            </div>
+
+                                                                                            <a href="/products/ke-ti-vi-mozart" class="quick-view" title="Xem nhanh">
+                                                                                                <i class="ion ion-ios-search"></i>
+                                                                                            </a>
+
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div><div class="owl-item active" style="width: 207px; margin-right: 10px;" bis_skin_checked="1"><div class="item" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                <div class="ant-product-item" bis_skin_checked="1">
+                                                                    <div class="product_row" bis_skin_checked="1">
+                                                                        <div class="item" bis_skin_checked="1">
+                                                                            <div class="item-inner" bis_skin_checked="1">
+                                                                                <div class="image-container" bis_skin_checked="1">
+
+
+
+                                                                                    <a href="/products/ke-ti-vi-suecia" class="product-item-photo">
+                                                                                        <img class="product-image-photo img-responsive center-block" src="//product.hstatic.net/1000343108/product/upload_01cfaab410184e109f06aa4d760ce1f4_large.jpg" data-lazyload="//product.hstatic.net/1000343108/product/upload_01cfaab410184e109f06aa4d760ce1f4_large.jpg" alt="Kệ ti vi SUECIA">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="box-info" bis_skin_checked="1">
+                                                                                    <h2 class="product-item-name">
+                                                                                        <a title="Kệ ti vi SUECIA" href="/products/ke-ti-vi-suecia" class="product-item-link">
+                                                                                            Kệ ti vi SUECIA
+                                                                                        </a>
+                                                                                    </h2>
+                                                                                    <div class="product-reviews-summary" bis_skin_checked="1">
+                                                                                        <div class="rating-summary" bis_skin_checked="1">
+                                                                                            <div class="haravan-product-reviews-badge" data-id="1017908237" bis_skin_checked="1"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item-price" bis_skin_checked="1">
+                                                                                        <div class="price-box price-final_price" bis_skin_checked="1">
+
+
+						<span class="special-price">
+							<span class="price-container">
+								<span class="price-wrapper">
+									<span class="price">3,800,000₫</span>
+								</span>
+							</span>
+						</span>
+
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="box-hover hidden-sm hidden-xs hidden-md" bis_skin_checked="1">
+                                                                                        <div class="add-to-links" bis_skin_checked="1">
+                                                                                            <div class="actions-primary" bis_skin_checked="1">
+                                                                                                <form action="/cart/add" method="post" class="variants form-nut-grid has-validation-callback" data-id="product-actions-1017908237" enctype="multipart/form-data">
+
+
+                                                                                                    <input type="hidden" name="id" value="1035080066">
+                                                                                                    <button class="tt-btn-addtocart btn-buy btn-cart btn btn-gray left-to add_to_cart" title="Cho vào giỏ hàng">
+                                                                                                        <i class="ion ion-md-cart"></i>
+                                                                                                    </button>
+
+
+                                                                                                </form>
+                                                                                            </div>
+
+                                                                                            <a href="/products/ke-ti-vi-suecia" class="quick-view" title="Xem nhanh">
+                                                                                                <i class="ion ion-ios-search"></i>
+                                                                                            </a>
+
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div><div class="owl-item active" style="width: 207px; margin-right: 10px;" bis_skin_checked="1"><div class="item" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                <div class="ant-product-item" bis_skin_checked="1">
+                                                                    <div class="product_row" bis_skin_checked="1">
+                                                                        <div class="item" bis_skin_checked="1">
+                                                                            <div class="item-inner" bis_skin_checked="1">
+                                                                                <div class="image-container" bis_skin_checked="1">
+
+
+
+                                                                                    <a href="/products/sofa-connemara" class="product-item-photo">
+                                                                                        <img class="product-image-photo img-responsive center-block" src="//product.hstatic.net/1000343108/product/upload_5c0eef8cef174220aabe3e448d9a6b69_large.jpg" data-lazyload="//product.hstatic.net/1000343108/product/upload_5c0eef8cef174220aabe3e448d9a6b69_large.jpg" alt="Sofa CONNEMARA">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="box-info" bis_skin_checked="1">
+                                                                                    <h2 class="product-item-name">
+                                                                                        <a title="Sofa CONNEMARA" href="/products/sofa-connemara" class="product-item-link">
+                                                                                            Sofa CONNEMARA
+                                                                                        </a>
+                                                                                    </h2>
+                                                                                    <div class="product-reviews-summary" bis_skin_checked="1">
+                                                                                        <div class="rating-summary" bis_skin_checked="1">
+                                                                                            <div class="haravan-product-reviews-badge" data-id="1017908259" bis_skin_checked="1"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item-price" bis_skin_checked="1">
+                                                                                        <div class="price-box price-final_price" bis_skin_checked="1">
+
+
+						<span class="special-price">
+							<span class="price-container">
+								<span class="price-wrapper">
+									<span class="price">14,400,000₫</span>
+								</span>
+							</span>
+						</span>
+
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="box-hover hidden-sm hidden-xs hidden-md" bis_skin_checked="1">
+                                                                                        <div class="add-to-links" bis_skin_checked="1">
+                                                                                            <div class="actions-primary" bis_skin_checked="1">
+                                                                                                <form action="/cart/add" method="post" class="variants form-nut-grid has-validation-callback" data-id="product-actions-1017908259" enctype="multipart/form-data">
+
+
+                                                                                                    <input type="hidden" name="id" value="1035080103">
+                                                                                                    <button class="tt-btn-addtocart btn-buy btn-cart btn btn-gray left-to add_to_cart" title="Cho vào giỏ hàng">
+                                                                                                        <i class="ion ion-md-cart"></i>
+                                                                                                    </button>
+
+
+                                                                                                </form>
+                                                                                            </div>
+
+                                                                                            <a href="/products/sofa-connemara" class="quick-view" title="Xem nhanh">
+                                                                                                <i class="ion ion-ios-search"></i>
+                                                                                            </a>
+
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div></div></div><div class="owl-nav disabled" bis_skin_checked="1"><div class="owl-prev disabled" bis_skin_checked="1"><i class="fa fa-angle-left" aria-hidden="true"></i></div><div class="owl-next disabled" bis_skin_checked="1"><i class="fa fa-angle-right" aria-hidden="true"></i></div></div><div class="owl-dots disabled" bis_skin_checked="1"></div></div>
+
+
+                                        </div>
+
+                                        <div class="tab-2 tab-content" bis_skin_checked="1">
+
+                                        </div>
+
+                                        <div class="tab-3 tab-content" bis_skin_checked="1">
+
+                                        </div>
+
+                                        <script>
+
+                                        </script>
+                                    </div>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-6 banner-with-effects">
-                        <a href="/collections/all" class="btn_type" rel="nofollow" title="Stylish Divan Phòng Ngủ">
-                            <picture>
-                                <source media="(min-width: 1200px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_4.jpg?v=255">
-                                <source media="(min-width: 992px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_4.jpg?v=255">
-                                <source media="(min-width: 569px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_4.jpg?v=255">
-                                <source media="(min-width: 480px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_4.jpg?v=255">
-                                <source media="(min-width: 320px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_4.jpg?v=255">
-                                <img src="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_4.jpg?v=255"
-                                     data-src="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_4.jpg?v=255"
-                                     alt="&lt;span&gt;Stylish Divan&lt;/span&gt; Phòng Ngủ"
-                                     class="img-responsive center-block lazy loaded">
-                            </picture>
-                            <div class="figcaption">
-                                <div class="banner-content">
-                                    <span>Stylish Divan</span> Phòng Ngủ
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-6 banner-with-effects">
-                        <a href="/collections/all" class="btn_type" rel="nofollow" title="Stylish Divan Phòng Khách">
-                            <picture>
-                                <source media="(min-width: 1200px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_5.jpg?v=255">
-                                <source media="(min-width: 992px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_5.jpg?v=255">
-                                <source media="(min-width: 569px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_5.jpg?v=255">
-                                <source media="(min-width: 480px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_5.jpg?v=255">
-                                <source media="(min-width: 320px)"
-                                        srcset="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_5.jpg?v=255">
-                                <img src="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_5.jpg?v=255"
-                                     data-src="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_index_5.jpg?v=255"
-                                     alt="&lt;span&gt;Stylish Divan&lt;/span&gt; Phòng Khách"
-                                     class="img-responsive center-block lazy loaded">
-                            </picture>
-                            <div class="figcaption">
-                                <div class="banner-content">
-                                    <span>Stylish Divan</span> Phòng Khách
-                                </div>
-                            </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="awe-section-4">
-        <div class="section_san_pham">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="new_title">
-                            <h2><a href="/collections/san-pham-moi" title="Nội thất gỗ">Nội thất gỗ</a></h2>
-                        </div>
-                        <div class="slick_ajax_tab evo-slick slick-initialized slick-slider">
-                            <div aria-live="polite" class="slick-list draggable">
-                                <div class="slick-track" role="listbox"
-                                     style="opacity: 1; width: 1160px; transform: translate3d(0px, 0px, 0px);">
-                                    <div class="evo-product-block-item  slick-slide slick-current slick-active"
-                                         data-slick-index="0" aria-hidden="false" tabindex="-1" role="option"
-                                         aria-describedby="slick-slide40" style="width: 280px;">
-                                        <div class="product-img">
-                                            <a href="/products/gia-sach-gia-re-kieu-dang-nho-gon"
-                                               title="Giá sách giá rẻ kiểu dáng nhỏ gọn" class="image-resize" tabindex="0">
-                                                <img class="lazy loaded"
-                                                     src="//cdn.hstatic.net/products/200001110831/upload_e3fc489d7c624d3c9d9fb80f499b6ec6_e8fd7163c25b4608a110760d072b8b41_large.jpg"
-                                                     data-src="//cdn.hstatic.net/products/200001110831/upload_e3fc489d7c624d3c9d9fb80f499b6ec6_e8fd7163c25b4608a110760d072b8b41_large.jpg"
-                                                     alt="Giá sách giá rẻ kiểu dáng nhỏ gọn">
-                                            </a>
-                                            <form action="/cart/add" method="post" enctype="multipart/form-data"
-                                                  class="button-add hidden-sm hidden-xs hidden-md variants form-nut-grid form-ajaxtocart has-validation-callback"
-                                                  data-id="product-actions-1072137024">
-                                                <input type="hidden" name="id" value="1163593303" tabindex="0">
-                                                <button type="button" title="Mua ngay" class="action"
-                                                        onclick="buy_now('1163593303')" tabindex="0"><i
-                                                        class="fa fa-check-square-o" aria-hidden="true"></i></button>
-                                                <button type="button" title="Thêm vào giỏ" class="action add_to_cart"
-                                                        tabindex="0"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                                </button>
-                                            </form>
+
+
+
+
+        <div class="section_product" bis_skin_checked="1">
+            <div class="container" bis_skin_checked="1">
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-md-12" bis_skin_checked="1">
+                        <div class="row" bis_skin_checked="1">
+                            <div class="col-md-12" bis_skin_checked="1">
+                                <div class="section-head" bis_skin_checked="1">
+                                    <span class="group-icon"><i class="fa fa-dashcube" aria-hidden="true"></i></span>
+                                    <h2>Phòng khách</h2>
+                                </div>
+                            </div>
+                            <div class="col-md-12 e-tabs not-dqtab ajax-tab-2" data-section="ajax-tab-2" data-view="grid_4" bis_skin_checked="1">
+                                <div class="content" bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <ul class="tabs tabs-title tab-mobile clearfix hidden-sm hidden-md hidden-lg">
+                                            <li class="prev current"><i class="fa fa-angle-left"></i></li>
+                                            <li class="tab-link tab-title hidden-sm hidden-md hidden-lg current tab-titlexs" data-tab="tab-1">
+
+                                                <span>Sofa &amp; ghế phòng khách</span>
+
+                                            </li>
+                                            <li class="next"><i class="fa fa-angle-right"></i></li>
+                                        </ul>
+                                        <ul class="tabs tabs-title tab-desktop ajax clearfix hidden-xs">
+
+                                            <li class="tab-link has-content current" data-tab="tab-1" data-url="/collections/sofa-ghe-pho-ng-kha-ch">
+                                                <span>Sofa &amp; ghế phòng khách</span>
+                                            </li>
+
+                                            <li class="tab-link " data-tab="tab-2" data-url="/collections/ke-cho-tv-thie-t-bi-die-n-tu">
+                                                <span>Kệ cho TV &amp; thiết bị điện tử</span>
+                                            </li>
+
+                                            <li class="tab-link " data-tab="tab-3" data-url="/collections/ba-n-ca-phe">
+                                                <span>Bàn cà phê</span>
+                                            </li>
+
+                                            <li class="tab-link " data-tab="tab-4" data-url="/collections/ban-goc">
+                                                <span>Bàn góc</span>
+                                            </li>
+
+                                            <li class="tab-link " data-tab="tab-5" data-url="/collections/ghe-luo-i-don-me-m">
+                                                <span>Ghế lười &amp; đôn mềm</span>
+                                            </li>
+
+                                        </ul>
+
+                                        <div class="tab-1 tab-content current" bis_skin_checked="1">
+
+                                            <div class="section-tour-owl3 products products-view-grid owl-carousel owl-loaded owl-drag" data-lg-items="5" data-md-items="5" data-sm-items="3" data-xs-items="2" data-xss-items="2" data-margin="10" data-nav="true" data-dot="false" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                <div class="owl-stage-outer" bis_skin_checked="1"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all; width: 1160px;" bis_skin_checked="1"><div class="owl-item active" style="width: 222px; margin-right: 10px;" bis_skin_checked="1"><div class="item" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                <div class="ant-product-item" bis_skin_checked="1">
+                                                                    <div class="product_row" bis_skin_checked="1">
+                                                                        <div class="item" bis_skin_checked="1">
+                                                                            <div class="item-inner" bis_skin_checked="1">
+                                                                                <div class="image-container" bis_skin_checked="1">
+
+
+				<span class="sale">
+17%
+</span>
+
+
+                                                                                    <a href="/products/ghe-nam-co-ngan-chua-shibuya" class="product-item-photo">
+                                                                                        <img class="product-image-photo img-responsive center-block" src="//product.hstatic.net/1000343108/product/upload_a159c8476a184a08ab9ad91c56ef736c_large.jpg" data-lazyload="//product.hstatic.net/1000343108/product/upload_a159c8476a184a08ab9ad91c56ef736c_large.jpg" alt="Ghế nằm có ngăn chứa SHIBUYA">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="box-info" bis_skin_checked="1">
+                                                                                    <h2 class="product-item-name">
+                                                                                        <a title="Ghế nằm có ngăn chứa SHIBUYA" href="/products/ghe-nam-co-ngan-chua-shibuya" class="product-item-link">
+                                                                                            Ghế nằm có ngăn chứa SHIBUYA
+                                                                                        </a>
+                                                                                    </h2>
+                                                                                    <div class="product-reviews-summary" bis_skin_checked="1">
+                                                                                        <div class="rating-summary" bis_skin_checked="1">
+                                                                                            <div class="haravan-product-reviews-badge" data-id="1017908264" bis_skin_checked="1"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item-price" bis_skin_checked="1">
+                                                                                        <div class="price-box price-final_price" bis_skin_checked="1">
+
+
+						<span class="special-price">
+							<span class="price-container">
+								<span class="price-wrapper">
+									<span class="price">7,490,000₫</span>
+								</span>
+							</span>
+						</span>
+
+                                                                                            <span class="old-price">
+							<span class="price-container">
+								<span class="price-wrapper">
+									<span class="price">9,000,000₫</span>
+								</span>
+							</span>
+						</span>
+
+
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="box-hover hidden-sm hidden-xs hidden-md" bis_skin_checked="1">
+                                                                                        <div class="add-to-links" bis_skin_checked="1">
+                                                                                            <div class="actions-primary" bis_skin_checked="1">
+                                                                                                <form action="/cart/add" method="post" class="variants form-nut-grid has-validation-callback" data-id="product-actions-1017908264" enctype="multipart/form-data">
+
+
+                                                                                                    <input type="hidden" name="id" value="1035080111">
+                                                                                                    <button class="tt-btn-addtocart btn-buy btn-cart btn btn-gray left-to add_to_cart" title="Cho vào giỏ hàng">
+                                                                                                        <i class="ion ion-md-cart"></i>
+                                                                                                    </button>
+
+
+                                                                                                </form>
+                                                                                            </div>
+
+                                                                                            <a href="/products/ghe-nam-co-ngan-chua-shibuya" class="quick-view" title="Xem nhanh">
+                                                                                                <i class="ion ion-ios-search"></i>
+                                                                                            </a>
+
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div><div class="owl-item active" style="width: 222px; margin-right: 10px;" bis_skin_checked="1"><div class="item" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                <div class="ant-product-item" bis_skin_checked="1">
+                                                                    <div class="product_row" bis_skin_checked="1">
+                                                                        <div class="item" bis_skin_checked="1">
+                                                                            <div class="item-inner" bis_skin_checked="1">
+                                                                                <div class="image-container" bis_skin_checked="1">
+
+
+
+                                                                                    <a href="/products/sofa-co-ghe-nam" class="product-item-photo">
+                                                                                        <img class="product-image-photo img-responsive center-block" src="//product.hstatic.net/1000343108/product/upload_956e4b235bd04b459ec68d647be596e6_large.jpg" data-lazyload="//product.hstatic.net/1000343108/product/upload_956e4b235bd04b459ec68d647be596e6_large.jpg" alt="Sofa có ghế nằm">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="box-info" bis_skin_checked="1">
+                                                                                    <h2 class="product-item-name">
+                                                                                        <a title="Sofa có ghế nằm" href="/products/sofa-co-ghe-nam" class="product-item-link">
+                                                                                            Sofa có ghế nằm
+                                                                                        </a>
+                                                                                    </h2>
+                                                                                    <div class="product-reviews-summary" bis_skin_checked="1">
+                                                                                        <div class="rating-summary" bis_skin_checked="1">
+                                                                                            <div class="haravan-product-reviews-badge" data-id="1017908266" bis_skin_checked="1"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item-price" bis_skin_checked="1">
+                                                                                        <div class="price-box price-final_price" bis_skin_checked="1">
+
+
+						<span class="special-price">
+							<span class="price-container">
+								<span class="price-wrapper">
+									<span class="price">16,400,000₫</span>
+								</span>
+							</span>
+						</span>
+
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="box-hover hidden-sm hidden-xs hidden-md" bis_skin_checked="1">
+                                                                                        <div class="add-to-links" bis_skin_checked="1">
+                                                                                            <div class="actions-primary" bis_skin_checked="1">
+                                                                                                <form action="/cart/add" method="post" class="variants form-nut-grid has-validation-callback" data-id="product-actions-1017908266" enctype="multipart/form-data">
+
+
+                                                                                                    <input type="hidden" name="id" value="1035080114">
+                                                                                                    <button class="tt-btn-addtocart btn-buy btn-cart btn btn-gray left-to add_to_cart" title="Cho vào giỏ hàng">
+                                                                                                        <i class="ion ion-md-cart"></i>
+                                                                                                    </button>
+
+
+                                                                                                </form>
+                                                                                            </div>
+
+                                                                                            <a href="/products/sofa-co-ghe-nam" class="quick-view" title="Xem nhanh">
+                                                                                                <i class="ion ion-ios-search"></i>
+                                                                                            </a>
+
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div><div class="owl-item active" style="width: 222px; margin-right: 10px;" bis_skin_checked="1"><div class="item" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                <div class="ant-product-item" bis_skin_checked="1">
+                                                                    <div class="product_row" bis_skin_checked="1">
+                                                                        <div class="item" bis_skin_checked="1">
+                                                                            <div class="item-inner" bis_skin_checked="1">
+                                                                                <div class="image-container" bis_skin_checked="1">
+
+
+
+                                                                                    <a href="/products/sofa-connemara" class="product-item-photo">
+                                                                                        <img class="product-image-photo img-responsive center-block" src="//product.hstatic.net/1000343108/product/upload_5c0eef8cef174220aabe3e448d9a6b69_large.jpg" data-lazyload="//product.hstatic.net/1000343108/product/upload_5c0eef8cef174220aabe3e448d9a6b69_large.jpg" alt="Sofa CONNEMARA">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="box-info" bis_skin_checked="1">
+                                                                                    <h2 class="product-item-name">
+                                                                                        <a title="Sofa CONNEMARA" href="/products/sofa-connemara" class="product-item-link">
+                                                                                            Sofa CONNEMARA
+                                                                                        </a>
+                                                                                    </h2>
+                                                                                    <div class="product-reviews-summary" bis_skin_checked="1">
+                                                                                        <div class="rating-summary" bis_skin_checked="1">
+                                                                                            <div class="haravan-product-reviews-badge" data-id="1017908259" bis_skin_checked="1"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item-price" bis_skin_checked="1">
+                                                                                        <div class="price-box price-final_price" bis_skin_checked="1">
+
+
+						<span class="special-price">
+							<span class="price-container">
+								<span class="price-wrapper">
+									<span class="price">14,400,000₫</span>
+								</span>
+							</span>
+						</span>
+
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="box-hover hidden-sm hidden-xs hidden-md" bis_skin_checked="1">
+                                                                                        <div class="add-to-links" bis_skin_checked="1">
+                                                                                            <div class="actions-primary" bis_skin_checked="1">
+                                                                                                <form action="/cart/add" method="post" class="variants form-nut-grid has-validation-callback" data-id="product-actions-1017908259" enctype="multipart/form-data">
+
+
+                                                                                                    <input type="hidden" name="id" value="1035080103">
+                                                                                                    <button class="tt-btn-addtocart btn-buy btn-cart btn btn-gray left-to add_to_cart" title="Cho vào giỏ hàng">
+                                                                                                        <i class="ion ion-md-cart"></i>
+                                                                                                    </button>
+
+
+                                                                                                </form>
+                                                                                            </div>
+
+                                                                                            <a href="/products/sofa-connemara" class="quick-view" title="Xem nhanh">
+                                                                                                <i class="ion ion-ios-search"></i>
+                                                                                            </a>
+
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div><div class="owl-item active" style="width: 222px; margin-right: 10px;" bis_skin_checked="1"><div class="item" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                <div class="ant-product-item" bis_skin_checked="1">
+                                                                    <div class="product_row" bis_skin_checked="1">
+                                                                        <div class="item" bis_skin_checked="1">
+                                                                            <div class="item-inner" bis_skin_checked="1">
+                                                                                <div class="image-container" bis_skin_checked="1">
+
+
+
+                                                                                    <a href="/products/sofa-giuong-bohemia" class="product-item-photo">
+                                                                                        <img class="product-image-photo img-responsive center-block" src="//product.hstatic.net/1000343108/product/upload_d93cceaf1e104005b3020ceb150f547c_large.jpg" data-lazyload="//product.hstatic.net/1000343108/product/upload_d93cceaf1e104005b3020ceb150f547c_large.jpg" alt="Sofa giường BOHEMIA">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="box-info" bis_skin_checked="1">
+                                                                                    <h2 class="product-item-name">
+                                                                                        <a title="Sofa giường BOHEMIA" href="/products/sofa-giuong-bohemia" class="product-item-link">
+                                                                                            Sofa giường BOHEMIA
+                                                                                        </a>
+                                                                                    </h2>
+                                                                                    <div class="product-reviews-summary" bis_skin_checked="1">
+                                                                                        <div class="rating-summary" bis_skin_checked="1">
+                                                                                            <div class="haravan-product-reviews-badge" data-id="1017908261" bis_skin_checked="1"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item-price" bis_skin_checked="1">
+                                                                                        <div class="price-box price-final_price" bis_skin_checked="1">
+
+
+						<span class="special-price">
+							<span class="price-container">
+								<span class="price-wrapper">
+									<span class="price">6,490,000₫</span>
+								</span>
+							</span>
+						</span>
+
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="box-hover hidden-sm hidden-xs hidden-md" bis_skin_checked="1">
+                                                                                        <div class="add-to-links" bis_skin_checked="1">
+                                                                                            <div class="actions-primary" bis_skin_checked="1">
+                                                                                                <form action="/cart/add" method="post" class="variants form-nut-grid has-validation-callback" data-id="product-actions-1017908261" enctype="multipart/form-data">
+
+
+                                                                                                    <input type="hidden" name="id" value="1035080107">
+                                                                                                    <button class="tt-btn-addtocart btn-buy btn-cart btn btn-gray left-to add_to_cart" title="Cho vào giỏ hàng">
+                                                                                                        <i class="ion ion-md-cart"></i>
+                                                                                                    </button>
+
+
+                                                                                                </form>
+                                                                                            </div>
+
+                                                                                            <a href="/products/sofa-giuong-bohemia" class="quick-view" title="Xem nhanh">
+                                                                                                <i class="ion ion-ios-search"></i>
+                                                                                            </a>
+
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div><div class="owl-item active" style="width: 222px; margin-right: 10px;" bis_skin_checked="1"><div class="item" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                <div class="ant-product-item" bis_skin_checked="1">
+                                                                    <div class="product_row" bis_skin_checked="1">
+                                                                        <div class="item" bis_skin_checked="1">
+                                                                            <div class="item-inner" bis_skin_checked="1">
+                                                                                <div class="image-container" bis_skin_checked="1">
+
+
+
+                                                                                    <a href="/products/sofa-monaco" class="product-item-photo">
+                                                                                        <img class="product-image-photo img-responsive center-block" src="//product.hstatic.net/1000343108/product/upload_98bbcefb9e6a4f4f8bbb60000df16e68_large.jpg" data-lazyload="//product.hstatic.net/1000343108/product/upload_98bbcefb9e6a4f4f8bbb60000df16e68_large.jpg" alt="Sofa MONACO">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="box-info" bis_skin_checked="1">
+                                                                                    <h2 class="product-item-name">
+                                                                                        <a title="Sofa MONACO" href="/products/sofa-monaco" class="product-item-link">
+                                                                                            Sofa MONACO
+                                                                                        </a>
+                                                                                    </h2>
+                                                                                    <div class="product-reviews-summary" bis_skin_checked="1">
+                                                                                        <div class="rating-summary" bis_skin_checked="1">
+                                                                                            <div class="haravan-product-reviews-badge" data-id="1017908265" bis_skin_checked="1"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item-price" bis_skin_checked="1">
+                                                                                        <div class="price-box price-final_price" bis_skin_checked="1">
+
+
+						<span class="special-price">
+							<span class="price-container">
+								<span class="price-wrapper">
+									<span class="price">13,990,000₫</span>
+								</span>
+							</span>
+						</span>
+
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="box-hover hidden-sm hidden-xs hidden-md" bis_skin_checked="1">
+                                                                                        <div class="add-to-links" bis_skin_checked="1">
+                                                                                            <div class="actions-primary" bis_skin_checked="1">
+                                                                                                <form action="/cart/add" method="post" class="variants form-nut-grid has-validation-callback" data-id="product-actions-1017908265" enctype="multipart/form-data">
+
+
+                                                                                                    <input type="hidden" name="id" value="1035080112">
+                                                                                                    <button class="tt-btn-addtocart btn-buy btn-cart btn btn-gray left-to add_to_cart" title="Cho vào giỏ hàng">
+                                                                                                        <i class="ion ion-md-cart"></i>
+                                                                                                    </button>
+
+
+                                                                                                </form>
+                                                                                            </div>
+
+                                                                                            <a href="/products/sofa-monaco" class="quick-view" title="Xem nhanh">
+                                                                                                <i class="ion ion-ios-search"></i>
+                                                                                            </a>
+
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div></div></div><div class="owl-nav disabled" bis_skin_checked="1"><div class="owl-prev disabled" bis_skin_checked="1"><i class="fa fa-angle-left" aria-hidden="true"></i></div><div class="owl-next disabled" bis_skin_checked="1"><i class="fa fa-angle-right" aria-hidden="true"></i></div></div><div class="owl-dots disabled" bis_skin_checked="1"></div></div>
+
+
                                         </div>
-                                        <div class="product-detail clearfix">
-                                            <div class="pro-brand">
-                                                IKEA
-                                            </div>
-                                            <h3 class="pro-name">
-                                                <a href="/products/gia-sach-gia-re-kieu-dang-nho-gon"
-                                                   title="Giá sách giá rẻ kiểu dáng nhỏ gọn" tabindex="0">Giá sách giá rẻ
-                                                    kiểu dáng nhỏ gọn</a>
-                                            </h3>
-                                            <p class="pro-price">
-                                                4,000,000₫
-                                            </p>
+
+                                        <div class="tab-2 tab-content" bis_skin_checked="1">
+
                                         </div>
-                                    </div>
-                                    <div class="evo-product-block-item  slick-slide slick-active" data-slick-index="1"
-                                         aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide41"
- style="width: 280px;">
-                                        <div class="product-img">
-                                            <a href="/products/gia-sach-go-tu-nhien-thiet-ke-dep"
-                                               title="Giá sách gỗ tự nhiên thiết kế đẹp" class="image-resize" tabindex="0">
-                                                <img class="lazy loaded"
-                                                     src="//cdn.hstatic.net/products/200001110831/upload_2e5bb06c2f914751b7acf4151ad6c6e0_34352c1f39f147e88865b57934f59925_large.jpg"
-                                                     data-src="//cdn.hstatic.net/products/200001110831/upload_2e5bb06c2f914751b7acf4151ad6c6e0_34352c1f39f147e88865b57934f59925_large.jpg"
-                                                     alt="Giá sách gỗ tự nhiên thiết kế đẹp">
-                                            </a>
-                                            <form action="/cart/add" method="post" enctype="multipart/form-data"
-                                                  class="button-add hidden-sm hidden-xs hidden-md variants form-nut-grid form-ajaxtocart has-validation-callback"
-                                                  data-id="product-actions-1072137026">
-                                                <input type="hidden" name="id" value="1163593305" tabindex="0">
-                                                <button type="button" title="Mua ngay" class="action"
-                                                        onclick="buy_now('1163593305')" tabindex="0"><i
-                                                        class="fa fa-check-square-o" aria-hidden="true"></i></button>
-                                                <button type="button" title="Thêm vào giỏ" class="action add_to_cart"
-                                                        tabindex="0"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                                </button>
-                                            </form>
+
+                                        <div class="tab-3 tab-content" bis_skin_checked="1">
+
                                         </div>
-                                        <div class="product-detail clearfix">
-                                            <div class="pro-brand">
-                                                IKEA
-                                            </div>
-                                            <h3 class="pro-name">
-                                                <a href="/products/gia-sach-go-tu-nhien-thiet-ke-dep"
-                                                   title="Giá sách gỗ tự nhiên thiết kế đẹp" tabindex="0">Giá sách gỗ tự
-                                                    nhiên thiết kế đẹp</a>
-                                            </h3>
-                                            <p class="pro-price">
-                                                13,990,000₫
-                                            </p>
+
+                                        <div class="tab-4 tab-content" bis_skin_checked="1">
+
                                         </div>
-                                    </div>
-                                    <div class="evo-product-block-item  slick-slide slick-active" data-slick-index="2"
-                                         aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide42"
- style="width: 280px;">
-                                        <div class="product-img">
-                                            <div class="product-sale">
-                                                <span>-16%</span>
-                                            </div>
-                                            <a href="/products/giuong-ngu-go-chat-luong-cao-cho-gia-dinh"
-                                               title="Giường ngủ gỗ chất lượng cao cho gia đình" class="image-resize"
-                                               tabindex="0">
-                                                <img class="lazy loaded"
-                                                     src="//cdn.hstatic.net/products/200001110831/upload_3fe7a64433d046e290922e3a5bd1905c_9204918b69624e53811ffc3f71bf089a_large.jpg"
-                                                     data-src="//cdn.hstatic.net/products/200001110831/upload_3fe7a64433d046e290922e3a5bd1905c_9204918b69624e53811ffc3f71bf089a_large.jpg"
-                                                     alt="Giường ngủ gỗ chất lượng cao cho gia đình"
->
-                                            </a>
-                                            <form action="/cart/add" method="post" enctype="multipart/form-data"
-                                                  class="button-add hidden-sm hidden-xs hidden-md variants form-nut-grid form-ajaxtocart has-validation-callback"
-                                                  data-id="product-actions-1072137028">
-                                                <input type="hidden" name="id" value="1163593307" tabindex="0">
-                                                <button type="button" title="Mua ngay" class="action"
-                                                        onclick="buy_now('1163593307')" tabindex="0"><i
-                                                        class="fa fa-check-square-o" aria-hidden="true"></i></button>
-                                                <button type="button" title="Thêm vào giỏ" class="action add_to_cart"
-                                                        tabindex="0"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                                </button>
-                                            </form>
+
+                                        <div class="tab-5 tab-content" bis_skin_checked="1">
+
                                         </div>
-                                        <div class="product-detail clearfix">
-                                            <div class="pro-brand">
-                                                Evo Nội thất
-                                            </div>
-                                            <h3 class="pro-name">
-                                                <a href="/products/giuong-ngu-go-chat-luong-cao-cho-gia-dinh"
-                                                   title="Giường ngủ gỗ chất lượng cao cho gia đình" tabindex="0">Giường ngủ
-                                                    gỗ chất lượng cao cho gia đình</a>
-                                            </h3>
-                                            <p class="pro-price">
-                                                1,290,000₫
-                                                <span class="pro-price-del">
-                                    <del class="compare-price">1,540,000₫</del>
-                                    </span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="evo-product-block-item  slick-slide slick-active" data-slick-index="3"
-                                         aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide43"
- style="width: 280px;">
-                                        <div class="product-img">
-                                            <a href="/products/giuong-ngu-go-gia-dinh-phun-son-hien-dai"
-                                               title="Giường ngủ gỗ gia đình phun sơn hiện đại" class="image-resize"
-                                               tabindex="0">
-                                                <img class="lazy loaded"
-                                                     src="//cdn.hstatic.net/products/200001110831/upload_85bed5bdcaf24d27af2b8ad673082647_b981895aacb64bbf8299edc3b48ee6a8_large.jpg"
-                                                     data-src="//cdn.hstatic.net/products/200001110831/upload_85bed5bdcaf24d27af2b8ad673082647_b981895aacb64bbf8299edc3b48ee6a8_large.jpg"
-                                                     alt="Giường ngủ gỗ gia đình phun sơn hiện đại"
->
-                                            </a>
-                                            <form action="/cart/add" method="post" enctype="multipart/form-data"
-                                                  class="button-add hidden-sm hidden-xs hidden-md variants form-nut-grid form-ajaxtocart has-validation-callback"
-                                                  data-id="product-actions-1072137029">
-                                                <input type="hidden" name="id" value="1163593308" tabindex="0">
-                                                <button type="button" title="Mua ngay" class="action"
-                                                        onclick="buy_now('1163593308')" tabindex="0"><i
-                                                        class="fa fa-check-square-o" aria-hidden="true"></i></button>
-                                                <button type="button" title="Thêm vào giỏ" class="action add_to_cart"
-                                                        tabindex="0"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                                </button>
-                                            </form>
-                                        </div>
-                                        <div class="product-detail clearfix">
-                                            <div class="pro-brand">
-                                                IKEA
-                                            </div>
-                                            <h3 class="pro-name">
-                                                <a href="/products/giuong-ngu-go-gia-dinh-phun-son-hien-dai"
-                                                   title="Giường ngủ gỗ gia đình phun sơn hiện đại" tabindex="0">Giường ngủ
-                                                    gỗ gia đình phun sơn hiện đại</a>
-                                            </h3>
-                                            <p class="pro-price">
-                                                18,000,000₫
-                                            </p>
-                                        </div>
+
+                                        <script>
+
+                                        </script>
                                     </div>
                                 </div>
                             </div>
@@ -596,372 +1392,511 @@
         </div>
     </section>
     <section class="awe-section-5">
-        <div class="section_san_pham">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="new_title">
-                            <h2><a href="/collections/sofa-ghe-thu-gian-nem" title="Sofa, Ghế thư giãn &amp; Nệm">Sofa, Ghế
-                                    thư giãn &amp; Nệm</a></h2>
-                        </div>
-                        <div class="slick_ajax_tab evo-slick slick-initialized slick-slider">
-                            <div aria-live="polite" class="slick-list draggable">
-                                <div class="slick-track" role="listbox"
-                                     style="opacity: 1; width: 1160px; transform: translate3d(0px, 0px, 0px);">
-                                    <div class="evo-product-block-item  slick-slide slick-current slick-active"
-                                         data-slick-index="0" aria-hidden="false" tabindex="-1" role="option"
-                                         aria-describedby="slick-slide50" style="width: 280px;">
-                                        <div class="product-img">
-                                            <a href="/products/ghe-may-tron-sieu-rong" title="Ghế Mây Tròn Siêu Rộng"
-                                               class="image-resize" tabindex="0">
-                                                <img class="lazy loaded"
-                                                     src="//cdn.hstatic.net/products/200001110831/upload_bef050ad88b04a56bfec8301cf01083e_73d4ec8b1ccc4c38b1a63282187686fc_large.jpg"
-                                                     data-src="//cdn.hstatic.net/products/200001110831/upload_bef050ad88b04a56bfec8301cf01083e_73d4ec8b1ccc4c38b1a63282187686fc_large.jpg"
-                                                     alt="Ghế Mây Tròn Siêu Rộng">
-                                            </a>
-                                            <form action="/cart/add" method="post" enctype="multipart/form-data"
-                                                  class="button-add hidden-sm hidden-xs hidden-md variants form-nut-grid form-ajaxtocart has-validation-callback"
-                                                  data-id="product-actions-1072137022">
-                                                <input type="hidden" name="id" value="1163593301" tabindex="0">
-                                                <button type="button" title="Mua ngay" class="action"
-                                                        onclick="buy_now('1163593301')" tabindex="0"><i
-                                                        class="fa fa-check-square-o" aria-hidden="true"></i></button>
-                                                <button type="button" title="Thêm vào giỏ" class="action add_to_cart"
-                                                        tabindex="0"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                                </button>
-                                            </form>
-                                        </div>
-                                        <div class="product-detail clearfix">
-                                            <div class="pro-brand">
-                                                Evo Nội thất
-                                            </div>
-                                            <h3 class="pro-name">
-                                                <a href="/products/ghe-may-tron-sieu-rong" title="Ghế Mây Tròn Siêu Rộng"
-                                                   tabindex="0">Ghế Mây Tròn Siêu Rộng</a>
-                                            </h3>
-                                            <p class="pro-price">
-                                                3,990,000₫
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="evo-product-block-item  slick-slide slick-active" data-slick-index="1"
-                                         aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide51"
- style="width: 280px;">
-                                        <div class="product-img">
-                                            <a href="/products/ghe-papasan" title="Ghế Papasan" class="image-resize"
-                                               tabindex="0">
-                                                <img class="lazy loaded"
-                                                     src="//cdn.hstatic.net/products/200001110831/upload_1e106302eb624970a1f5f881b6f61108_fa6f19ff1d7246818e28847361216a86_large.jpg"
-                                                     data-src="//cdn.hstatic.net/products/200001110831/upload_1e106302eb624970a1f5f881b6f61108_fa6f19ff1d7246818e28847361216a86_large.jpg"
-                                                     alt="Ghế Papasan">
-                                            </a>
-                                            <form action="/cart/add" method="post" enctype="multipart/form-data"
-                                                  class="button-add hidden-sm hidden-xs hidden-md variants form-nut-grid form-ajaxtocart has-validation-callback"
-                                                  data-id="product-actions-1072137023">
-                                                <input type="hidden" name="id" value="1163593302" tabindex="0">
-                                                <button type="button" title="Mua ngay" class="action"
-                                                        onclick="buy_now('1163593302')" tabindex="0"><i
-                                                        class="fa fa-check-square-o" aria-hidden="true"></i></button>
-                                                <button type="button" title="Thêm vào giỏ" class="action add_to_cart"
-                                                        tabindex="0"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                                </button>
-                                            </form>
-                                        </div>
-                                        <div class="product-detail clearfix">
-                                            <div class="pro-brand">
-                                                Evo Nội thất
-                                            </div>
-                                            <h3 class="pro-name">
-                                                <a href="/products/ghe-papasan" title="Ghế Papasan" tabindex="0">Ghế
-                                                    Papasan</a>
-                                            </h3>
-                                            <p class="pro-price">
-                                                5,490,000₫
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="evo-product-block-item  slick-slide slick-active" data-slick-index="2"
-                                         aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide52"
- style="width: 280px;">
-                                        <div class="product-img">
-                                            <div class="product-sale">
-                                                <span>-7%</span>
-                                            </div>
-                                            <a href="/products/queen-chair-m-veins" title="Queen Chair M&amp;Veins"
-                                               class="image-resize" tabindex="0">
-                                                <img class="lazy loaded"
-                                                     src="//cdn.hstatic.net/products/200001110831/upload_ccae74f668bd496b9cb3e451d169303a_3e21d46c363e4e61b2eb5cae22e55623_large.jpg"
-                                                     data-src="//cdn.hstatic.net/products/200001110831/upload_ccae74f668bd496b9cb3e451d169303a_3e21d46c363e4e61b2eb5cae22e55623_large.jpg"
-                                                     alt="Queen Chair M&amp;Veins">
-                                            </a>
-                                            <form action="/cart/add" method="post" enctype="multipart/form-data"
-                                                  class="button-add hidden-sm hidden-xs hidden-md variants form-nut-grid form-ajaxtocart has-validation-callback"
-                                                  data-id="product-actions-1072137041">
-                                                <button title="Tùy chọn" type="button"
-                                                        onclick="location.href='/products/queen-chair-m-veins'"
-                                                        class="action cart-button" tabindex="0"><i class="fa fa-link"
-                                                                                                   aria-hidden="true"></i>
-                                                </button>
-                                            </form>
-                                        </div>
-                                        <div class="product-detail clearfix">
-                                            <div class="pro-brand">
-                                                Evo Nội thất
-                                            </div>
-                                            <h3 class="pro-name">
-                                                <a href="/products/queen-chair-m-veins" title="Queen Chair M&amp;Veins"
-                                                   tabindex="0">Queen Chair M&amp;Veins</a>
-                                            </h3>
-                                            <p class="pro-price">
-                                                6,500,000₫
-                                                <span class="pro-price-del">
-                                    <del class="compare-price">7,000,000₫</del>
-                                    </span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="evo-product-block-item  slick-slide slick-active" data-slick-index="3"
-                                         aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide53"
- style="width: 280px;">
-                                        <div class="product-img">
-                                            <a href="/products/sofa-may-pretzel-3-seat" title="Sofa Mây Pretzel (3 Seat)"
-                                               class="image-resize" tabindex="0">
-                                                <img class="lazy loaded"
-                                                     src="//cdn.hstatic.net/products/200001110831/upload_acb98017f7c04166a3feca28aa3faaeb_bb82bd15d45545a19f5333e4aa55f657_large.jpg"
-                                                     data-src="//cdn.hstatic.net/products/200001110831/upload_acb98017f7c04166a3feca28aa3faaeb_bb82bd15d45545a19f5333e4aa55f657_large.jpg"
-                                                     alt="Sofa Mây Pretzel (3 Seat)">
-                                            </a>
-                                            <form action="/cart/add" method="post" enctype="multipart/form-data"
-                                                  class="button-add hidden-sm hidden-xs hidden-md variants form-nut-grid form-ajaxtocart has-validation-callback"
-                                                  data-id="product-actions-1072137042">
-                                                <input type="hidden" name="id" value="1163593322" tabindex="0">
-                                                <button type="button" title="Mua ngay" class="action"
-                                                        onclick="buy_now('1163593322')" tabindex="0"><i
-                                                        class="fa fa-check-square-o" aria-hidden="true"></i></button>
-                                                <button type="button" title="Thêm vào giỏ" class="action add_to_cart"
-                                                        tabindex="0"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                                </button>
-                                            </form>
-                                        </div>
-                                        <div class="product-detail clearfix">
-                                            <div class="pro-brand">
-                                                Evo Nội thất
-                                            </div>
-                                            <h3 class="pro-name">
-                                                <a href="/products/sofa-may-pretzel-3-seat"
-                                                   title="Sofa Mây Pretzel (3 Seat)" tabindex="0">Sofa Mây Pretzel (3
-                                                    Seat)</a>
-                                            </h3>
-                                            <p class="pro-price">
-                                                3,990,000₫
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <div class="section_banner_2" bis_skin_checked="1">
+            <div class="container" bis_skin_checked="1">
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-md-12" bis_skin_checked="1">
+                        <a href="#">
+                            <img src="//theme.hstatic.net/1000343108/1000435493/14/banner_2_image.png?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/banner_2_image.png?v=230" alt="Ant Furniture" class="img-responsive center-block">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="awe-section-6">
-        <div class="section_trending">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="banner-item ">
-                            <div class="banner-img">
-                                <a href="/collections/all" title="Phòng Khách Bộ Sưu TậpChao Đèn">
-                                    <img class="img-responsive center-block lazy"
-                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                         data-src="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_two_1.jpg?v=255"
-                                         alt="Phòng Khách">
-                                </a>
+
+
+
+
+        <div class="section_product" bis_skin_checked="1">
+            <div class="container" bis_skin_checked="1">
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-md-12" bis_skin_checked="1">
+                        <div class="row" bis_skin_checked="1">
+                            <div class="col-md-12" bis_skin_checked="1">
+                                <div class="section-head" bis_skin_checked="1">
+                                    <span class="group-icon"><i class="fa fa-dashcube" aria-hidden="true"></i></span>
+                                    <h2>Phòng ngủ</h2>
+                                </div>
                             </div>
-                            <div class="banner-content">
-                                <span>Phòng Khách</span>
-                                <h4>Bộ Sưu Tập<br>Chao Đèn</h4>
-                                <a class="umino-btn" href="/collections/all" title="Xem thêm">Xem thêm</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="banner-item banner-item-last">
-                            <div class="banner-img">
-                                <a href="/collections/all" title="Giải nhiệt hè Giá Siêu CoolGiảm 30%">
-                                    <img class="img-responsive center-block lazy"
-                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                         data-src="//cdn.hstatic.net/themes/200001110831/1001434972/14/evo_banner_two_2.jpg?v=255"
-                                         alt="Giải nhiệt hè">
-                                </a>
-                            </div>
-                            <div class="banner-content">
-                                <span>Giải nhiệt hè</span>
-                                <h4>Giá Siêu Cool<br>Giảm 30%</h4>
-                                <a class="umino-btn" href="/collections/all" title="Xem thêm">Xem thêm</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="awe-section-7">
-        <div class="section_san_pham">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="new_title">
-                            <h2><a href="/collections/do-trang-tri" title="Đồ trang trí">Đồ trang trí</a></h2>
-                        </div>
-                        <div class="slick_ajax_tab evo-slick slick-initialized slick-slider">
-                            <div aria-live="polite" class="slick-list draggable">
-                                <div class="slick-track" role="listbox"
-                                     style="opacity: 1; width: 1160px; transform: translate3d(0px, 0px, 0px);">
-                                    <div class="evo-product-block-item  slick-slide slick-current slick-active"
-                                         data-slick-index="0" aria-hidden="false" tabindex="-1" role="option"
-                                         aria-describedby="slick-slide60" style="width: 280px;">
-                                        <div class="product-img">
-                                            <a href="/products/chao-den-oskar" title="Chao đèn OSKAR" class="image-resize"
-                                               tabindex="0">
-                                                <img class="lazy"
-                                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                     data-src="//cdn.hstatic.net/products/200001110831/upload_4feab7fe3fa6446190ddc5e2e9f4b393_62638a7626954b1696d322883134f7da_large.jpg"
-                                                     alt="Chao đèn OSKAR">
-                                            </a>
-                                            <form action="/cart/add" method="post" enctype="multipart/form-data"
-                                                  class="button-add hidden-sm hidden-xs hidden-md variants form-nut-grid form-ajaxtocart has-validation-callback"
-                                                  data-id="product-actions-1072137017">
-                                                <input type="hidden" name="id" value="1163593296" tabindex="0">
-                                                <button type="button" title="Mua ngay" class="action"
-                                                        onclick="buy_now('1163593296')" tabindex="0"><i
-                                                        class="fa fa-check-square-o" aria-hidden="true"></i></button>
-                                                <button type="button" title="Thêm vào giỏ" class="action add_to_cart"
-                                                        tabindex="0"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                                </button>
-                                            </form>
+                            <div class="col-md-12 e-tabs not-dqtab ajax-tab-3" data-section="ajax-tab-3" data-view="grid_4" bis_skin_checked="1">
+                                <div class="content" bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <ul class="tabs tabs-title tab-mobile clearfix hidden-sm hidden-md hidden-lg">
+                                            <li class="prev current"><i class="fa fa-angle-left"></i></li>
+                                            <li class="tab-link tab-title hidden-sm hidden-md hidden-lg current tab-titlexs" data-tab="tab-1">
+
+                                                <span>Giường ngủ</span>
+
+                                            </li>
+                                            <li class="next"><i class="fa fa-angle-right"></i></li>
+                                        </ul>
+                                        <ul class="tabs tabs-title tab-desktop ajax clearfix hidden-xs">
+
+                                            <li class="tab-link has-content current" data-tab="tab-1" data-url="/collections/giuo-ng-ngu">
+                                                <span>Giường ngủ</span>
+                                            </li>
+
+                                            <li class="tab-link " data-tab="tab-2" data-url="/collections/ba-n-ke-da-u-giuo-ng">
+                                                <span>Bàn kê đầu giường</span>
+                                            </li>
+
+                                            <li class="tab-link " data-tab="tab-3" data-url="/collections/ba-n-trang-die-m">
+                                                <span>Bàn trang điểm</span>
+                                            </li>
+
+                                        </ul>
+
+                                        <div class="tab-1 tab-content current" bis_skin_checked="1">
+
+                                            <div class="section-tour-owl3 products products-view-grid owl-carousel owl-loaded owl-drag" data-lg-items="5" data-md-items="5" data-sm-items="3" data-xs-items="2" data-xss-items="2" data-margin="10" data-nav="true" data-dot="false" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                <div class="owl-stage-outer" bis_skin_checked="1"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all; width: 1160px;" bis_skin_checked="1"><div class="owl-item active" style="width: 222px; margin-right: 10px;" bis_skin_checked="1"><div class="item" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                <div class="ant-product-item" bis_skin_checked="1">
+                                                                    <div class="product_row" bis_skin_checked="1">
+                                                                        <div class="item" bis_skin_checked="1">
+                                                                            <div class="item-inner" bis_skin_checked="1">
+                                                                                <div class="image-container" bis_skin_checked="1">
+
+
+
+                                                                                    <a href="/products/giuong-albany" class="product-item-photo">
+                                                                                        <img class="product-image-photo img-responsive center-block" src="//product.hstatic.net/1000343108/product/upload_cc838244563947e9ab885ca9538c2a84_large.jpg" data-lazyload="//product.hstatic.net/1000343108/product/upload_cc838244563947e9ab885ca9538c2a84_large.jpg" alt="Giường ALBANY">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="box-info" bis_skin_checked="1">
+                                                                                    <h2 class="product-item-name">
+                                                                                        <a title="Giường ALBANY" href="/products/giuong-albany" class="product-item-link">
+                                                                                            Giường ALBANY
+                                                                                        </a>
+                                                                                    </h2>
+                                                                                    <div class="product-reviews-summary" bis_skin_checked="1">
+                                                                                        <div class="rating-summary" bis_skin_checked="1">
+                                                                                            <div class="haravan-product-reviews-badge" data-id="1017908255" bis_skin_checked="1"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item-price" bis_skin_checked="1">
+                                                                                        <div class="price-box price-final_price" bis_skin_checked="1">
+
+
+						<span class="special-price">
+							<span class="price-container">
+								<span class="price-wrapper">
+									<span class="price">7,690,000₫</span>
+								</span>
+							</span>
+						</span>
+
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="box-hover hidden-sm hidden-xs hidden-md" bis_skin_checked="1">
+                                                                                        <div class="add-to-links" bis_skin_checked="1">
+                                                                                            <div class="actions-primary" bis_skin_checked="1">
+                                                                                                <form action="/cart/add" method="post" class="variants form-nut-grid has-validation-callback" data-id="product-actions-1017908255" enctype="multipart/form-data">
+
+
+                                                                                                    <input type="hidden" name="id" value="1035080096">
+                                                                                                    <button class="tt-btn-addtocart btn-buy btn-cart btn btn-gray left-to add_to_cart" title="Cho vào giỏ hàng">
+                                                                                                        <i class="ion ion-md-cart"></i>
+                                                                                                    </button>
+
+
+                                                                                                </form>
+                                                                                            </div>
+
+                                                                                            <a href="/products/giuong-albany" class="quick-view" title="Xem nhanh">
+                                                                                                <i class="ion ion-ios-search"></i>
+                                                                                            </a>
+
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div><div class="owl-item active" style="width: 222px; margin-right: 10px;" bis_skin_checked="1"><div class="item" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                <div class="ant-product-item" bis_skin_checked="1">
+                                                                    <div class="product_row" bis_skin_checked="1">
+                                                                        <div class="item" bis_skin_checked="1">
+                                                                            <div class="item-inner" bis_skin_checked="1">
+                                                                                <div class="image-container" bis_skin_checked="1">
+
+
+
+                                                                                    <a href="/products/giuong-bernie" class="product-item-photo">
+                                                                                        <img class="product-image-photo img-responsive center-block" src="//product.hstatic.net/1000343108/product/upload_03ddba52e3614c05bfbb2d5f75236787_large.jpg" data-lazyload="//product.hstatic.net/1000343108/product/upload_03ddba52e3614c05bfbb2d5f75236787_large.jpg" alt="Giường BERNIE">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="box-info" bis_skin_checked="1">
+                                                                                    <h2 class="product-item-name">
+                                                                                        <a title="Giường BERNIE" href="/products/giuong-bernie" class="product-item-link">
+                                                                                            Giường BERNIE
+                                                                                        </a>
+                                                                                    </h2>
+                                                                                    <div class="product-reviews-summary" bis_skin_checked="1">
+                                                                                        <div class="rating-summary" bis_skin_checked="1">
+                                                                                            <div class="haravan-product-reviews-badge" data-id="1017908252" bis_skin_checked="1"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item-price" bis_skin_checked="1">
+                                                                                        <div class="price-box price-final_price" bis_skin_checked="1">
+
+
+						<span class="special-price">
+							<span class="price-container">
+								<span class="price-wrapper">
+									<span class="price">3,990,000₫</span>
+								</span>
+							</span>
+						</span>
+
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="box-hover hidden-sm hidden-xs hidden-md" bis_skin_checked="1">
+                                                                                        <div class="add-to-links" bis_skin_checked="1">
+                                                                                            <div class="actions-primary" bis_skin_checked="1">
+                                                                                                <form action="/cart/add" method="post" class="variants form-nut-grid has-validation-callback" data-id="product-actions-1017908252" enctype="multipart/form-data">
+
+
+                                                                                                    <input type="hidden" name="id" value="1035080090">
+                                                                                                    <button class="tt-btn-addtocart btn-buy btn-cart btn btn-gray left-to add_to_cart" title="Cho vào giỏ hàng">
+                                                                                                        <i class="ion ion-md-cart"></i>
+                                                                                                    </button>
+
+
+                                                                                                </form>
+                                                                                            </div>
+
+                                                                                            <a href="/products/giuong-bernie" class="quick-view" title="Xem nhanh">
+                                                                                                <i class="ion ion-ios-search"></i>
+                                                                                            </a>
+
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div><div class="owl-item active" style="width: 222px; margin-right: 10px;" bis_skin_checked="1"><div class="item" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                <div class="ant-product-item" bis_skin_checked="1">
+                                                                    <div class="product_row" bis_skin_checked="1">
+                                                                        <div class="item" bis_skin_checked="1">
+                                                                            <div class="item-inner" bis_skin_checked="1">
+                                                                                <div class="image-container" bis_skin_checked="1">
+
+
+
+                                                                                    <a href="/products/giuong-rally" class="product-item-photo">
+                                                                                        <img class="product-image-photo img-responsive center-block" src="//product.hstatic.net/1000343108/product/upload_5d34eb4c9dce45ffa3cc1bc21790d18d_large.jpg" data-lazyload="//product.hstatic.net/1000343108/product/upload_5d34eb4c9dce45ffa3cc1bc21790d18d_large.jpg" alt="Giường RALLY">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="box-info" bis_skin_checked="1">
+                                                                                    <h2 class="product-item-name">
+                                                                                        <a title="Giường RALLY" href="/products/giuong-rally" class="product-item-link">
+                                                                                            Giường RALLY
+                                                                                        </a>
+                                                                                    </h2>
+                                                                                    <div class="product-reviews-summary" bis_skin_checked="1">
+                                                                                        <div class="rating-summary" bis_skin_checked="1">
+                                                                                            <div class="haravan-product-reviews-badge" data-id="1017908256" bis_skin_checked="1"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item-price" bis_skin_checked="1">
+                                                                                        <div class="price-box price-final_price" bis_skin_checked="1">
+
+
+						<span class="special-price">
+							<span class="price-container">
+								<span class="price-wrapper">
+									<span class="price">5,490,000₫</span>
+								</span>
+							</span>
+						</span>
+
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="box-hover hidden-sm hidden-xs hidden-md" bis_skin_checked="1">
+                                                                                        <div class="add-to-links" bis_skin_checked="1">
+                                                                                            <div class="actions-primary" bis_skin_checked="1">
+                                                                                                <form action="/cart/add" method="post" class="variants form-nut-grid has-validation-callback" data-id="product-actions-1017908256" enctype="multipart/form-data">
+
+
+                                                                                                    <input type="hidden" name="id" value="1035080099">
+                                                                                                    <button class="tt-btn-addtocart btn-buy btn-cart btn btn-gray left-to add_to_cart" title="Cho vào giỏ hàng">
+                                                                                                        <i class="ion ion-md-cart"></i>
+                                                                                                    </button>
+
+
+                                                                                                </form>
+                                                                                            </div>
+
+                                                                                            <a href="/products/giuong-rally" class="quick-view" title="Xem nhanh">
+                                                                                                <i class="ion ion-ios-search"></i>
+                                                                                            </a>
+
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div><div class="owl-item active" style="width: 222px; margin-right: 10px;" bis_skin_checked="1"><div class="item" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                <div class="ant-product-item" bis_skin_checked="1">
+                                                                    <div class="product_row" bis_skin_checked="1">
+                                                                        <div class="item" bis_skin_checked="1">
+                                                                            <div class="item-inner" bis_skin_checked="1">
+                                                                                <div class="image-container" bis_skin_checked="1">
+
+
+
+                                                                                    <a href="/products/giuong-yokohama-1" class="product-item-photo">
+                                                                                        <img class="product-image-photo img-responsive center-block" src="//product.hstatic.net/1000343108/product/upload_b97db9bb32704fb996fca935a3800d6d_large.jpg" data-lazyload="//product.hstatic.net/1000343108/product/upload_b97db9bb32704fb996fca935a3800d6d_large.jpg" alt="Giường YOKOHAMA">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="box-info" bis_skin_checked="1">
+                                                                                    <h2 class="product-item-name">
+                                                                                        <a title="Giường YOKOHAMA" href="/products/giuong-yokohama-1" class="product-item-link">
+                                                                                            Giường YOKOHAMA
+                                                                                        </a>
+                                                                                    </h2>
+                                                                                    <div class="product-reviews-summary" bis_skin_checked="1">
+                                                                                        <div class="rating-summary" bis_skin_checked="1">
+                                                                                            <div class="haravan-product-reviews-badge" data-id="1017908251" bis_skin_checked="1"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item-price" bis_skin_checked="1">
+                                                                                        <div class="price-box price-final_price" bis_skin_checked="1">
+
+
+						<span class="special-price">
+							<span class="price-container">
+								<span class="price-wrapper">
+									<span class="price">2,490,000₫</span>
+								</span>
+							</span>
+						</span>
+
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="box-hover hidden-sm hidden-xs hidden-md" bis_skin_checked="1">
+                                                                                        <div class="add-to-links" bis_skin_checked="1">
+                                                                                            <div class="actions-primary" bis_skin_checked="1">
+                                                                                                <form action="/cart/add" method="post" class="variants form-nut-grid has-validation-callback" data-id="product-actions-1017908251" enctype="multipart/form-data">
+
+
+                                                                                                    <input type="hidden" name="id" value="1035080088">
+                                                                                                    <button class="tt-btn-addtocart btn-buy btn-cart btn btn-gray left-to add_to_cart" title="Cho vào giỏ hàng">
+                                                                                                        <i class="ion ion-md-cart"></i>
+                                                                                                    </button>
+
+
+                                                                                                </form>
+                                                                                            </div>
+
+                                                                                            <a href="/products/giuong-yokohama-1" class="quick-view" title="Xem nhanh">
+                                                                                                <i class="ion ion-ios-search"></i>
+                                                                                            </a>
+
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div><div class="owl-item active" style="width: 222px; margin-right: 10px;" bis_skin_checked="1"><div class="item" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                <div class="ant-product-item" bis_skin_checked="1">
+                                                                    <div class="product_row" bis_skin_checked="1">
+                                                                        <div class="item" bis_skin_checked="1">
+                                                                            <div class="item-inner" bis_skin_checked="1">
+                                                                                <div class="image-container" bis_skin_checked="1">
+
+
+
+                                                                                    <a href="/products/giuong-yokohama" class="product-item-photo">
+                                                                                        <img class="product-image-photo img-responsive center-block" src="//product.hstatic.net/1000343108/product/upload_4917cdd7587c4242ba2ad13d17325251_large.jpg" data-lazyload="//product.hstatic.net/1000343108/product/upload_4917cdd7587c4242ba2ad13d17325251_large.jpg" alt="Giường YOKOHAMA">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="box-info" bis_skin_checked="1">
+                                                                                    <h2 class="product-item-name">
+                                                                                        <a title="Giường YOKOHAMA" href="/products/giuong-yokohama" class="product-item-link">
+                                                                                            Giường YOKOHAMA
+                                                                                        </a>
+                                                                                    </h2>
+                                                                                    <div class="product-reviews-summary" bis_skin_checked="1">
+                                                                                        <div class="rating-summary" bis_skin_checked="1">
+                                                                                            <div class="haravan-product-reviews-badge" data-id="1017908254" bis_skin_checked="1"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item-price" bis_skin_checked="1">
+                                                                                        <div class="price-box price-final_price" bis_skin_checked="1">
+
+
+						<span class="special-price">
+							<span class="price-container">
+								<span class="price-wrapper">
+									<span class="price">3,990,000₫</span>
+								</span>
+							</span>
+						</span>
+
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="box-hover hidden-sm hidden-xs hidden-md" bis_skin_checked="1">
+                                                                                        <div class="add-to-links" bis_skin_checked="1">
+                                                                                            <div class="actions-primary" bis_skin_checked="1">
+                                                                                                <form action="/cart/add" method="post" class="variants form-nut-grid has-validation-callback" data-id="product-actions-1017908254" enctype="multipart/form-data">
+
+
+                                                                                                    <input type="hidden" name="id" value="1035080095">
+                                                                                                    <button class="tt-btn-addtocart btn-buy btn-cart btn btn-gray left-to add_to_cart" title="Cho vào giỏ hàng">
+                                                                                                        <i class="ion ion-md-cart"></i>
+                                                                                                    </button>
+
+
+                                                                                                </form>
+                                                                                            </div>
+
+                                                                                            <a href="/products/giuong-yokohama" class="quick-view" title="Xem nhanh">
+                                                                                                <i class="ion ion-ios-search"></i>
+                                                                                            </a>
+
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div></div></div><div class="owl-nav disabled" bis_skin_checked="1"><div class="owl-prev disabled" bis_skin_checked="1"><i class="fa fa-angle-left" aria-hidden="true"></i></div><div class="owl-next disabled" bis_skin_checked="1"><i class="fa fa-angle-right" aria-hidden="true"></i></div></div><div class="owl-dots disabled" bis_skin_checked="1"></div></div>
+
+
                                         </div>
-                                        <div class="product-detail clearfix">
-                                            <div class="pro-brand">
-                                                Ant Furni
-                                            </div>
-                                            <h3 class="pro-name">
-                                                <a href="/products/chao-den-oskar" title="Chao đèn OSKAR" tabindex="0">Chao
-                                                    đèn OSKAR</a>
-                                            </h3>
-                                            <p class="pro-price">
-                                                139,000₫
-                                            </p>
+
+                                        <div class="tab-2 tab-content" bis_skin_checked="1">
+
                                         </div>
-                                    </div>
-                                    <div class="evo-product-block-item  slick-slide slick-active" data-slick-index="1"
-                                         aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide61"
- style="width: 280px;">
-                                        <div class="product-img">
-                                            <a href="/products/den-ban-concert" title="Đèn bàn CONCERT" class="image-resize"
-                                               tabindex="0">
-                                                <img class="lazy"
-                                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                     data-src="//cdn.hstatic.net/products/200001110831/upload_be325a75d1f84957962cfc811ca6a0e4_c94dc4e0be344631beadb09a2e0d33fc_large.jpg"
-                                                     alt="Đèn bàn CONCERT">
-                                            </a>
-                                            <form action="/cart/add" method="post" enctype="multipart/form-data"
-                                                  class="button-add hidden-sm hidden-xs hidden-md variants form-nut-grid form-ajaxtocart has-validation-callback"
-                                                  data-id="product-actions-1072137018">
-                                                <input type="hidden" name="id" value="1163593297" tabindex="0">
-                                                <button type="button" title="Mua ngay" class="action"
-                                                        onclick="buy_now('1163593297')" tabindex="0"><i
-                                                        class="fa fa-check-square-o" aria-hidden="true"></i></button>
-                                                <button type="button" title="Thêm vào giỏ" class="action add_to_cart"
-                                                        tabindex="0"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                                </button>
-                                            </form>
+
+                                        <div class="tab-3 tab-content" bis_skin_checked="1">
+
                                         </div>
-                                        <div class="product-detail clearfix">
-                                            <div class="pro-brand">
-                                                Ant Furni
-                                            </div>
-                                            <h3 class="pro-name">
-                                                <a href="/products/den-ban-concert" title="Đèn bàn CONCERT" tabindex="0">Đèn
-                                                    bàn CONCERT</a>
-                                            </h3>
-                                            <p class="pro-price">
-                                                429,000₫
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="evo-product-block-item  slick-slide slick-active" data-slick-index="2"
-                                         aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide62"
- style="width: 280px;">
-                                        <div class="product-img">
-                                            <a href="/products/den-ban-foster" title="Đèn bàn FOSTER" class="image-resize"
-                                               tabindex="0">
-                                                <img class="lazy"
-                                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                     data-src="//cdn.hstatic.net/products/200001110831/upload_4991288c02724a2da2acf3141fcd21f9_3cbe9412e099432da21b7760908804c9_large.jpg"
-                                                     alt="Đèn bàn FOSTER">
-                                            </a>
-                                            <form action="/cart/add" method="post" enctype="multipart/form-data"
-                                                  class="button-add hidden-sm hidden-xs hidden-md variants form-nut-grid form-ajaxtocart has-validation-callback"
-                                                  data-id="product-actions-1072137019">
-                                                <input type="hidden" name="id" value="1163593298" tabindex="0">
-                                                <button type="button" title="Mua ngay" class="action"
-                                                        onclick="buy_now('1163593298')" tabindex="0"><i
-                                                        class="fa fa-check-square-o" aria-hidden="true"></i></button>
-                                                <button type="button" title="Thêm vào giỏ" class="action add_to_cart"
-                                                        tabindex="0"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                                </button>
-                                            </form>
-                                        </div>
-                                        <div class="product-detail clearfix">
-                                            <div class="pro-brand">
-                                                Ant Furni
-                                            </div>
-                                            <h3 class="pro-name">
-                                                <a href="/products/den-ban-foster" title="Đèn bàn FOSTER" tabindex="0">Đèn
-                                                    bàn FOSTER</a>
-                                            </h3>
-                                            <p class="pro-price">
-                                                599,000₫
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="evo-product-block-item  slick-slide slick-active" data-slick-index="3"
-                                         aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide63"
- style="width: 280px;">
-                                        <div class="product-img">
-                                            <a href="/products/den-san-kruger" title="Đèn sàn KRUGER" class="image-resize"
-                                               tabindex="0">
-                                                <img class="lazy"
-                                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                     data-src="//cdn.hstatic.net/products/200001110831/upload_7f87dc4f49c64772b52f91be7fa2203d_3f7f37ef1c884ae3a8eeec3cc339281e_large.jpg"
-                                                     alt="Đèn sàn KRUGER">
-                                            </a>
-                                            <form action="/cart/add" method="post" enctype="multipart/form-data"
-                                                  class="button-add hidden-sm hidden-xs hidden-md variants form-nut-grid form-ajaxtocart has-validation-callback"
-                                                  data-id="product-actions-1072137020">
-                                                <input type="hidden" name="id" value="1163593299" tabindex="0">
-                                                <button type="button" title="Mua ngay" class="action"
-                                                        onclick="buy_now('1163593299')" tabindex="0"><i
-                                                        class="fa fa-check-square-o" aria-hidden="true"></i></button>
-                                                <button type="button" title="Thêm vào giỏ" class="action add_to_cart"
-                                                        tabindex="0"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                                                </button>
-                                            </form>
-                                        </div>
-                                        <div class="product-detail clearfix">
-                                            <div class="pro-brand">
-                                                Ant Furni
-                                            </div>
-                                            <h3 class="pro-name">
-                                                <a href="/products/den-san-kruger" title="Đèn sàn KRUGER" tabindex="0">Đèn
-                                                    sàn KRUGER</a>
-                                            </h3>
-                                            <p class="pro-price">
-                                                1,590,000₫
-                                            </p>
-                                        </div>
+
+                                        <script>
+
+                                        </script>
                                     </div>
                                 </div>
                             </div>
@@ -972,289 +1907,498 @@
         </div>
     </section>
     <section class="awe-section-8">
-        <div class="section_san_pham_col">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <div class="new_title">
-                            <h2><a href="/collections/san-pham-moi" title="Nổi bật">Nổi bật</a></h2>
-                        </div>
-                        <div class="three-col-slick evo-slick slick-initialized slick-slider">
-                            <div aria-live="polite" class="slick-list draggable">
-                                <div class="slick-track" role="listbox"
-                                     style="opacity: 1; width: 370px; transform: translate3d(0px, 0px, 0px);">
-                                    <div class="evo-item slick-slide slick-current slick-active" data-slick-index="0"
-                                         aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide70"
- style="width: 370px;">
-                                        <div class="evo-product-slide-item">
-                                            <div class="product-img">
-                                                <a href="/products/gia-sach-gia-re-kieu-dang-nho-gon"
-                                                   title="Giá sách giá rẻ kiểu dáng nhỏ gọn" class="image-resize"
-                                                   tabindex="0">
-                                                    <img class="lazy"
-                                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                         data-src="//cdn.hstatic.net/products/200001110831/upload_e3fc489d7c624d3c9d9fb80f499b6ec6_e8fd7163c25b4608a110760d072b8b41_large.jpg"
-                                                         alt="Giá sách giá rẻ kiểu dáng nhỏ gọn">
-                                                </a>
-                                            </div>
-                                            <div class="product-detail clearfix">
-                                                <div class="pro-brand">
-                                                    IKEA
-                                                </div>
-                                                <h3 class="pro-name">
-                                                    <a href="/products/gia-sach-gia-re-kieu-dang-nho-gon"
-                                                       title="Giá sách giá rẻ kiểu dáng nhỏ gọn" tabindex="0">Giá sách giá
-                                                        rẻ kiểu dáng nhỏ gọn</a>
-                                                </h3>
-                                                <div class="box-pro-prices">
-                                                    <p class="pro-price">
-                                                        4,000,000₫
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="evo-product-slide-item">
-                                            <div class="product-img">
-                                                <a href="/products/gia-sach-go-tu-nhien-thiet-ke-dep"
-                                                   title="Giá sách gỗ tự nhiên thiết kế đẹp" class="image-resize"
-                                                   tabindex="0">
-                                                    <img class="lazy"
-                                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                         data-src="//cdn.hstatic.net/products/200001110831/upload_2e5bb06c2f914751b7acf4151ad6c6e0_34352c1f39f147e88865b57934f59925_large.jpg"
-                                                         alt="Giá sách gỗ tự nhiên thiết kế đẹp">
-                                                </a>
-                                            </div>
-                                            <div class="product-detail clearfix">
-                                                <div class="pro-brand">
-                                                    IKEA
-                                                </div>
-                                                <h3 class="pro-name">
-                                                    <a href="/products/gia-sach-go-tu-nhien-thiet-ke-dep"
-                                                       title="Giá sách gỗ tự nhiên thiết kế đẹp" tabindex="0">Giá sách gỗ tự
-                                                        nhiên thiết kế đẹp</a>
-                                                </h3>
-                                                <div class="box-pro-prices">
-                                                    <p class="pro-price">
-                                                        13,990,000₫
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="evo-product-slide-item">
-                                            <div class="product-img">
-                                                <div class="product-sale">
-                                                    <span>-16%</span>
-                                                </div>
-                                                <a href="/products/giuong-ngu-go-chat-luong-cao-cho-gia-dinh"
-                                                   title="Giường ngủ gỗ chất lượng cao cho gia đình" class="image-resize"
-                                                   tabindex="0">
-                                                    <img class="lazy"
-                                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                         data-src="//cdn.hstatic.net/products/200001110831/upload_3fe7a64433d046e290922e3a5bd1905c_9204918b69624e53811ffc3f71bf089a_large.jpg"
-                                                         alt="Giường ngủ gỗ chất lượng cao cho gia đình">
-                                                </a>
-                                            </div>
-                                            <div class="product-detail clearfix">
-                                                <div class="pro-brand">
-                                                    Evo Nội thất
-                                                </div>
-                                                <h3 class="pro-name">
-                                                    <a href="/products/giuong-ngu-go-chat-luong-cao-cho-gia-dinh"
-                                                       title="Giường ngủ gỗ chất lượng cao cho gia đình" tabindex="0">Giường
-                                                        ngủ gỗ chất lượng cao cho gia đình</a>
-                                                </h3>
-                                                <div class="box-pro-prices">
-                                                    <p class="pro-price">
-                                                        1,290,000₫
-                                                        <span class="pro-price-del">
-                                          <del class="compare-price">1,540,000₫</del>
-                                          </span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+
+
+
+
+        <div class="section_product" bis_skin_checked="1">
+            <div class="container" bis_skin_checked="1">
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-md-12" bis_skin_checked="1">
+                        <div class="row" bis_skin_checked="1">
+                            <div class="col-md-12" bis_skin_checked="1">
+                                <div class="section-head" bis_skin_checked="1">
+                                    <span class="group-icon"><i class="fa fa-dashcube" aria-hidden="true"></i></span>
+                                    <h2>Đồ Trang trí</h2>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 mar">
-                        <div class="new_title">
-                            <h2><a href="/collections/do-trang-tri" title="Bán chạy">Bán chạy</a></h2>
-                        </div>
-                        <div class="three-col-slick evo-slick slick-initialized slick-slider">
-                            <div aria-live="polite" class="slick-list draggable">
-                                <div class="slick-track" role="listbox"
-                                     style="opacity: 1; width: 370px; transform: translate3d(0px, 0px, 0px);">
-                                    <div class="evo-item slick-slide slick-current slick-active" data-slick-index="0"
-                                         aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide80"
- style="width: 370px;">
-                                        <div class="evo-product-slide-item">
-                                            <div class="product-img">
-                                                <a href="/products/chao-den-oskar" title="Chao đèn OSKAR"
-                                                   class="image-resize" tabindex="0">
-                                                    <img class="lazy"
-                                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                         data-src="//cdn.hstatic.net/products/200001110831/upload_4feab7fe3fa6446190ddc5e2e9f4b393_62638a7626954b1696d322883134f7da_large.jpg"
-                                                         alt="Chao đèn OSKAR">
-                                                </a>
-                                            </div>
-                                            <div class="product-detail clearfix">
-                                                <div class="pro-brand">
-                                                    Ant Furni
-                                                </div>
-                                                <h3 class="pro-name">
-                                                    <a href="/products/chao-den-oskar" title="Chao đèn OSKAR" tabindex="0">Chao
-                                                        đèn OSKAR</a>
-                                                </h3>
-                                                <div class="box-pro-prices">
-                                                    <p class="pro-price">
-                                                        139,000₫
-                                                    </p>
-                                                </div>
-                                            </div>
+                            <div class="col-md-12 e-tabs not-dqtab ajax-tab-5" data-section="ajax-tab-5" data-view="grid_4" bis_skin_checked="1">
+                                <div class="content" bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <ul class="tabs tabs-title tab-mobile clearfix hidden-sm hidden-md hidden-lg">
+                                            <li class="prev current"><i class="fa fa-angle-left"></i></li>
+                                            <li class="tab-link tab-title hidden-sm hidden-md hidden-lg current tab-titlexs" data-tab="tab-1">
+
+                                                <span>Đèn phòng khách</span>
+
+                                            </li>
+                                            <li class="next"><i class="fa fa-angle-right"></i></li>
+                                        </ul>
+                                        <ul class="tabs tabs-title tab-desktop ajax clearfix hidden-xs">
+
+                                            <li class="tab-link has-content current" data-tab="tab-1" data-url="/collections/de-n-pho-ng-kha-ch">
+                                                <span>Đèn phòng khách</span>
+                                            </li>
+
+                                            <li class="tab-link " data-tab="tab-2" data-url="/collections/guong">
+                                                <span>Gương</span>
+                                            </li>
+
+                                            <li class="tab-link " data-tab="tab-3" data-url="/collections/goi-trang-tri">
+                                                <span>Gối trang trí</span>
+                                            </li>
+
+                                        </ul>
+
+                                        <div class="tab-1 tab-content current" bis_skin_checked="1">
+
+                                            <div class="section-tour-owl3 products products-view-grid owl-carousel owl-loaded owl-drag" data-lg-items="5" data-md-items="5" data-sm-items="3" data-xs-items="2" data-xss-items="2" data-margin="10" data-nav="true" data-dot="false" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                <div class="owl-stage-outer" bis_skin_checked="1"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all; width: 1160px;" bis_skin_checked="1"><div class="owl-item active" style="width: 222px; margin-right: 10px;" bis_skin_checked="1"><div class="item" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                <div class="ant-product-item" bis_skin_checked="1">
+                                                                    <div class="product_row" bis_skin_checked="1">
+                                                                        <div class="item" bis_skin_checked="1">
+                                                                            <div class="item-inner" bis_skin_checked="1">
+                                                                                <div class="image-container" bis_skin_checked="1">
+
+
+
+                                                                                    <a href="/products/chao-den-oskar" class="product-item-photo">
+                                                                                        <img class="product-image-photo img-responsive center-block" src="//product.hstatic.net/1000343108/product/upload_59e176766d01450c8d384412e58467bd_large.jpg" data-lazyload="//product.hstatic.net/1000343108/product/upload_59e176766d01450c8d384412e58467bd_large.jpg" alt="Chao đèn OSKAR">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="box-info" bis_skin_checked="1">
+                                                                                    <h2 class="product-item-name">
+                                                                                        <a title="Chao đèn OSKAR" href="/products/chao-den-oskar" class="product-item-link">
+                                                                                            Chao đèn OSKAR
+                                                                                        </a>
+                                                                                    </h2>
+                                                                                    <div class="product-reviews-summary" bis_skin_checked="1">
+                                                                                        <div class="rating-summary" bis_skin_checked="1">
+                                                                                            <div class="haravan-product-reviews-badge" data-id="1017908248" bis_skin_checked="1"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item-price" bis_skin_checked="1">
+                                                                                        <div class="price-box price-final_price" bis_skin_checked="1">
+
+
+						<span class="special-price">
+							<span class="price-container">
+								<span class="price-wrapper">
+									<span class="price">139,000₫</span>
+								</span>
+							</span>
+						</span>
+
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="box-hover hidden-sm hidden-xs hidden-md" bis_skin_checked="1">
+                                                                                        <div class="add-to-links" bis_skin_checked="1">
+                                                                                            <div class="actions-primary" bis_skin_checked="1">
+                                                                                                <form action="/cart/add" method="post" class="variants form-nut-grid has-validation-callback" data-id="product-actions-1017908248" enctype="multipart/form-data">
+
+
+                                                                                                    <input type="hidden" name="id" value="1035080084">
+                                                                                                    <button class="tt-btn-addtocart btn-buy btn-cart btn btn-gray left-to add_to_cart" title="Cho vào giỏ hàng">
+                                                                                                        <i class="ion ion-md-cart"></i>
+                                                                                                    </button>
+
+
+                                                                                                </form>
+                                                                                            </div>
+
+                                                                                            <a href="/products/chao-den-oskar" class="quick-view" title="Xem nhanh">
+                                                                                                <i class="ion ion-ios-search"></i>
+                                                                                            </a>
+
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div><div class="owl-item active" style="width: 222px; margin-right: 10px;" bis_skin_checked="1"><div class="item" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                <div class="ant-product-item" bis_skin_checked="1">
+                                                                    <div class="product_row" bis_skin_checked="1">
+                                                                        <div class="item" bis_skin_checked="1">
+                                                                            <div class="item-inner" bis_skin_checked="1">
+                                                                                <div class="image-container" bis_skin_checked="1">
+
+
+
+                                                                                    <a href="/products/den-ban-concert" class="product-item-photo">
+                                                                                        <img class="product-image-photo img-responsive center-block" src="//product.hstatic.net/1000343108/product/upload_ef94cc3b36f74a4a83f4f3fa958f78fb_large.jpg" data-lazyload="//product.hstatic.net/1000343108/product/upload_ef94cc3b36f74a4a83f4f3fa958f78fb_large.jpg" alt="Đèn bàn CONCERT">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="box-info" bis_skin_checked="1">
+                                                                                    <h2 class="product-item-name">
+                                                                                        <a title="Đèn bàn CONCERT" href="/products/den-ban-concert" class="product-item-link">
+                                                                                            Đèn bàn CONCERT
+                                                                                        </a>
+                                                                                    </h2>
+                                                                                    <div class="product-reviews-summary" bis_skin_checked="1">
+                                                                                        <div class="rating-summary" bis_skin_checked="1">
+                                                                                            <div class="haravan-product-reviews-badge" data-id="1017908245" bis_skin_checked="1"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item-price" bis_skin_checked="1">
+                                                                                        <div class="price-box price-final_price" bis_skin_checked="1">
+
+
+						<span class="special-price">
+							<span class="price-container">
+								<span class="price-wrapper">
+									<span class="price">429,000₫</span>
+								</span>
+							</span>
+						</span>
+
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="box-hover hidden-sm hidden-xs hidden-md" bis_skin_checked="1">
+                                                                                        <div class="add-to-links" bis_skin_checked="1">
+                                                                                            <div class="actions-primary" bis_skin_checked="1">
+                                                                                                <form action="/cart/add" method="post" class="variants form-nut-grid has-validation-callback" data-id="product-actions-1017908245" enctype="multipart/form-data">
+
+
+                                                                                                    <input type="hidden" name="id" value="1035080080">
+                                                                                                    <button class="tt-btn-addtocart btn-buy btn-cart btn btn-gray left-to add_to_cart" title="Cho vào giỏ hàng">
+                                                                                                        <i class="ion ion-md-cart"></i>
+                                                                                                    </button>
+
+
+                                                                                                </form>
+                                                                                            </div>
+
+                                                                                            <a href="/products/den-ban-concert" class="quick-view" title="Xem nhanh">
+                                                                                                <i class="ion ion-ios-search"></i>
+                                                                                            </a>
+
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div><div class="owl-item active" style="width: 222px; margin-right: 10px;" bis_skin_checked="1"><div class="item" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                <div class="ant-product-item" bis_skin_checked="1">
+                                                                    <div class="product_row" bis_skin_checked="1">
+                                                                        <div class="item" bis_skin_checked="1">
+                                                                            <div class="item-inner" bis_skin_checked="1">
+                                                                                <div class="image-container" bis_skin_checked="1">
+
+
+
+                                                                                    <a href="/products/den-ban-foster" class="product-item-photo">
+                                                                                        <img class="product-image-photo img-responsive center-block" src="//product.hstatic.net/1000343108/product/upload_afdd9d312d5943978eec56dfd4df3496_large.jpg" data-lazyload="//product.hstatic.net/1000343108/product/upload_afdd9d312d5943978eec56dfd4df3496_large.jpg" alt="Đèn bàn FOSTER">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="box-info" bis_skin_checked="1">
+                                                                                    <h2 class="product-item-name">
+                                                                                        <a title="Đèn bàn FOSTER" href="/products/den-ban-foster" class="product-item-link">
+                                                                                            Đèn bàn FOSTER
+                                                                                        </a>
+                                                                                    </h2>
+                                                                                    <div class="product-reviews-summary" bis_skin_checked="1">
+                                                                                        <div class="rating-summary" bis_skin_checked="1">
+                                                                                            <div class="haravan-product-reviews-badge" data-id="1017908246" bis_skin_checked="1"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item-price" bis_skin_checked="1">
+                                                                                        <div class="price-box price-final_price" bis_skin_checked="1">
+
+
+						<span class="special-price">
+							<span class="price-container">
+								<span class="price-wrapper">
+									<span class="price">599,000₫</span>
+								</span>
+							</span>
+						</span>
+
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="box-hover hidden-sm hidden-xs hidden-md" bis_skin_checked="1">
+                                                                                        <div class="add-to-links" bis_skin_checked="1">
+                                                                                            <div class="actions-primary" bis_skin_checked="1">
+                                                                                                <form action="/cart/add" method="post" class="variants form-nut-grid has-validation-callback" data-id="product-actions-1017908246" enctype="multipart/form-data">
+
+
+                                                                                                    <input type="hidden" name="id" value="1035080081">
+                                                                                                    <button class="tt-btn-addtocart btn-buy btn-cart btn btn-gray left-to add_to_cart" title="Cho vào giỏ hàng">
+                                                                                                        <i class="ion ion-md-cart"></i>
+                                                                                                    </button>
+
+
+                                                                                                </form>
+                                                                                            </div>
+
+                                                                                            <a href="/products/den-ban-foster" class="quick-view" title="Xem nhanh">
+                                                                                                <i class="ion ion-ios-search"></i>
+                                                                                            </a>
+
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div><div class="owl-item active" style="width: 222px; margin-right: 10px;" bis_skin_checked="1"><div class="item" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                <div class="ant-product-item" bis_skin_checked="1">
+                                                                    <div class="product_row" bis_skin_checked="1">
+                                                                        <div class="item" bis_skin_checked="1">
+                                                                            <div class="item-inner" bis_skin_checked="1">
+                                                                                <div class="image-container" bis_skin_checked="1">
+
+
+
+                                                                                    <a href="/products/den-san-kruger" class="product-item-photo">
+                                                                                        <img class="product-image-photo img-responsive center-block" src="//product.hstatic.net/1000343108/product/upload_671b2c38e56b469483b61af2ccad3271_large.jpg" data-lazyload="//product.hstatic.net/1000343108/product/upload_671b2c38e56b469483b61af2ccad3271_large.jpg" alt="Đèn sàn KRUGER">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="box-info" bis_skin_checked="1">
+                                                                                    <h2 class="product-item-name">
+                                                                                        <a title="Đèn sàn KRUGER" href="/products/den-san-kruger" class="product-item-link">
+                                                                                            Đèn sàn KRUGER
+                                                                                        </a>
+                                                                                    </h2>
+                                                                                    <div class="product-reviews-summary" bis_skin_checked="1">
+                                                                                        <div class="rating-summary" bis_skin_checked="1">
+                                                                                            <div class="haravan-product-reviews-badge" data-id="1017908250" bis_skin_checked="1"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item-price" bis_skin_checked="1">
+                                                                                        <div class="price-box price-final_price" bis_skin_checked="1">
+
+
+						<span class="special-price">
+							<span class="price-container">
+								<span class="price-wrapper">
+									<span class="price">1,590,000₫</span>
+								</span>
+							</span>
+						</span>
+
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="box-hover hidden-sm hidden-xs hidden-md" bis_skin_checked="1">
+                                                                                        <div class="add-to-links" bis_skin_checked="1">
+                                                                                            <div class="actions-primary" bis_skin_checked="1">
+                                                                                                <form action="/cart/add" method="post" class="variants form-nut-grid has-validation-callback" data-id="product-actions-1017908250" enctype="multipart/form-data">
+
+
+                                                                                                    <input type="hidden" name="id" value="1035080087">
+                                                                                                    <button class="tt-btn-addtocart btn-buy btn-cart btn btn-gray left-to add_to_cart" title="Cho vào giỏ hàng">
+                                                                                                        <i class="ion ion-md-cart"></i>
+                                                                                                    </button>
+
+
+                                                                                                </form>
+                                                                                            </div>
+
+                                                                                            <a href="/products/den-san-kruger" class="quick-view" title="Xem nhanh">
+                                                                                                <i class="ion ion-ios-search"></i>
+                                                                                            </a>
+
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div><div class="owl-item active" style="width: 222px; margin-right: 10px;" bis_skin_checked="1"><div class="item" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                <div class="ant-product-item" bis_skin_checked="1">
+                                                                    <div class="product_row" bis_skin_checked="1">
+                                                                        <div class="item" bis_skin_checked="1">
+                                                                            <div class="item-inner" bis_skin_checked="1">
+                                                                                <div class="image-container" bis_skin_checked="1">
+
+
+
+                                                                                    <a href="/products/den-tran-indochine" class="product-item-photo">
+                                                                                        <img class="product-image-photo img-responsive center-block" src="//product.hstatic.net/1000343108/product/upload_22e44f80bc9c458095790bd94817de99_large.jpg" data-lazyload="//product.hstatic.net/1000343108/product/upload_22e44f80bc9c458095790bd94817de99_large.jpg" alt="Đèn trần INDOCHINE">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="box-info" bis_skin_checked="1">
+                                                                                    <h2 class="product-item-name">
+                                                                                        <a title="Đèn trần INDOCHINE" href="/products/den-tran-indochine" class="product-item-link">
+                                                                                            Đèn trần INDOCHINE
+                                                                                        </a>
+                                                                                    </h2>
+                                                                                    <div class="product-reviews-summary" bis_skin_checked="1">
+                                                                                        <div class="rating-summary" bis_skin_checked="1">
+                                                                                            <div class="haravan-product-reviews-badge" data-id="1017908244" bis_skin_checked="1"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="item-price" bis_skin_checked="1">
+                                                                                        <div class="price-box price-final_price" bis_skin_checked="1">
+
+
+						<span class="special-price">
+							<span class="price-container">
+								<span class="price-wrapper">
+									<span class="price">499,000₫</span>
+								</span>
+							</span>
+						</span>
+
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="box-hover hidden-sm hidden-xs hidden-md" bis_skin_checked="1">
+                                                                                        <div class="add-to-links" bis_skin_checked="1">
+                                                                                            <div class="actions-primary" bis_skin_checked="1">
+                                                                                                <form action="/cart/add" method="post" class="variants form-nut-grid has-validation-callback" data-id="product-actions-1017908244" enctype="multipart/form-data">
+
+
+                                                                                                    <input type="hidden" name="id" value="1035080078">
+                                                                                                    <button class="tt-btn-addtocart btn-buy btn-cart btn btn-gray left-to add_to_cart" title="Cho vào giỏ hàng">
+                                                                                                        <i class="ion ion-md-cart"></i>
+                                                                                                    </button>
+
+
+                                                                                                </form>
+                                                                                            </div>
+
+                                                                                            <a href="/products/den-tran-indochine" class="quick-view" title="Xem nhanh">
+                                                                                                <i class="ion ion-ios-search"></i>
+                                                                                            </a>
+
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div></div></div><div class="owl-nav disabled" bis_skin_checked="1"><div class="owl-prev disabled" bis_skin_checked="1"><i class="fa fa-angle-left" aria-hidden="true"></i></div><div class="owl-next disabled" bis_skin_checked="1"><i class="fa fa-angle-right" aria-hidden="true"></i></div></div><div class="owl-dots disabled" bis_skin_checked="1"></div></div>
+
+
                                         </div>
-                                        <div class="evo-product-slide-item">
-                                            <div class="product-img">
-                                                <a href="/products/den-ban-concert" title="Đèn bàn CONCERT"
-                                                   class="image-resize" tabindex="0">
-                                                    <img class="lazy"
-                                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                         data-src="//cdn.hstatic.net/products/200001110831/upload_be325a75d1f84957962cfc811ca6a0e4_c94dc4e0be344631beadb09a2e0d33fc_large.jpg"
-                                                         alt="Đèn bàn CONCERT">
-                                                </a>
-                                            </div>
-                                            <div class="product-detail clearfix">
-                                                <div class="pro-brand">
-                                                    Ant Furni
-                                                </div>
-                                                <h3 class="pro-name">
-                                                    <a href="/products/den-ban-concert" title="Đèn bàn CONCERT"
-                                                       tabindex="0">Đèn bàn CONCERT</a>
-                                                </h3>
-                                                <div class="box-pro-prices">
-                                                    <p class="pro-price">
-                                                        429,000₫
-                                                    </p>
-                                                </div>
-                                            </div>
+
+                                        <div class="tab-2 tab-content" bis_skin_checked="1">
+
                                         </div>
-                                        <div class="evo-product-slide-item">
-                                            <div class="product-img">
-                                                <a href="/products/den-ban-foster" title="Đèn bàn FOSTER"
-                                                   class="image-resize" tabindex="0">
-                                                    <img class="lazy"
-                                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                         data-src="//cdn.hstatic.net/products/200001110831/upload_4991288c02724a2da2acf3141fcd21f9_3cbe9412e099432da21b7760908804c9_large.jpg"
-                                                         alt="Đèn bàn FOSTER">
-                                                </a>
-                                            </div>
-                                            <div class="product-detail clearfix">
-                                                <div class="pro-brand">
-                                                    Ant Furni
-                                                </div>
-                                                <h3 class="pro-name">
-                                                    <a href="/products/den-ban-foster" title="Đèn bàn FOSTER" tabindex="0">Đèn
-                                                        bàn FOSTER</a>
-                                                </h3>
-                                                <div class="box-pro-prices">
-                                                    <p class="pro-price">
-                                                        599,000₫
-                                                    </p>
-                                                </div>
-                                            </div>
+
+                                        <div class="tab-3 tab-content" bis_skin_checked="1">
+
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 mar">
-                        <div class="new_title">
-                            <h2><a href="/collections/ban-ca-phe" title="Khuyến mãi">Khuyến mãi</a></h2>
-                        </div>
-                        <div class="three-col-slick evo-slick slick-initialized slick-slider">
-                            <div aria-live="polite" class="slick-list draggable">
-                                <div class="slick-track" role="listbox"
-                                     style="opacity: 1; width: 370px; transform: translate3d(0px, 0px, 0px);">
-                                    <div class="evo-item slick-slide slick-current slick-active" data-slick-index="0"
-                                         aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide90"
- style="width: 370px;">
-                                        <div class="evo-product-slide-item">
-                                            <div class="product-img">
-                                                <a href="/products/ban-ca-phe-clark" title="Bàn cà phê CLARK"
-                                                   class="image-resize" tabindex="0">
-                                                    <img class="lazy"
-                                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                         data-src="//cdn.hstatic.net/products/200001110831/upload_d0a60e288f5f43ef9d2cf77c795f862d_b00888e3067d43f8ac12faa2307b6138_large.jpg"
-                                                         alt="Bàn cà phê CLARK">
-                                                </a>
-                                            </div>
-                                            <div class="product-detail clearfix">
-                                                <div class="pro-brand">
-                                                    Ant Furni
-                                                </div>
-                                                <h3 class="pro-name">
-                                                    <a href="/products/ban-ca-phe-clark" title="Bàn cà phê CLARK"
-                                                       tabindex="0">Bàn cà phê CLARK</a>
-                                                </h3>
-                                                <div class="box-pro-prices">
-                                                    <p class="pro-price">
-                                                        2,300,000₫
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="evo-product-slide-item">
-                                            <div class="product-img">
-                                                <a href="/products/ban-ca-phe-gonzales" title="Bàn cà phê GONZALES"
-                                                   class="image-resize" tabindex="0">
-                                                    <img class="lazy"
-                                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                         data-src="//cdn.hstatic.net/products/200001110831/upload_ccaa5b8841514492a53f24175fc5e10f_d5cf27b6bd84442297670e58444a587e_large.jpg"
-                                                         alt="Bàn cà phê GONZALES">
-                                                </a>
-                                            </div>
-                                            <div class="product-detail clearfix">
-                                                <div class="pro-brand">
-                                                    Ant Furni
-                                                </div>
-                                                <h3 class="pro-name">
-                                                    <a href="/products/ban-ca-phe-gonzales" title="Bàn cà phê GONZALES"
-                                                       tabindex="0">Bàn cà phê GONZALES</a>
-                                                </h3>
-                                                <div class="box-pro-prices">
-                                                    <p class="pro-price">
-                                                        1,700,000₫
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="evo-product-slide-item">
-                                            <div class="product-img">
-                                                <a href="/products/ban-ca-phe-kitka" title="Bàn cà phê KITKA"
-                                                   class="image-resize" tabindex="0">
-                                                    <img class="lazy"
-                                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                         data-src="//cdn.hstatic.net/products/200001110831/upload_2d10eb5378304d9d90c0f0edc82743bb_0c264ba396c64af88f6099b21c28d65d_large.jpg"
-                                                         alt="Bàn cà phê KITKA">
-                                                </a>
-                                            </div>
-                                            <div class="product-detail clearfix">
-                                                <div class="pro-brand">
-                                                    Ant Furni
-                                                </div>
-                                                <h3 class="pro-name">
-                                                    <a href="/products/ban-ca-phe-kitka" title="Bàn cà phê KITKA"
-                                                       tabindex="0">Bàn cà phê KITKA</a>
-                                                </h3>
-                                                <div class="box-pro-prices">
-                                                    <p class="pro-price">
-                                                        2,900,000₫
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
+
+                                        <script>
+
+                                        </script>
                                     </div>
                                 </div>
                             </div>
@@ -1265,90 +2409,239 @@
         </div>
     </section>
     <section class="awe-section-9">
-        <div class="container section_blogs">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="new_title">
-                        <h2><a href="/blogs/tin-tuc" title="Tư vấn thiết kế ">Tư vấn thiết kế </a></h2>
+        <div class="section_customer" bis_skin_checked="1">
+            <div class="container" bis_skin_checked="1">
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-md-6" bis_skin_checked="1">
+                        <div class="customer_reviews" bis_skin_checked="1">
+                            <div class="heading" bis_skin_checked="1">
+                                <span class="group-icon"><i class="fa fa-dashcube" aria-hidden="true"></i></span>
+                                <h2 class="title-head">
+                                    <span>Ý kiến khách hàng</span>
+                                </h2>
+                            </div>
+                            <div class="wrap_views" bis_skin_checked="1">
+                                <div class="content_views owl-carousel not-dqowl owl-loaded owl-drag" bis_skin_checked="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <div class="owl-stage-outer" bis_skin_checked="1"><div class="owl-stage" style="transform: translate3d(-1605px, 0px, 0px); transition: 0.25s; width: 3745px;" bis_skin_checked="1"><div class="owl-item cloned" bis_skin_checked="1" style="width: 535px;"><div class="item" bis_skin_checked="1">
+                                                    <div class="image_reviews" bis_skin_checked="1">
+                                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/customer_image_2.png?v=230" alt="Nguyễn Ngọc Huyền">
+                                                        <p class="description_review">Lần đầu tham quan showroom, tôi đã thật sự ngạc nhiên trước sự rộng lớn của showroom Ant Furniture. Ant Furniture có rất nhiều bộ sưu tập đẹp từ cổ điển cho đến hiện đại. Ngoài ra thì công ty còn có nhà máy với máy móc hiện đại. Tôi hài lòng với thiết kế của nội thất Ant Furniture: rất đẹp, hài hòa với căn nhà và phù hợp với phong cách của tôi.</p>
+                                                        <div class="info_reviews" bis_skin_checked="1">
+                                                            <p>Nguyễn Ngọc Huyền</p>
+                                                            <span>-</span>
+                                                            <span>Nhân viên ngân hàng</span>
+                                                        </div>
+                                                    </div>
+                                                </div></div><div class="owl-item cloned" bis_skin_checked="1" style="width: 535px;"><div class="item" bis_skin_checked="1">
+                                                    <div class="image_reviews" bis_skin_checked="1">
+                                                        <img src="//theme.hstatic.net/1000343108/1000435493/14/customer_image_3.png?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/customer_image_3.png?v=230" alt="Nguyễn Ngọc Minh">
+                                                        <p class="description_review">Lần đầu tham quan showroom, tôi đã thật sự ngạc nhiên trước sự rộng lớn của showroom Ant Furniture. Ant Furniture có rất nhiều bộ sưu tập đẹp từ cổ điển cho đến hiện đại. Ngoài ra thì công ty còn có nhà máy với máy móc hiện đại. Tôi hài lòng với thiết kế của nội thất Ant Furniture: rất đẹp, hài hòa với căn nhà và phù hợp với phong cách của tôi.</p>
+                                                        <div class="info_reviews" bis_skin_checked="1">
+                                                            <p>Nguyễn Ngọc Minh</p>
+                                                            <span>-</span>
+                                                            <span>Kiến trúc sư</span>
+                                                        </div>
+                                                    </div>
+                                                </div></div><div class="owl-item" bis_skin_checked="1" style="width: 535px;"><div class="item" bis_skin_checked="1">
+                                                    <div class="image_reviews" bis_skin_checked="1">
+                                                        <img src="//theme.hstatic.net/1000343108/1000435493/14/customer_image_1.png?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/customer_image_1.png?v=230" alt="Nguyễn Ngọc Nhi">
+                                                        <p class="description_review">Lần đầu tham quan showroom, tôi đã thật sự ngạc nhiên trước sự rộng lớn của showroom Ant Furniture. Ant Furniture có rất nhiều bộ sưu tập đẹp từ cổ điển cho đến hiện đại. Ngoài ra thì công ty còn có nhà máy với máy móc hiện đại. Tôi hài lòng với thiết kế của nội thất Ant Furniture: rất đẹp, hài hòa với căn nhà và phù hợp với phong cách của tôi.</p>
+                                                        <div class="info_reviews" bis_skin_checked="1">
+                                                            <p>Nguyễn Ngọc Nhi</p>
+                                                            <span>-</span>
+                                                            <span>Nhân viên ngân hàng</span>
+                                                        </div>
+                                                    </div>
+                                                </div></div><div class="owl-item active" bis_skin_checked="1" style="width: 535px;"><div class="item" bis_skin_checked="1">
+                                                    <div class="image_reviews" bis_skin_checked="1">
+                                                        <img src="//theme.hstatic.net/1000343108/1000435493/14/customer_image_2.png?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/customer_image_2.png?v=230" alt="Nguyễn Ngọc Huyền">
+                                                        <p class="description_review">Lần đầu tham quan showroom, tôi đã thật sự ngạc nhiên trước sự rộng lớn của showroom Ant Furniture. Ant Furniture có rất nhiều bộ sưu tập đẹp từ cổ điển cho đến hiện đại. Ngoài ra thì công ty còn có nhà máy với máy móc hiện đại. Tôi hài lòng với thiết kế của nội thất Ant Furniture: rất đẹp, hài hòa với căn nhà và phù hợp với phong cách của tôi.</p>
+                                                        <div class="info_reviews" bis_skin_checked="1">
+                                                            <p>Nguyễn Ngọc Huyền</p>
+                                                            <span>-</span>
+                                                            <span>Nhân viên ngân hàng</span>
+                                                        </div>
+                                                    </div>
+                                                </div></div><div class="owl-item" bis_skin_checked="1" style="width: 535px;"><div class="item" bis_skin_checked="1">
+                                                    <div class="image_reviews" bis_skin_checked="1">
+                                                        <img src="//theme.hstatic.net/1000343108/1000435493/14/customer_image_3.png?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/customer_image_3.png?v=230" alt="Nguyễn Ngọc Minh">
+                                                        <p class="description_review">Lần đầu tham quan showroom, tôi đã thật sự ngạc nhiên trước sự rộng lớn của showroom Ant Furniture. Ant Furniture có rất nhiều bộ sưu tập đẹp từ cổ điển cho đến hiện đại. Ngoài ra thì công ty còn có nhà máy với máy móc hiện đại. Tôi hài lòng với thiết kế của nội thất Ant Furniture: rất đẹp, hài hòa với căn nhà và phù hợp với phong cách của tôi.</p>
+                                                        <div class="info_reviews" bis_skin_checked="1">
+                                                            <p>Nguyễn Ngọc Minh</p>
+                                                            <span>-</span>
+                                                            <span>Kiến trúc sư</span>
+                                                        </div>
+                                                    </div>
+                                                </div></div><div class="owl-item cloned" bis_skin_checked="1" style="width: 535px;"><div class="item" bis_skin_checked="1">
+                                                    <div class="image_reviews" bis_skin_checked="1">
+                                                        <img src="//theme.hstatic.net/1000343108/1000435493/14/customer_image_1.png?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/customer_image_1.png?v=230" alt="Nguyễn Ngọc Nhi">
+                                                        <p class="description_review">Lần đầu tham quan showroom, tôi đã thật sự ngạc nhiên trước sự rộng lớn của showroom Ant Furniture. Ant Furniture có rất nhiều bộ sưu tập đẹp từ cổ điển cho đến hiện đại. Ngoài ra thì công ty còn có nhà máy với máy móc hiện đại. Tôi hài lòng với thiết kế của nội thất Ant Furniture: rất đẹp, hài hòa với căn nhà và phù hợp với phong cách của tôi.</p>
+                                                        <div class="info_reviews" bis_skin_checked="1">
+                                                            <p>Nguyễn Ngọc Nhi</p>
+                                                            <span>-</span>
+                                                            <span>Nhân viên ngân hàng</span>
+                                                        </div>
+                                                    </div>
+                                                </div></div><div class="owl-item cloned" bis_skin_checked="1" style="width: 535px;"><div class="item" bis_skin_checked="1">
+                                                    <div class="image_reviews" bis_skin_checked="1">
+                                                        <img src="//theme.hstatic.net/1000343108/1000435493/14/customer_image_2.png?v=230" data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/customer_image_2.png?v=230" alt="Nguyễn Ngọc Huyền">
+                                                        <p class="description_review">Lần đầu tham quan showroom, tôi đã thật sự ngạc nhiên trước sự rộng lớn của showroom Ant Furniture. Ant Furniture có rất nhiều bộ sưu tập đẹp từ cổ điển cho đến hiện đại. Ngoài ra thì công ty còn có nhà máy với máy móc hiện đại. Tôi hài lòng với thiết kế của nội thất Ant Furniture: rất đẹp, hài hòa với căn nhà và phù hợp với phong cách của tôi.</p>
+                                                        <div class="info_reviews" bis_skin_checked="1">
+                                                            <p>Nguyễn Ngọc Huyền</p>
+                                                            <span>-</span>
+                                                            <span>Nhân viên ngân hàng</span>
+                                                        </div>
+                                                    </div>
+                                                </div></div></div></div><div class="owl-nav disabled" bis_skin_checked="1"><div class="owl-prev" bis_skin_checked="1"><i class="fa fa-angle-left" aria-hidden="true"></i></div><div class="owl-next" bis_skin_checked="1"><i class="fa fa-angle-right" aria-hidden="true"></i></div></div><div class="owl-dots" bis_skin_checked="1"><div class="owl-dot" bis_skin_checked="1"><span></span></div><div class="owl-dot active" bis_skin_checked="1"><span></span></div><div class="owl-dot" bis_skin_checked="1"><span></span></div></div></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="evo-owl-blog evo-slick slick-initialized slick-slider">
-                        <div aria-live="polite" class="slick-list draggable">
-                            <div class="slick-track" role="listbox"
-                                 style="opacity: 1; width: 1160px; transform: translate3d(0px, 0px, 0px);">
-                                <div class="news-items slick-slide slick-current slick-active" data-slick-index="0"
-                                     aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide10"
- style="width: 280px;">
-                                    <a href="/blogs/tin-tuc/diem-danh-4-chat-lieu-sofa-ben-bi-cung-do-tham-my-cao-nhat"
-                                       title="Điểm danh 4 chất liệu sofa bền bỉ cùng độ thẩm mỹ cao nhất"
-                                       class="clearfix evo-item-blogs" tabindex="0">
-                                        <div class="evo-article-image">
-                                            <img
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                data-src="//cdn.hstatic.net/files/200001110831/article/sofa-chung-cu-ma-01-p707_b9e9e13141da4d29a0caccef9dca8ebf_large.jpg"
-                                                alt="Điểm danh 4 chất liệu sofa bền bỉ cùng độ thẩm mỹ cao nhất"
-                                                class="lazy img-responsive center-block">
-                                        </div>
-                                        <h3 class="line-clamps">Điểm danh 4 chất liệu sofa bền bỉ cùng độ thẩm mỹ cao
-                                            nhất</h3>
-                                        <p>Sofa luôn là sản phẩm nội thất tô điểm kho không gian ngôi nhà thêm phần sang
-                                            trọng và đẳng cấp. Tất nhiên ...</p>
-                                    </a>
-                                </div>
-                                <div class="news-items slick-slide slick-active" data-slick-index="1" aria-hidden="false"
-                                     tabindex="-1" role="option" aria-describedby="slick-slide11"
-                                     style="width: 280px;">
-                                    <a href="/blogs/tin-tuc/sofa-chu-u-dep-hien-dai-mau-moi-cap-nhat"
-                                       title="Sofa chữ U đẹp, hiện đại, mẫu mới cập nhật" class="clearfix evo-item-blogs"
-                                       tabindex="0">
-                                        <div class="evo-article-image">
-                                            <img
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                data-src="//cdn.hstatic.net/files/200001110831/article/sofa-goc-chu-u-1_e6a07300d5b5494d9dca5124ab944038_large.jpg"
-                                                alt="Sofa chữ U đẹp, hiện đại, mẫu mới cập nhật"
-                                                class="lazy img-responsive center-block">
-                                        </div>
-                                        <h3 class="line-clamps">Sofa chữ U đẹp, hiện đại, mẫu mới cập nhật</h3>
-                                        <p>Sofa chữ U&nbsp;đang trở thành xu hướng nổi bật trong năm 2026, mang đến sự tiện
-                                            nghi và phong cách nổi bật...</p>
-                                    </a>
-                                </div>
-                                <div class="news-items slick-slide slick-active" data-slick-index="2" aria-hidden="false"
-                                     tabindex="-1" role="option" aria-describedby="slick-slide12"
-                                     style="width: 280px;">
-                                    <a href="/blogs/tin-tuc/tim-hieu-ve-ghe-sa-long-go-va-kinh-nghiem-mua-bo-salon-dep"
-                                       title="Tìm hiểu về ghế sa lông gỗ và kinh nghiệm mua bộ salon đẹp"
-                                       class="clearfix evo-item-blogs" tabindex="0">
-                                        <div class="evo-article-image">
-                                            <img
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                data-src="//cdn.hstatic.net/files/200001110831/article/sofa-vang-mau-vang-3_8bf2bfb2f6aa404dad5d35e7f28a2457_large.jpg"
-                                                alt="Tìm hiểu về ghế sa lông gỗ và kinh nghiệm mua bộ salon đẹp"
-                                                class="lazy img-responsive center-block">
-                                        </div>
-                                        <h3 class="line-clamps">Tìm hiểu về ghế sa lông gỗ và kinh nghiệm mua bộ salon
-                                            đẹp</h3>
-                                        <p>Trong không gian sống hiện đại,&nbsp;ghế sa lông gỗ&nbsp;đã trở thành một phần
-                                            không thể thiếu trong nội th...</p>
-                                    </a>
-                                </div>
-                                <div class="news-items slick-slide slick-active" data-slick-index="3" aria-hidden="false"
-                                     tabindex="-1" role="option" aria-describedby="slick-slide13"
-                                     style="width: 280px;">
-                                    <a href="/blogs/tin-tuc/cach-chon-kieu-tu-quan-ao-dep-giup-phong-ngu-sang-trong-va-tinh-te-hon"
-                                       title="Cách chọn kiểu tủ quần áo đẹp giúp phòng ngủ sang trọng và tinh tế hơn"
-                                       class="clearfix evo-item-blogs" tabindex="0">
-                                        <div class="evo-article-image">
-                                            <img
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                data-src="//cdn.hstatic.net/files/200001110831/article/ban_nen_sap_xep_lai_tu_quan_ao_7b92731a42a64eefbc95601c9b05fa5a_grande_8043eff8d65a47e9805de257914d7b90_large.jpg"
-                                                alt="Cách chọn kiểu tủ quần áo đẹp giúp phòng ngủ sang trọng và tinh tế hơn"
-                                                class="lazy img-responsive center-block">
-                                        </div>
-                                        <h3 class="line-clamps">Cách chọn kiểu tủ quần áo đẹp giúp phòng ngủ sang trọng và
-                                            tinh tế hơn</h3>
-                                        <p>Trong thiết kế nội thất hiện đại, tủ quần áo đẹp không chỉ là nơi cất trữ đồ đạc
-                                            mà còn là điểm nhấn giúp t...</p>
-                                    </a>
+                    <div class="col-md-6" bis_skin_checked="1">
+                        <div class="project_reviews" bis_skin_checked="1">
+                            <div class="heading" bis_skin_checked="1">
+                                <span class="group-icon"><i class="fa fa-dashcube" aria-hidden="true"></i></span>
+                                <h2 class="title-head">
+                                    <span>Ảnh bàn giao khách hàng</span>
+                                </h2>
+                            </div>
+
+
+
+                            <div class="ant-image-handover" bis_skin_checked="1">
+                                <div class="content_views owl-carousel not-dqowl owl-loaded owl-drag" bis_skin_checked="1">
+
+
+
+
+
+                                    <div class="owl-stage-outer" bis_skin_checked="1"><div class="owl-stage" style="transform: translate3d(-1130px, 0px, 0px); transition: 0.25s; width: 3390px;" bis_skin_checked="1"><div class="owl-item cloned" bis_skin_checked="1" style="width: 565px;"><div class="item-inner clearfix" bis_skin_checked="1">
+                                                    <div class="blog-image" bis_skin_checked="1">
+                                                        <a href="/blogs/ban-giao/he-lam-giup-nha-ong-sai-gon-khong-so-trom-thua-nang-gio">
+
+                                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-lazyload="//file.hstatic.net/1000343108/article/untitled-2_grande.jpg" alt="Hệ lam giúp nhà ống Sài Gòn không sợ trộm, thừa nắng gió" class="img-responsive center-block">
+
+                                                        </a>
+                                                    </div>
+                                                    <div class="blog-content" bis_skin_checked="1">
+                                                        <div class="blog-content-inner" bis_skin_checked="1">
+                                                            <h3 class="blog-title">
+                                                                <a href="/blogs/ban-giao/he-lam-giup-nha-ong-sai-gon-khong-so-trom-thua-nang-gio" title="Hệ lam giúp nhà ống Sài Gòn không sợ trộm, thừa nắng gió">Hệ lam giúp nhà ống Sài Gòn không sợ trộm, thừa nắng gió</a>
+                                                            </h3>
+                                                            <p class="short-des">Khung lam ở mặt tiền, sân vườn ở tầng 3 giúp ngôi nhà quận 8 thoáng đãng, đón gió, nắng và chặn bụi đường.Ngôi nhà đư...</p>
+                                                        </div>
+                                                    </div>
+                                                </div></div><div class="owl-item cloned" bis_skin_checked="1" style="width: 565px;"><div class="item-inner clearfix" bis_skin_checked="1">
+                                                    <div class="blog-image" bis_skin_checked="1">
+                                                        <a href="/blogs/ban-giao/nhung-thiet-ke-noi-that-nha-bep-voi-chat-lieu-go-tuyet-dep">
+
+                                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-lazyload="//file.hstatic.net/1000343108/article/shapeimage-9_grande.png" alt="Những thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt đẹp" class="img-responsive center-block">
+
+                                                        </a>
+                                                    </div>
+                                                    <div class="blog-content" bis_skin_checked="1">
+                                                        <div class="blog-content-inner" bis_skin_checked="1">
+                                                            <h3 class="blog-title">
+                                                                <a href="/blogs/ban-giao/nhung-thiet-ke-noi-that-nha-bep-voi-chat-lieu-go-tuyet-dep" title="Những thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt đẹp">Những thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt đẹp</a>
+                                                            </h3>
+                                                            <p class="short-des">Gỗ là vật liệu phổ biến được sử dụng nhiều nhất trong thiết kế nhà đẹp nhà bếp. Bên cạnh những thiết kế truyền thống ...</p>
+                                                        </div>
+                                                    </div>
+                                                </div></div><div class="owl-item active" bis_skin_checked="1" style="width: 565px;"><div class="item-inner clearfix" bis_skin_checked="1">
+                                                    <div class="blog-image" bis_skin_checked="1">
+                                                        <a href="/blogs/ban-giao/he-lam-giup-nha-ong-sai-gon-khong-so-trom-thua-nang-gio">
+
+                                                            <img src="//file.hstatic.net/1000343108/article/untitled-2_grande.jpg" data-lazyload="//file.hstatic.net/1000343108/article/untitled-2_grande.jpg" alt="Hệ lam giúp nhà ống Sài Gòn không sợ trộm, thừa nắng gió" class="img-responsive center-block">
+
+                                                        </a>
+                                                    </div>
+                                                    <div class="blog-content" bis_skin_checked="1">
+                                                        <div class="blog-content-inner" bis_skin_checked="1">
+                                                            <h3 class="blog-title">
+                                                                <a href="/blogs/ban-giao/he-lam-giup-nha-ong-sai-gon-khong-so-trom-thua-nang-gio" title="Hệ lam giúp nhà ống Sài Gòn không sợ trộm, thừa nắng gió">Hệ lam giúp nhà ống Sài Gòn không sợ trộm, thừa nắng gió</a>
+                                                            </h3>
+                                                            <p class="short-des">Khung lam ở mặt tiền, sân vườn ở tầng 3 giúp ngôi nhà quận 8 thoáng đãng, đón gió, nắng và chặn bụi đường.Ngôi nhà đư...</p>
+                                                        </div>
+                                                    </div>
+                                                </div></div><div class="owl-item" bis_skin_checked="1" style="width: 565px;"><div class="item-inner clearfix" bis_skin_checked="1">
+                                                    <div class="blog-image" bis_skin_checked="1">
+                                                        <a href="/blogs/ban-giao/nhung-thiet-ke-noi-that-nha-bep-voi-chat-lieu-go-tuyet-dep">
+
+                                                            <img src="//file.hstatic.net/1000343108/article/shapeimage-9_grande.png" data-lazyload="//file.hstatic.net/1000343108/article/shapeimage-9_grande.png" alt="Những thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt đẹp" class="img-responsive center-block">
+
+                                                        </a>
+                                                    </div>
+                                                    <div class="blog-content" bis_skin_checked="1">
+                                                        <div class="blog-content-inner" bis_skin_checked="1">
+                                                            <h3 class="blog-title">
+                                                                <a href="/blogs/ban-giao/nhung-thiet-ke-noi-that-nha-bep-voi-chat-lieu-go-tuyet-dep" title="Những thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt đẹp">Những thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt đẹp</a>
+                                                            </h3>
+                                                            <p class="short-des">Gỗ là vật liệu phổ biến được sử dụng nhiều nhất trong thiết kế nhà đẹp nhà bếp. Bên cạnh những thiết kế truyền thống ...</p>
+                                                        </div>
+                                                    </div>
+                                                </div></div><div class="owl-item cloned" bis_skin_checked="1" style="width: 565px;"><div class="item-inner clearfix" bis_skin_checked="1">
+                                                    <div class="blog-image" bis_skin_checked="1">
+                                                        <a href="/blogs/ban-giao/he-lam-giup-nha-ong-sai-gon-khong-so-trom-thua-nang-gio">
+
+                                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-lazyload="//file.hstatic.net/1000343108/article/untitled-2_grande.jpg" alt="Hệ lam giúp nhà ống Sài Gòn không sợ trộm, thừa nắng gió" class="img-responsive center-block">
+
+                                                        </a>
+                                                    </div>
+                                                    <div class="blog-content" bis_skin_checked="1">
+                                                        <div class="blog-content-inner" bis_skin_checked="1">
+                                                            <h3 class="blog-title">
+                                                                <a href="/blogs/ban-giao/he-lam-giup-nha-ong-sai-gon-khong-so-trom-thua-nang-gio" title="Hệ lam giúp nhà ống Sài Gòn không sợ trộm, thừa nắng gió">Hệ lam giúp nhà ống Sài Gòn không sợ trộm, thừa nắng gió</a>
+                                                            </h3>
+                                                            <p class="short-des">Khung lam ở mặt tiền, sân vườn ở tầng 3 giúp ngôi nhà quận 8 thoáng đãng, đón gió, nắng và chặn bụi đường.Ngôi nhà đư...</p>
+                                                        </div>
+                                                    </div>
+                                                </div></div><div class="owl-item cloned" bis_skin_checked="1" style="width: 565px;"><div class="item-inner clearfix" bis_skin_checked="1">
+                                                    <div class="blog-image" bis_skin_checked="1">
+                                                        <a href="/blogs/ban-giao/nhung-thiet-ke-noi-that-nha-bep-voi-chat-lieu-go-tuyet-dep">
+
+                                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-lazyload="//file.hstatic.net/1000343108/article/shapeimage-9_grande.png" alt="Những thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt đẹp" class="img-responsive center-block">
+
+                                                        </a>
+                                                    </div>
+                                                    <div class="blog-content" bis_skin_checked="1">
+                                                        <div class="blog-content-inner" bis_skin_checked="1">
+                                                            <h3 class="blog-title">
+                                                                <a href="/blogs/ban-giao/nhung-thiet-ke-noi-that-nha-bep-voi-chat-lieu-go-tuyet-dep" title="Những thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt đẹp">Những thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt đẹp</a>
+                                                            </h3>
+                                                            <p class="short-des">Gỗ là vật liệu phổ biến được sử dụng nhiều nhất trong thiết kế nhà đẹp nhà bếp. Bên cạnh những thiết kế truyền thống ...</p>
+                                                        </div>
+                                                    </div>
+                                                </div></div></div></div><div class="owl-nav disabled" bis_skin_checked="1"><div class="owl-prev" bis_skin_checked="1"><i class="fa fa-angle-left" aria-hidden="true"></i></div><div class="owl-next" bis_skin_checked="1"><i class="fa fa-angle-right" aria-hidden="true"></i></div></div><div class="owl-dots" bis_skin_checked="1"><div class="owl-dot active" bis_skin_checked="1"><span></span></div><div class="owl-dot" bis_skin_checked="1"><span></span></div></div></div>
+                                <div class="clearfix" bis_skin_checked="1"></div>
+                                <div class="amorre" bis_skin_checked="1">
+                                    <a href="ban-giao" title="Xem thêm">Xem thêm</a>
                                 </div>
                             </div>
                         </div>
@@ -1358,80 +2651,269 @@
         </div>
     </section>
     <section class="awe-section-10">
-        <div class="section_brand">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="brand-slick slick-initialized slick-slider">
-                            <div aria-live="polite" class="slick-list draggable">
-                                <div class="slick-track" role="listbox"
-                                     style="opacity: 1; width: 1164px; transform: translate3d(0px, 0px, 0px);">
-                                    <div class="item slick-slide slick-current slick-active" data-slick-index="0"
-                                         aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide20"
- style="width: 184px;">
-                                        <a href="#" target="_blank" title="Wolf Nội thất" tabindex="0">
-                                            <img
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                data-src="//cdn.hstatic.net/themes/200001110831/1001434972/14/partner_1.jpg?v=255"
-                                                alt="Wolf Nội thất" class="lazy img-responsive center-block">
-                                        </a>
-                                    </div>
-                                    <div class="item slick-slide slick-active" data-slick-index="1" aria-hidden="false"
-                                         tabindex="-1" role="option" aria-describedby="slick-slide21"
-                                         style="width: 184px;">
-                                        <a href="#" target="_blank" title="Wolf Nội thất" tabindex="0">
-                                            <img
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                data-src="//cdn.hstatic.net/themes/200001110831/1001434972/14/partner_2.jpg?v=255"
-                                                alt="Wolf Nội thất" class="lazy img-responsive center-block">
-                                        </a>
-                                    </div>
-                                    <div class="item slick-slide slick-active" data-slick-index="2" aria-hidden="false"
-                                         tabindex="-1" role="option" aria-describedby="slick-slide22"
-                                         style="width: 184px;">
-                                        <a href="#" target="_blank" title="Wolf Nội thất" tabindex="0">
-                                            <img
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                data-src="//cdn.hstatic.net/themes/200001110831/1001434972/14/partner_3.jpg?v=255"
-                                                alt="Wolf Nội thất" class="lazy img-responsive center-block">
-                                        </a>
-                                    </div>
-                                    <div class="item slick-slide slick-active" data-slick-index="3" aria-hidden="false"
-                                         tabindex="-1" role="option" aria-describedby="slick-slide23"
-                                         style="width: 184px;">
-                                        <a href="#" target="_blank" title="Wolf Nội thất" tabindex="0">
-                                            <img
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                data-src="//cdn.hstatic.net/themes/200001110831/1001434972/14/partner_4.jpg?v=255"
-                                                alt="Wolf Nội thất" class="lazy img-responsive center-block">
-                                        </a>
-                                    </div>
-                                    <div class="item slick-slide slick-active" data-slick-index="4" aria-hidden="false"
-                                         tabindex="-1" role="option" aria-describedby="slick-slide24"
-                                         style="width: 184px;">
-                                        <a href="#" target="_blank" title="Wolf Nội thất" tabindex="0">
-                                            <img
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                data-src="//cdn.hstatic.net/themes/200001110831/1001434972/14/partner_5.jpg?v=255"
-                                                alt="Wolf Nội thất" class="lazy img-responsive center-block">
-                                        </a>
-                                    </div>
-                                    <div class="item slick-slide slick-active" data-slick-index="5" aria-hidden="false"
-                                         tabindex="-1" role="option" aria-describedby="slick-slide25"
-                                         style="width: 184px;">
-                                        <a href="#" target="_blank" title="Wolf Nội thất" tabindex="0">
-                                            <img
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                data-src="//cdn.hstatic.net/themes/200001110831/1001434972/14/partner_6.jpg?v=255"
-                                                alt="Wolf Nội thất" class="lazy img-responsive center-block">
-                                        </a>
-                                    </div>
-                                </div>
+        <section class="section-news">
+            <div class="container" bis_skin_checked="1">
+                <div class="blogs-content" bis_skin_checked="1">
+                    <div class="heading" bis_skin_checked="1">
+				<span class="group-icon">
+					<i class="ion ion-ios-images" aria-hidden="true"></i>
+				</span>
+                        <h2 class="title-head">
+                            Nhà đẹp
+                        </h2>
+                        <a href="/blogs/news" class="news-more" title="Xem thêm">Xem thêm</a>
+                    </div>
+                    <div class="list-blogs-link" bis_skin_checked="1">
+                        <div class="row" bis_skin_checked="1">
+                            <div class="col-md-12" bis_skin_checked="1">
+                                <div class="section-news-owl owl-carousel not-dqowl owl-loaded owl-drag" bis_skin_checked="1">
+
+
+
+
+
+
+
+                                    <div class="owl-stage-outer" bis_skin_checked="1"><div class="owl-stage" style="transform: translate3d(-1164px, 0px, 0px); transition: all; width: 3495px;" bis_skin_checked="1"><div class="owl-item cloned" bis_skin_checked="1" style="width: 373.333px; margin-right: 15px;"><div class="item-inner" bis_skin_checked="1">
+                                                    <div class="blog-image" bis_skin_checked="1">
+                                                        <a href="/blogs/news/245-trieu-cai-tao-giup-can-ho-ha-noi-75-m2-dep-rong-gap-doi">
+
+                                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-lazyload="//file.hstatic.net/1000343108/article/scandinavian-apartment-5_grande.jpg" alt="245 triệu cải tạo giúp căn hộ Hà Nội 75 m2 đẹp rộng gấp đôi" class="img-responsive center-block">
+
+                                                        </a>
+                                                    </div>
+                                                    <div class="blog-content" bis_skin_checked="1">
+                                                        <div class="blog-content-inner" bis_skin_checked="1">
+                                                            <h3 class="blog-title">
+                                                                <a href="/blogs/news/245-trieu-cai-tao-giup-can-ho-ha-noi-75-m2-dep-rong-gap-doi" title="245 triệu cải tạo giúp căn hộ Hà Nội 75 m2 đẹp rộng gấp đôi">245 triệu cải tạo giúp căn hộ Hà Nội 75 m2 đẹp rộng gấp đôi</a>
+                                                            </h3>
+                                                            <div class="time-comment" bis_skin_checked="1">
+											<span class="date-time">
+												<i class="ion ion-ios-alarm"></i> 09/12/2018
+											</span>
+                                                                <span class="comment">
+												<i class="ion ion-ios-chatboxes"></i> 6 Bình luận
+											</span>
+                                                            </div>
+
+                                                            <p class="short-des">Thay vì để lại các bức tường bí kiểu truyền thống, KTS biến không gian linh động bằng vách kính đóng mở và hệ tủ ngăn chia phòng.Hiện trạ...</p>
+                                                            <a class="readmore" href="/blogs/news/245-trieu-cai-tao-giup-can-ho-ha-noi-75-m2-dep-rong-gap-doi">Đọc tin</a>
+                                                        </div>
+                                                    </div>
+                                                </div></div><div class="owl-item cloned" bis_skin_checked="1" style="width: 373.333px; margin-right: 15px;"><div class="item-inner" bis_skin_checked="1">
+                                                    <div class="blog-image" bis_skin_checked="1">
+                                                        <a href="/blogs/news/bo-suu-tap-mau-sac-2019-cho-khong-gian-song">
+
+                                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-lazyload="//file.hstatic.net/1000343108/article/white-kitchen-color-schemes-hyper-trend-ideas-1_grande.jpg" alt="Bộ sưu tập màu sắc 2019 cho không gian sống" class="img-responsive center-block">
+
+                                                        </a>
+                                                    </div>
+                                                    <div class="blog-content" bis_skin_checked="1">
+                                                        <div class="blog-content-inner" bis_skin_checked="1">
+                                                            <h3 class="blog-title">
+                                                                <a href="/blogs/news/bo-suu-tap-mau-sac-2019-cho-khong-gian-song" title="Bộ sưu tập màu sắc 2019 cho không gian sống">Bộ sưu tập màu sắc 2019 cho không gian sống</a>
+                                                            </h3>
+                                                            <div class="time-comment" bis_skin_checked="1">
+											<span class="date-time">
+												<i class="ion ion-ios-alarm"></i> 09/12/2018
+											</span>
+                                                                <span class="comment">
+												<i class="ion ion-ios-chatboxes"></i> 0 Bình luận
+											</span>
+                                                            </div>
+
+                                                            <p class="short-des">Bộ sưu tập nhấn mạnh vào tính cách nhẹ nhàng, tinh tế, thô mộc gợi ý nhiều màu sắc cho gia chủ để tô điểm cho không gian sống.Việc giới t...</p>
+                                                            <a class="readmore" href="/blogs/news/bo-suu-tap-mau-sac-2019-cho-khong-gian-song">Đọc tin</a>
+                                                        </div>
+                                                    </div>
+                                                </div></div><div class="owl-item cloned" bis_skin_checked="1" style="width: 373.333px; margin-right: 15px;"><div class="item-inner" bis_skin_checked="1">
+                                                    <div class="blog-image" bis_skin_checked="1">
+                                                        <a href="/blogs/news/gia-chu-thanh-hoa-mua-6-nha-hang-xom-de-lam-noi-o-dep-nhu-resort">
+
+                                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-lazyload="//file.hstatic.net/1000343108/article/123069182_grande.jpg" alt="Gia chủ Thanh Hóa mua 6 nhà hàng xóm để làm nơi ở đẹp như resort" class="img-responsive center-block">
+
+                                                        </a>
+                                                    </div>
+                                                    <div class="blog-content" bis_skin_checked="1">
+                                                        <div class="blog-content-inner" bis_skin_checked="1">
+                                                            <h3 class="blog-title">
+                                                                <a href="/blogs/news/gia-chu-thanh-hoa-mua-6-nha-hang-xom-de-lam-noi-o-dep-nhu-resort" title="Gia chủ Thanh Hóa mua 6 nhà hàng xóm để làm nơi ở đẹp như resort">Gia chủ Thanh Hóa mua 6 nhà hàng xóm để làm nơi ở đẹp như resort</a>
+                                                            </h3>
+                                                            <div class="time-comment" bis_skin_checked="1">
+											<span class="date-time">
+												<i class="ion ion-ios-alarm"></i> 09/12/2018
+											</span>
+                                                                <span class="comment">
+												<i class="ion ion-ios-chatboxes"></i> 0 Bình luận
+											</span>
+                                                            </div>
+
+                                                            <p class="short-des">Phần nhà ở được cải tạo từ 3 ngôi nhà ống liền kề. Gia chủ còn mua thêm đất phía sau để làm sân vườn vì yêu thích thiên nhiên.Ngôi nhà nằ...</p>
+                                                            <a class="readmore" href="/blogs/news/gia-chu-thanh-hoa-mua-6-nha-hang-xom-de-lam-noi-o-dep-nhu-resort">Đọc tin</a>
+                                                        </div>
+                                                    </div>
+                                                </div></div><div class="owl-item active" bis_skin_checked="1" style="width: 373.333px; margin-right: 15px;"><div class="item-inner" bis_skin_checked="1">
+                                                    <div class="blog-image" bis_skin_checked="1">
+                                                        <a href="/blogs/news/245-trieu-cai-tao-giup-can-ho-ha-noi-75-m2-dep-rong-gap-doi">
+
+                                                            <img src="//file.hstatic.net/1000343108/article/scandinavian-apartment-5_grande.jpg" data-lazyload="//file.hstatic.net/1000343108/article/scandinavian-apartment-5_grande.jpg" alt="245 triệu cải tạo giúp căn hộ Hà Nội 75 m2 đẹp rộng gấp đôi" class="img-responsive center-block">
+
+                                                        </a>
+                                                    </div>
+                                                    <div class="blog-content" bis_skin_checked="1">
+                                                        <div class="blog-content-inner" bis_skin_checked="1">
+                                                            <h3 class="blog-title">
+                                                                <a href="/blogs/news/245-trieu-cai-tao-giup-can-ho-ha-noi-75-m2-dep-rong-gap-doi" title="245 triệu cải tạo giúp căn hộ Hà Nội 75 m2 đẹp rộng gấp đôi">245 triệu cải tạo giúp căn hộ Hà Nội 75 m2 đẹp rộng gấp đôi</a>
+                                                            </h3>
+                                                            <div class="time-comment" bis_skin_checked="1">
+											<span class="date-time">
+												<i class="ion ion-ios-alarm"></i> 09/12/2018
+											</span>
+                                                                <span class="comment">
+												<i class="ion ion-ios-chatboxes"></i> 6 Bình luận
+											</span>
+                                                            </div>
+
+                                                            <p class="short-des">Thay vì để lại các bức tường bí kiểu truyền thống, KTS biến không gian linh động bằng vách kính đóng mở và hệ tủ ngăn chia phòng.Hiện trạ...</p>
+                                                            <a class="readmore" href="/blogs/news/245-trieu-cai-tao-giup-can-ho-ha-noi-75-m2-dep-rong-gap-doi">Đọc tin</a>
+                                                        </div>
+                                                    </div>
+                                                </div></div><div class="owl-item active" bis_skin_checked="1" style="width: 373.333px; margin-right: 15px;"><div class="item-inner" bis_skin_checked="1">
+                                                    <div class="blog-image" bis_skin_checked="1">
+                                                        <a href="/blogs/news/bo-suu-tap-mau-sac-2019-cho-khong-gian-song">
+
+                                                            <img src="//file.hstatic.net/1000343108/article/white-kitchen-color-schemes-hyper-trend-ideas-1_grande.jpg" data-lazyload="//file.hstatic.net/1000343108/article/white-kitchen-color-schemes-hyper-trend-ideas-1_grande.jpg" alt="Bộ sưu tập màu sắc 2019 cho không gian sống" class="img-responsive center-block">
+
+                                                        </a>
+                                                    </div>
+                                                    <div class="blog-content" bis_skin_checked="1">
+                                                        <div class="blog-content-inner" bis_skin_checked="1">
+                                                            <h3 class="blog-title">
+                                                                <a href="/blogs/news/bo-suu-tap-mau-sac-2019-cho-khong-gian-song" title="Bộ sưu tập màu sắc 2019 cho không gian sống">Bộ sưu tập màu sắc 2019 cho không gian sống</a>
+                                                            </h3>
+                                                            <div class="time-comment" bis_skin_checked="1">
+											<span class="date-time">
+												<i class="ion ion-ios-alarm"></i> 09/12/2018
+											</span>
+                                                                <span class="comment">
+												<i class="ion ion-ios-chatboxes"></i> 0 Bình luận
+											</span>
+                                                            </div>
+
+                                                            <p class="short-des">Bộ sưu tập nhấn mạnh vào tính cách nhẹ nhàng, tinh tế, thô mộc gợi ý nhiều màu sắc cho gia chủ để tô điểm cho không gian sống.Việc giới t...</p>
+                                                            <a class="readmore" href="/blogs/news/bo-suu-tap-mau-sac-2019-cho-khong-gian-song">Đọc tin</a>
+                                                        </div>
+                                                    </div>
+                                                </div></div><div class="owl-item active" bis_skin_checked="1" style="width: 373.333px; margin-right: 15px;"><div class="item-inner" bis_skin_checked="1">
+                                                    <div class="blog-image" bis_skin_checked="1">
+                                                        <a href="/blogs/news/gia-chu-thanh-hoa-mua-6-nha-hang-xom-de-lam-noi-o-dep-nhu-resort">
+
+                                                            <img src="//file.hstatic.net/1000343108/article/123069182_grande.jpg" data-lazyload="//file.hstatic.net/1000343108/article/123069182_grande.jpg" alt="Gia chủ Thanh Hóa mua 6 nhà hàng xóm để làm nơi ở đẹp như resort" class="img-responsive center-block">
+
+                                                        </a>
+                                                    </div>
+                                                    <div class="blog-content" bis_skin_checked="1">
+                                                        <div class="blog-content-inner" bis_skin_checked="1">
+                                                            <h3 class="blog-title">
+                                                                <a href="/blogs/news/gia-chu-thanh-hoa-mua-6-nha-hang-xom-de-lam-noi-o-dep-nhu-resort" title="Gia chủ Thanh Hóa mua 6 nhà hàng xóm để làm nơi ở đẹp như resort">Gia chủ Thanh Hóa mua 6 nhà hàng xóm để làm nơi ở đẹp như resort</a>
+                                                            </h3>
+                                                            <div class="time-comment" bis_skin_checked="1">
+											<span class="date-time">
+												<i class="ion ion-ios-alarm"></i> 09/12/2018
+											</span>
+                                                                <span class="comment">
+												<i class="ion ion-ios-chatboxes"></i> 0 Bình luận
+											</span>
+                                                            </div>
+
+                                                            <p class="short-des">Phần nhà ở được cải tạo từ 3 ngôi nhà ống liền kề. Gia chủ còn mua thêm đất phía sau để làm sân vườn vì yêu thích thiên nhiên.Ngôi nhà nằ...</p>
+                                                            <a class="readmore" href="/blogs/news/gia-chu-thanh-hoa-mua-6-nha-hang-xom-de-lam-noi-o-dep-nhu-resort">Đọc tin</a>
+                                                        </div>
+                                                    </div>
+                                                </div></div><div class="owl-item cloned" bis_skin_checked="1" style="width: 373.333px; margin-right: 15px;"><div class="item-inner" bis_skin_checked="1">
+                                                    <div class="blog-image" bis_skin_checked="1">
+                                                        <a href="/blogs/news/245-trieu-cai-tao-giup-can-ho-ha-noi-75-m2-dep-rong-gap-doi">
+
+                                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-lazyload="//file.hstatic.net/1000343108/article/scandinavian-apartment-5_grande.jpg" alt="245 triệu cải tạo giúp căn hộ Hà Nội 75 m2 đẹp rộng gấp đôi" class="img-responsive center-block">
+
+                                                        </a>
+                                                    </div>
+                                                    <div class="blog-content" bis_skin_checked="1">
+                                                        <div class="blog-content-inner" bis_skin_checked="1">
+                                                            <h3 class="blog-title">
+                                                                <a href="/blogs/news/245-trieu-cai-tao-giup-can-ho-ha-noi-75-m2-dep-rong-gap-doi" title="245 triệu cải tạo giúp căn hộ Hà Nội 75 m2 đẹp rộng gấp đôi">245 triệu cải tạo giúp căn hộ Hà Nội 75 m2 đẹp rộng gấp đôi</a>
+                                                            </h3>
+                                                            <div class="time-comment" bis_skin_checked="1">
+											<span class="date-time">
+												<i class="ion ion-ios-alarm"></i> 09/12/2018
+											</span>
+                                                                <span class="comment">
+												<i class="ion ion-ios-chatboxes"></i> 6 Bình luận
+											</span>
+                                                            </div>
+
+                                                            <p class="short-des">Thay vì để lại các bức tường bí kiểu truyền thống, KTS biến không gian linh động bằng vách kính đóng mở và hệ tủ ngăn chia phòng.Hiện trạ...</p>
+                                                            <a class="readmore" href="/blogs/news/245-trieu-cai-tao-giup-can-ho-ha-noi-75-m2-dep-rong-gap-doi">Đọc tin</a>
+                                                        </div>
+                                                    </div>
+                                                </div></div><div class="owl-item cloned" bis_skin_checked="1" style="width: 373.333px; margin-right: 15px;"><div class="item-inner" bis_skin_checked="1">
+                                                    <div class="blog-image" bis_skin_checked="1">
+                                                        <a href="/blogs/news/bo-suu-tap-mau-sac-2019-cho-khong-gian-song">
+
+                                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-lazyload="//file.hstatic.net/1000343108/article/white-kitchen-color-schemes-hyper-trend-ideas-1_grande.jpg" alt="Bộ sưu tập màu sắc 2019 cho không gian sống" class="img-responsive center-block">
+
+                                                        </a>
+                                                    </div>
+                                                    <div class="blog-content" bis_skin_checked="1">
+                                                        <div class="blog-content-inner" bis_skin_checked="1">
+                                                            <h3 class="blog-title">
+                                                                <a href="/blogs/news/bo-suu-tap-mau-sac-2019-cho-khong-gian-song" title="Bộ sưu tập màu sắc 2019 cho không gian sống">Bộ sưu tập màu sắc 2019 cho không gian sống</a>
+                                                            </h3>
+                                                            <div class="time-comment" bis_skin_checked="1">
+											<span class="date-time">
+												<i class="ion ion-ios-alarm"></i> 09/12/2018
+											</span>
+                                                                <span class="comment">
+												<i class="ion ion-ios-chatboxes"></i> 0 Bình luận
+											</span>
+                                                            </div>
+
+                                                            <p class="short-des">Bộ sưu tập nhấn mạnh vào tính cách nhẹ nhàng, tinh tế, thô mộc gợi ý nhiều màu sắc cho gia chủ để tô điểm cho không gian sống.Việc giới t...</p>
+                                                            <a class="readmore" href="/blogs/news/bo-suu-tap-mau-sac-2019-cho-khong-gian-song">Đọc tin</a>
+                                                        </div>
+                                                    </div>
+                                                </div></div><div class="owl-item cloned" bis_skin_checked="1" style="width: 373.333px; margin-right: 15px;"><div class="item-inner" bis_skin_checked="1">
+                                                    <div class="blog-image" bis_skin_checked="1">
+                                                        <a href="/blogs/news/gia-chu-thanh-hoa-mua-6-nha-hang-xom-de-lam-noi-o-dep-nhu-resort">
+
+                                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-lazyload="//file.hstatic.net/1000343108/article/123069182_grande.jpg" alt="Gia chủ Thanh Hóa mua 6 nhà hàng xóm để làm nơi ở đẹp như resort" class="img-responsive center-block">
+
+                                                        </a>
+                                                    </div>
+                                                    <div class="blog-content" bis_skin_checked="1">
+                                                        <div class="blog-content-inner" bis_skin_checked="1">
+                                                            <h3 class="blog-title">
+                                                                <a href="/blogs/news/gia-chu-thanh-hoa-mua-6-nha-hang-xom-de-lam-noi-o-dep-nhu-resort" title="Gia chủ Thanh Hóa mua 6 nhà hàng xóm để làm nơi ở đẹp như resort">Gia chủ Thanh Hóa mua 6 nhà hàng xóm để làm nơi ở đẹp như resort</a>
+                                                            </h3>
+                                                            <div class="time-comment" bis_skin_checked="1">
+											<span class="date-time">
+												<i class="ion ion-ios-alarm"></i> 09/12/2018
+											</span>
+                                                                <span class="comment">
+												<i class="ion ion-ios-chatboxes"></i> 0 Bình luận
+											</span>
+                                                            </div>
+
+                                                            <p class="short-des">Phần nhà ở được cải tạo từ 3 ngôi nhà ống liền kề. Gia chủ còn mua thêm đất phía sau để làm sân vườn vì yêu thích thiên nhiên.Ngôi nhà nằ...</p>
+                                                            <a class="readmore" href="/blogs/news/gia-chu-thanh-hoa-mua-6-nha-hang-xom-de-lam-noi-o-dep-nhu-resort">Đọc tin</a>
+                                                        </div>
+                                                    </div>
+                                                </div></div></div></div><div class="owl-nav disabled" bis_skin_checked="1"><div class="owl-prev" bis_skin_checked="1"><i class="fa fa-angle-left" aria-hidden="true"></i></div><div class="owl-next" bis_skin_checked="1"><i class="fa fa-angle-right" aria-hidden="true"></i></div></div><div class="owl-dots disabled" bis_skin_checked="1"></div></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
 @endsection

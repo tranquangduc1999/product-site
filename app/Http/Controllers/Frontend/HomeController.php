@@ -24,12 +24,10 @@ class HomeController extends Controller
             ->where('status', true)
             ->orderBy('sort_order')
             ->get();
-        $banner = Setting::getValue('homepage_banner');
 
         return view('frontend.home', compact(
             'products',
             'posts',
-            'banner',
             'banners',
         ));
     }

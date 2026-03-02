@@ -1,9 +1,3 @@
 <script src="{{ asset('js/frontend/jquery-2.2.3.min.js') }}"></script>
-<script src="{{ asset('js/frontend/jquery.form-validator.min.js') }}"></script>
-<script src="{{ asset('js/frontend/api.jquery.js') }}"></script>
-<script src="{{ asset('js/frontend/api.js') }}"></script>
-<script src="{{ asset('js/frontend/option_selection.js') }}"></script>
-<script src="{{ asset('js/frontend/beacon.min.js') }}"></script>
-<script src="{{ asset('js/frontend/cs.script.js') }}"></script>
-<script src="{{ asset('js/frontend/evo-index-js.js') }}"></script>
 <script src="{{ asset('js/frontend/main.js') }}"></script>
+
