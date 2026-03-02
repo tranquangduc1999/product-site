@@ -21,7 +21,13 @@ class HomeController extends Controller
                     ->take(6);
             }])
             ->get();
-        $categories=ProductCategory::all();
+        $categories = ProductCategory::where('status', true)
+            ->with(['products' => function ($query) {
+                $query->published()
+                    ->latest('published_at')
+                    ->limit(8);
+            }])
+            ->get();
         $posts = Post::published()
             ->latest('published_at')
             ->take(3)

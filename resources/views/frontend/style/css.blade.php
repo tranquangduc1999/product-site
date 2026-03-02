@@ -7209,3 +7209,4 @@
 <link rel="stylesheet" type="text/css" media="all" href="{{ asset('css/frontend/plugin.scss.css') }}">
 <link rel="stylesheet" type="text/css" media="all" href="{{ asset('css/frontend/ant-furniture.scss.css') }}">
 <link rel="stylesheet" type="text/css" media="all" href="{{ asset('css/frontend/base.scss.css') }}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
