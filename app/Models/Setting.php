@@ -7,13 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 class Setting extends Model
 {
     protected $fillable = [
-        'key',
-        'value',
-        'type',
+        'site_name',
+        'logo',
+        'favicon',
+        'hotline',
+        'email',
+        'address',
+        'facebook',
+        'zalo',
+        'meta_title',
+        'meta_description',
+        'google_analytics',
     ];
-
-    public static function getValue($key, $default = null)
-    {
-        return static::where('key', $key)->value('value') ?? $default;
-    }
 }

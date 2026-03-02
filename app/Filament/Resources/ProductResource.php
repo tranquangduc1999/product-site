@@ -4,10 +4,12 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\ProductResource\Pages;
 use App\Models\Product;
+use App\Models\ProductCategory;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 use Filament\Forms\Components\{
     TextInput,
@@ -201,7 +203,18 @@ class ProductResource extends Resource
                     ->dateTime('d/m/Y H:i'),
             ])
             ->filters([
-                TernaryFilter::make('status'),
+                // Lọc theo trạng thái
+                TernaryFilter::make('status')
+                    ->label('Trạng thái')
+                    ->trueLabel('Hiển thị')
+                    ->falseLabel('Ẩn'),
+
+                // Lọc theo danh mục
+                SelectFilter::make('product_category_id')
+                    ->label('Danh mục')
+                    ->options(
+                        ProductCategory::pluck('name', 'id')
+                    )
             ])
             ->defaultSort('created_at', 'desc');
     }

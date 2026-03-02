@@ -20,8 +20,10 @@ class PageResource extends Resource
 {
     protected static ?string $model = Page::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-globe-alt';
+    protected static ?string $navigationGroup = 'Nội dung';
 
+    protected static ?string $navigationLabel = 'Trang';
     public static function form(Form $form): Form
     {
         return $form

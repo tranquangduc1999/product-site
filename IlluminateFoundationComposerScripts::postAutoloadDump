@@ -1,0 +1,1332 @@
+> @php artisan package:discover --ansi
+
+   INFO  Discovering packages.  
+
+  laravel/pail .......................................................... DONE
+  laravel/sail .......................................................... DONE
+  laravel/tinker ........................................................ DONE
+  nesbot/carbon ......................................................... DONE
+  nunomaduro/collision .................................................. DONE
+  nunomaduro/termwind ................................................... DONE
+
+80 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+> @php artisan vendor:publish --tag=laravel-assets --ansi --force
+
+   INFO  No publishable resources for tag [laravel-assets].  
+
+No security vulnerability advisories found.
+> @php artisan key:generate --ansi
+
+   INFO  Application key set successfully.  
+
+> @php -r "file_exists('database/database.sqlite') || touch('database/database.sqlite');"
+> @php artisan migrate --graceful --ansi
+
+   INFO  Preparing database.  
+
+  Creating migration table ....................................... 1.51ms DONE
+
+   INFO  Running migrations.  
+
+  0001_01_01_000000_create_users_table ........................... 2.47ms DONE
+  0001_01_01_000001_create_cache_table ........................... 0.75ms DONE
+  0001_01_01_000002_create_jobs_table ............................ 1.90ms DONE
+
+tranquangduc@Duc-M3-Pro MyProject % ls
+app					product-website-template-spec-v1.0.md
+app.zip					twiterxshop-main.zip
+filament				wood-cms
+product-site
+tranquangduc@Duc-M3-Pro MyProject % cd product-site 
+tranquangduc@Duc-M3-Pro product-site % php artisan make:model ProductCategory -m
+
+   INFO  Model [app/Models/ProductCategory.php] created successfully.  
+
+   INFO  Migration [database/migrations/2026_02_26_035203_create_product_categories_table.php] created successfully.  
+
+tranquangduc@Duc-M3-Pro product-site % php artisan make:model Product -m
+
+   INFO  Model [app/Models/Product.php] created successfully.  
+
+   INFO  Migration [database/migrations/2026_02_26_035209_create_products_table.php] created successfully.  
+
+tranquangduc@Duc-M3-Pro product-site % php artisan make:model PostCategory -m
+
+   INFO  Model [app/Models/PostCategory.php] created successfully.  
+
+   INFO  Migration [database/migrations/2026_02_26_035215_create_post_categories_table.php] created successfully.  
+
+tranquangduc@Duc-M3-Pro product-site % php artisan make:model Post -m
+
+   INFO  Model [app/Models/Post.php] created successfully.  
+
+   INFO  Migration [database/migrations/2026_02_26_035222_create_posts_table.php] created successfully.  
+
+tranquangduc@Duc-M3-Pro product-site % php artisan make:model Page -m
+
+   INFO  Model [app/Models/Page.php] created successfully.  
+
+   INFO  Migration [database/migrations/2026_02_26_035228_create_pages_table.php] created successfully.  
+
+tranquangduc@Duc-M3-Pro product-site % php artisan make:model Setting -m
+
+   INFO  Model [app/Models/Setting.php] created successfully.  
+
+   INFO  Migration [database/migrations/2026_02_26_035234_create_settings_table.php] created successfully.  
+
+tranquangduc@Duc-M3-Pro product-site % php artisan migrate
+
+   INFO  Running migrations.  
+
+  2026_02_26_035203_create_product_categories_table ................................................. 2.22ms DONE
+  2026_02_26_035209_create_products_table ........................................................... 5.12ms DONE
+  2026_02_26_035215_create_post_categories_table .................................................... 0.74ms DONE
+  2026_02_26_035222_create_posts_table .............................................................. 1.12ms DONE
+  2026_02_26_035228_create_pages_table .............................................................. 0.82ms DONE
+  2026_02_26_035234_create_settings_table ........................................................... 0.69ms DONE
+
+tranquangduc@Duc-M3-Pro product-site % php artisan tinker
+Psy Shell v0.12.20 (PHP 8.4.8 — cli) by Justin Hileman
+New PHP manual is available (latest: 3.0.3). Update with `doc --update-manual`
+> App\Models\ProductCategory::create(['name' => 'Test Category']);
+= App\Models\ProductCategory {#5323
+    name: "Test Category",
+    slug: "test-category",
+    updated_at: "2026-02-26 03:58:02",
+    created_at: "2026-02-26 03:58:02",
+    id: 1,
+  }
+
+> %                                                                                                                tranquangduc@Duc-M3-Pro product-site % php artisan make:filament-resource ProductCategory
+
+   ERROR  Command "make:filament-resource" is not defined. Did you mean one of these?  
+
+  ⇂ make:cache-table  
+  ⇂ make:cast  
+  ⇂ make:channel  
+  ⇂ make:class  
+  ⇂ make:command  
+  ⇂ make:component  
+  ⇂ make:controller  
+  ⇂ make:enum  
+  ⇂ make:event  
+  ⇂ make:exception  
+  ⇂ make:factory  
+  ⇂ make:interface  
+  ⇂ make:job  
+  ⇂ make:job-middleware  
+  ⇂ make:listener  
+  ⇂ make:mail  
+  ⇂ make:middleware  
+  ⇂ make:migration  
+  ⇂ make:model  
+  ⇂ make:notification  
+  ⇂ make:notifications-table  
+  ⇂ make:observer  
+  ⇂ make:policy  
+  ⇂ make:provider  
+  ⇂ make:queue-batches-table  
+  ⇂ make:queue-failed-table  
+  ⇂ make:queue-table  
+  ⇂ make:request  
+  ⇂ make:resource  
+  ⇂ make:rule  
+  ⇂ make:scope  
+  ⇂ make:seeder  
+  ⇂ make:session-table  
+  ⇂ make:test  
+  ⇂ make:trait  
+  ⇂ make:view  
+
+tranquangduc@Duc-M3-Pro product-site % composer require filament/filament:"^3.0"
+./composer.json has been updated
+Running composer update filament/filament
+Loading composer repositories with package information
+Updating dependencies
+Lock file operations: 26 installs, 0 updates, 0 removals
+  - Locking anourvalar/eloquent-serialize (1.3.5)
+  - Locking blade-ui-kit/blade-heroicons (2.6.0)
+  - Locking blade-ui-kit/blade-icons (1.9.0)
+  - Locking danharrin/date-format-converter (v0.3.1)
+  - Locking danharrin/livewire-rate-limiting (v2.1.0)
+  - Locking doctrine/dbal (4.4.1)
+  - Locking doctrine/deprecations (1.1.6)
+  - Locking filament/actions (v3.3.49)
+  - Locking filament/filament (v3.3.49)
+  - Locking filament/forms (v3.3.49)
+  - Locking filament/infolists (v3.3.49)
+  - Locking filament/notifications (v3.3.49)
+  - Locking filament/support (v3.3.49)
+  - Locking filament/tables (v3.3.49)
+  - Locking filament/widgets (v3.3.49)
+  - Locking kirschbaum-development/eloquent-power-joins (4.2.11)
+  - Locking league/csv (9.28.0)
+  - Locking livewire/livewire (v3.7.11)
+  - Locking masterminds/html5 (2.10.0)
+  - Locking openspout/openspout (v4.32.0)
+  - Locking psr/cache (3.0.0)
+  - Locking ryangjchandler/blade-capture-directive (v1.1.0)
+  - Locking spatie/color (1.8.0)
+  - Locking spatie/invade (2.1.0)
+  - Locking spatie/laravel-package-tools (1.93.0)
+  - Locking symfony/html-sanitizer (v7.4.0)
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Package operations: 26 installs, 0 updates, 0 removals
+  - Downloading blade-ui-kit/blade-icons (1.9.0)
+  - Downloading psr/cache (3.0.0)
+  - Downloading doctrine/deprecations (1.1.6)
+  - Downloading spatie/laravel-package-tools (1.93.0)
+  - Downloading livewire/livewire (v3.7.11)
+  - Downloading filament/support (v3.3.49)
+  - Downloading filament/widgets (v3.3.49)
+  - Downloading filament/actions (v3.3.49)
+  - Downloading filament/infolists (v3.3.49)
+  - Downloading filament/forms (v3.3.49)
+  - Downloading filament/tables (v3.3.49)
+  - Downloading filament/filament (v3.3.49)
+  - Installing anourvalar/eloquent-serialize (1.3.5): Extracting archive
+  - Installing blade-ui-kit/blade-icons (1.9.0): Extracting archive
+  - Installing blade-ui-kit/blade-heroicons (2.6.0): Extracting archive
+  - Installing danharrin/date-format-converter (v0.3.1): Extracting archive
+  - Installing psr/cache (3.0.0): Extracting archive
+  - Installing doctrine/deprecations (1.1.6): Extracting archive
+  - Installing doctrine/dbal (4.4.1): Extracting archive
+  - Installing spatie/laravel-package-tools (1.93.0): Extracting archive
+  - Installing masterminds/html5 (2.10.0): Extracting archive
+  - Installing symfony/html-sanitizer (v7.4.0): Extracting archive
+  - Installing spatie/invade (2.1.0): Extracting archive
+  - Installing spatie/color (1.8.0): Extracting archive
+  - Installing ryangjchandler/blade-capture-directive (v1.1.0): Extracting archive
+  - Installing livewire/livewire (v3.7.11): Extracting archive
+  - Installing kirschbaum-development/eloquent-power-joins (4.2.11): Extracting archive
+  - Installing filament/support (v3.3.49): Extracting archive
+  - Installing filament/widgets (v3.3.49): Extracting archive
+  - Installing openspout/openspout (v4.32.0): Extracting archive
+  - Installing league/csv (9.28.0): Extracting archive
+  - Installing filament/actions (v3.3.49): Extracting archive
+  - Installing filament/notifications (v3.3.49): Extracting archive
+  - Installing filament/infolists (v3.3.49): Extracting archive
+  - Installing filament/forms (v3.3.49): Extracting archive
+  - Installing filament/tables (v3.3.49): Extracting archive
+  - Installing danharrin/livewire-rate-limiting (v2.1.0): Extracting archive
+  - Installing filament/filament (v3.3.49): Extracting archive
+Generating optimized autoload files
+> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover --ansi
+
+   INFO  Discovering packages.  
+
+  anourvalar/eloquent-serialize ............................................................................ DONE
+  blade-ui-kit/blade-heroicons ............................................................................. DONE
+  blade-ui-kit/blade-icons ................................................................................. DONE
+  filament/actions ......................................................................................... DONE
+  filament/filament ........................................................................................ DONE
+  filament/forms ........................................................................................... DONE
+  filament/infolists ....................................................................................... DONE
+  filament/notifications ................................................................................... DONE
+  filament/support ......................................................................................... DONE
+  filament/tables .......................................................................................... DONE
+  filament/widgets ......................................................................................... DONE
+  kirschbaum-development/eloquent-power-joins .............................................................. DONE
+  laravel/pail ............................................................................................. DONE
+  laravel/sail ............................................................................................. DONE
+  laravel/tinker ........................................................................................... DONE
+  livewire/livewire ........................................................................................ DONE
+  nesbot/carbon ............................................................................................ DONE
+  nunomaduro/collision ..................................................................................... DONE
+  nunomaduro/termwind ...................................................................................... DONE
+  ryangjchandler/blade-capture-directive ................................................................... DONE
+
+93 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+> @php artisan vendor:publish --tag=laravel-assets --ansi --force
+
+   INFO  No publishable resources for tag [laravel-assets].  
+
+No security vulnerability advisories found.
+tranquangduc@Duc-M3-Pro product-site % php artisan make:filament-resource ProductCategory
+
+   Error 
+
+  Call to a member function getResourceDirectories() on null
+
+  at vendor/filament/filament/src/Commands/MakeResourceCommand.php:105
+    101▕                 default: Filament::getDefaultPanel()->getId()
+    102▕             )] : Arr::first($panels);
+    103▕         }
+    104▕ 
+  ➜ 105▕         $resourceDirectories = $panel->getResourceDirectories();
+    106▕         $resourceNamespaces = $panel->getResourceNamespaces();
+    107▕ 
+    108▕         foreach ($resourceDirectories as $resourceIndex => $resourceDirectory) {
+    109▕             if (str($resourceDirectory)->startsWith(base_path('vendor'))) {
+
+      +13 vendor frames 
+
+  14  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+tranquangduc@Duc-M3-Pro product-site % php artisan filament:install
+  ⇂ public/js/filament/forms/components/color-picker.js  
+  ⇂ public/js/filament/forms/components/date-time-picker.js  
+  ⇂ public/js/filament/forms/components/file-upload.js  
+  ⇂ public/js/filament/forms/components/key-value.js  
+  ⇂ public/js/filament/forms/components/markdown-editor.js  
+  ⇂ public/js/filament/forms/components/rich-editor.js  
+  ⇂ public/js/filament/forms/components/select.js  
+  ⇂ public/js/filament/forms/components/tags-input.js  
+  ⇂ public/js/filament/forms/components/textarea.js  
+  ⇂ public/js/filament/tables/components/table.js  
+  ⇂ public/js/filament/widgets/components/chart.js  
+  ⇂ public/js/filament/widgets/components/stats-overview/stat/chart.js  
+  ⇂ public/js/filament/filament/app.js  
+  ⇂ public/js/filament/filament/echo.js  
+  ⇂ public/js/filament/notifications/notifications.js  
+  ⇂ public/js/filament/support/support.js  
+  ⇂ public/css/filament/forms/forms.css  
+  ⇂ public/css/filament/support/support.css  
+  ⇂ public/css/filament/filament/app.css  
+
+   INFO  Successfully published assets!  
+
+   INFO  Configuration cache cleared successfully.  
+
+   INFO  Route cache cleared successfully.  
+
+   INFO  Compiled views cleared successfully.  
+
+   INFO  Successfully upgraded!  
+
+ ┌ All done! Would you like to show some love by starring the Filament repo on GitHub? ┐
+ │ No                                                                                  │
+ └─────────────────────────────────────────────────────────────────────────────────────┘
+
+tranquangduc@Duc-M3-Pro product-site % php artisan make:filament-user
+Filament has not been installed yet: php artisan filament:install --panels
+tranquangduc@Duc-M3-Pro product-site % php artisan filament:install --panels
+
+ ┌ What is the ID? ─────────────────────────────────────────────┐
+ │ admin                                                        │
+ └──────────────────────────────────────────────────────────────┘
+
+   INFO  Filament panel [app/Providers/Filament/AdminPanelProvider.php] created successfully.  
+
+   WARN  We've attempted to register the AdminPanelProvider in your [bootstrap/providers.php] file. If you get an error while trying to access your panel then this process has probably failed. You can manually register the service provider by adding it to the array.  
+
+  ⇂ public/js/filament/forms/components/color-picker.js  
+  ⇂ public/js/filament/forms/components/date-time-picker.js  
+  ⇂ public/js/filament/forms/components/file-upload.js  
+  ⇂ public/js/filament/forms/components/key-value.js  
+  ⇂ public/js/filament/forms/components/markdown-editor.js  
+  ⇂ public/js/filament/forms/components/rich-editor.js  
+  ⇂ public/js/filament/forms/components/select.js  
+  ⇂ public/js/filament/forms/components/tags-input.js  
+  ⇂ public/js/filament/forms/components/textarea.js  
+  ⇂ public/js/filament/tables/components/table.js  
+  ⇂ public/js/filament/widgets/components/chart.js  
+  ⇂ public/js/filament/widgets/components/stats-overview/stat/chart.js  
+  ⇂ public/js/filament/filament/app.js  
+  ⇂ public/js/filament/filament/echo.js  
+  ⇂ public/js/filament/notifications/notifications.js  
+  ⇂ public/js/filament/support/support.js  
+  ⇂ public/css/filament/forms/forms.css  
+  ⇂ public/css/filament/support/support.css  
+  ⇂ public/css/filament/filament/app.css  
+
+   INFO  Successfully published assets!  
+
+   INFO  Configuration cache cleared successfully.  
+
+   INFO  Route cache cleared successfully.  
+
+   INFO  Compiled views cleared successfully.  
+
+   INFO  Successfully upgraded!  
+
+ ┌ All done! Would you like to show some love by starring the Filament repo on GitHub? ┐
+ │ No                                                                                  │
+ └─────────────────────────────────────────────────────────────────────────────────────┘
+
+tranquangduc@Duc-M3-Pro product-site % php artisan make:filament-user
+
+ ┌ Name ────────────────────────────────────────────────────────┐
+ │ admin                                                        │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ Email address ───────────────────────────────────────────────┐
+ │ admin@gmail.com                                              │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ Password ────────────────────────────────────────────────────┐
+ │ •••••                                                        │
+ └──────────────────────────────────────────────────────────────┘
+
+   INFO  Success! admin@gmail.com may now log in at http://localhost/admin/login.  
+
+tranquangduc@Duc-M3-Pro product-site % php artisan make:filament-resource ProductCategory
+
+   INFO  Filament resource [app/Filament/Resources/ProductCategoryResource.php] created successfully.  
+
+tranquangduc@Duc-M3-Pro product-site % php artisan make:filament-resource Product
+
+   INFO  Filament resource [app/Filament/Resources/ProductResource.php] created successfully.  
+
+tranquangduc@Duc-M3-Pro product-site % php artisan make:filament-resource PostCategory
+
+   INFO  Filament resource [app/Filament/Resources/PostCategoryResource.php] created successfully.  
+
+tranquangduc@Duc-M3-Pro product-site % php artisan make:filament-resource Post
+
+   INFO  Filament resource [app/Filament/Resources/PostResource.php] created successfully.  
+
+tranquangduc@Duc-M3-Pro product-site % php artisan make:filament-resource Page
+
+   INFO  Filament resource [app/Filament/Resources/PageResource.php] created successfully.  
+
+tranquangduc@Duc-M3-Pro product-site % php artisan make:filament-resource Setting
+
+   INFO  Filament resource [app/Filament/Resources/SettingResource.php] created successfully.  
+
+tranquangduc@Duc-M3-Pro product-site % php artisan serve
+
+   INFO  Server running on [http://127.0.0.1:8000].  
+
+  Press Ctrl+C to stop the server
+
+  2026-02-26 11:13:10 / ............................................................................. ~ 500.77ms
+  2026-02-26 11:13:10 /favicon.ico ........................................................................ ~ 1s
+  2026-02-26 11:13:13 /admin/certificate/4/edit ....................................................... ~ 0.49ms
+  2026-02-26 11:13:13 /favicon.ico .................................................................... ~ 8.06ms
+  2026-02-26 11:13:18 /admin .......................................................................... ~ 0.09ms
+  2026-02-26 11:13:18 /admin/login .................................................................. ~ 505.69ms
+  2026-02-26 11:13:18 /css/filament/forms/forms.css?v=3.3.49.0 ........................................ ~ 0.17ms
+  2026-02-26 11:13:18 /css/filament/support/support.css?v=3.3.49.0 .................................... ~ 4.80ms
+  2026-02-26 11:13:18 /css/filament/filament/app.css?v=3.3.49.0 ....................................... ~ 8.58ms
+  2026-02-26 11:13:18 /js/filament/notifications/notifications.js?v=3.3.49.0 ......................... ~ 11.79ms
+  2026-02-26 11:13:18 /livewire/livewire.js ........................................................... ~ 2.03ms
+  2026-02-26 11:13:18 /js/filament/support/support.js?v=3.3.49.0 ..................................... ~ 14.20ms
+  2026-02-26 11:13:18 /js/filament/filament/echo.js?v=3.3.49.0 ....................................... ~ 16.65ms
+  2026-02-26 11:13:18 /js/filament/filament/app.js?v=3.3.49.0 ........................................ ~ 14.19ms
+  2026-02-26 11:13:21 /favicon.ico .................................................................... ~ 0.54ms
+  2026-02-26 11:13:28 /livewire/update .............................................................. ~ 505.05ms
+  2026-02-26 11:13:28 /admin .......................................................................... ~ 0.14ms
+  2026-02-26 11:13:28 /css/filament/forms/forms.css?v=3.3.49.0 ........................................ ~ 6.38ms
+  2026-02-26 11:13:28 /css/filament/support/support.css?v=3.3.49.0 .................................... ~ 3.45ms
+  2026-02-26 11:13:28 /css/filament/filament/app.css?v=3.3.49.0 ....................................... ~ 5.93ms
+  2026-02-26 11:13:28 /js/filament/notifications/notifications.js?v=3.3.49.0 .......................... ~ 8.65ms
+  2026-02-26 11:13:28 /js/filament/support/support.js?v=3.3.49.0 ...................................... ~ 0.13ms
+  2026-02-26 11:13:28 /js/filament/filament/echo.js?v=3.3.49.0 ........................................ ~ 2.41ms
+  2026-02-26 11:13:28 /js/filament/filament/app.js?v=3.3.49.0 ......................................... ~ 4.79ms
+  2026-02-26 11:13:29 /favicon.ico .................................................................... ~ 0.61ms
+  2026-02-26 11:13:32 /admin/post-categories ........................................................ ~ 505.49ms
+  2026-02-26 11:13:32 /css/filament/forms/forms.css?v=3.3.49.0 ........................................ ~ 0.14ms
+  2026-02-26 11:13:32 /css/filament/support/support.css?v=3.3.49.0 .................................... ~ 3.31ms
+  2026-02-26 11:13:32 /css/filament/filament/app.css?v=3.3.49.0 ....................................... ~ 0.13ms
+  2026-02-26 11:13:32 /js/filament/notifications/notifications.js?v=3.3.49.0 .......................... ~ 3.70ms
+  2026-02-26 11:13:32 /js/filament/support/support.js?v=3.3.49.0 ...................................... ~ 5.65ms
+  2026-02-26 11:13:32 /js/filament/filament/echo.js?v=3.3.49.0 ........................................ ~ 0.12ms
+  2026-02-26 11:13:32 /js/filament/filament/app.js?v=3.3.49.0 ......................................... ~ 3.44ms
+  2026-02-26 11:13:32 /js/filament/tables/components/table.js?v=3.3.49.0 .............................. ~ 0.11ms
+  2026-02-26 11:13:32 /favicon.ico .................................................................... ~ 0.11ms
+  2026-02-26 11:13:34 /admin/posts .................................................................... ~ 0.16ms
+  2026-02-26 11:13:34 /css/filament/forms/forms.css?v=3.3.49.0 ........................................ ~ 0.13ms
+  2026-02-26 11:13:34 /css/filament/support/support.css?v=3.3.49.0 .................................... ~ 1.89ms
+  2026-02-26 11:13:34 /css/filament/filament/app.css?v=3.3.49.0 ....................................... ~ 4.06ms
+  2026-02-26 11:13:34 /js/filament/notifications/notifications.js?v=3.3.49.0 .......................... ~ 5.99ms
+  2026-02-26 11:13:34 /js/filament/support/support.js?v=3.3.49.0 ...................................... ~ 5.15ms
+  2026-02-26 11:13:34 /js/filament/filament/echo.js?v=3.3.49.0 ........................................ ~ 0.09ms
+  2026-02-26 11:13:34 /js/filament/filament/app.js?v=3.3.49.0 ......................................... ~ 1.86ms
+  2026-02-26 11:13:34 /js/filament/tables/components/table.js?v=3.3.49.0 .............................. ~ 0.05ms
+  2026-02-26 11:13:34 /favicon.ico .................................................................... ~ 0.05ms
+  2026-02-26 11:13:34 /admin/product-categories ....................................................... ~ 0.10ms
+  2026-02-26 11:13:35 /css/filament/forms/forms.css?v=3.3.49.0 ........................................ ~ 0.32ms
+  2026-02-26 11:13:35 /css/filament/support/support.css?v=3.3.49.0 .................................... ~ 2.38ms
+  2026-02-26 11:13:35 /css/filament/filament/app.css?v=3.3.49.0 ....................................... ~ 3.67ms
+  2026-02-26 11:13:35 /js/filament/notifications/notifications.js?v=3.3.49.0 .......................... ~ 4.97ms
+  2026-02-26 11:13:35 /js/filament/support/support.js?v=3.3.49.0 ...................................... ~ 3.73ms
+  2026-02-26 11:13:35 /js/filament/filament/echo.js?v=3.3.49.0 ........................................ ~ 0.07ms
+  2026-02-26 11:13:35 /js/filament/filament/app.js?v=3.3.49.0 ......................................... ~ 1.41ms
+  2026-02-26 11:13:35 /js/filament/tables/components/table.js?v=3.3.49.0 .............................. ~ 0.36ms
+  2026-02-26 11:13:35 /favicon.ico .................................................................... ~ 0.25ms
+  2026-02-26 11:13:35 /admin/settings ..................................................................... ~ 1s
+  2026-02-26 11:13:36 /css/filament/forms/forms.css?v=3.3.49.0 ........................................ ~ 0.14ms
+  2026-02-26 11:13:36 /css/filament/support/support.css?v=3.3.49.0 .................................... ~ 2.75ms
+  2026-02-26 11:13:36 /css/filament/filament/app.css?v=3.3.49.0 ....................................... ~ 4.87ms
+  2026-02-26 11:13:36 /js/filament/notifications/notifications.js?v=3.3.49.0 .......................... ~ 7.37ms
+  2026-02-26 11:13:36 /js/filament/support/support.js?v=3.3.49.0 ...................................... ~ 6.26ms
+  2026-02-26 11:13:36 /js/filament/filament/echo.js?v=3.3.49.0 ........................................ ~ 0.10ms
+  2026-02-26 11:13:36 /js/filament/filament/app.js?v=3.3.49.0 ......................................... ~ 2.48ms
+  2026-02-26 11:13:36 /js/filament/tables/components/table.js?v=3.3.49.0 .............................. ~ 0.10ms
+  2026-02-26 11:13:36 /favicon.ico .................................................................... ~ 1.60ms
+  2026-02-26 11:13:36 /admin/products ............................................................... ~ 504.04ms
+  2026-02-26 11:13:36 /css/filament/forms/forms.css?v=3.3.49.0 ........................................ ~ 0.05ms
+  2026-02-26 11:13:36 /css/filament/support/support.css?v=3.3.49.0 .................................... ~ 0.08ms
+  2026-02-26 11:13:36 /css/filament/filament/app.css?v=3.3.49.0 ....................................... ~ 1.34ms
+  2026-02-26 11:13:36 /js/filament/notifications/notifications.js?v=3.3.49.0 .......................... ~ 2.70ms
+  2026-02-26 11:13:36 /js/filament/support/support.js?v=3.3.49.0 ...................................... ~ 3.58ms
+  2026-02-26 11:13:36 /js/filament/filament/echo.js?v=3.3.49.0 ........................................ ~ 0.06ms
+  2026-02-26 11:13:36 /js/filament/filament/app.js?v=3.3.49.0 ......................................... ~ 1.41ms
+  2026-02-26 11:13:36 /js/filament/tables/components/table.js?v=3.3.49.0 .............................. ~ 0.06ms
+  2026-02-26 11:13:36 /favicon.ico .................................................................... ~ 0.99ms
+  2026-02-26 11:13:37 /admin/product-categories ..................................................... ~ 504.27ms
+  2026-02-26 11:13:37 /css/filament/forms/forms.css?v=3.3.49.0 ........................................ ~ 0.05ms
+  2026-02-26 11:13:37 /css/filament/support/support.css?v=3.3.49.0 .................................... ~ 0.06ms
+  2026-02-26 11:13:37 /css/filament/filament/app.css?v=3.3.49.0 ....................................... ~ 1.58ms
+  2026-02-26 11:13:37 /js/filament/notifications/notifications.js?v=3.3.49.0 .......................... ~ 3.10ms
+  2026-02-26 11:13:37 /js/filament/support/support.js?v=3.3.49.0 ...................................... ~ 4.03ms
+  2026-02-26 11:13:37 /js/filament/filament/echo.js?v=3.3.49.0 ........................................ ~ 0.08ms
+  2026-02-26 11:13:37 /js/filament/filament/app.js?v=3.3.49.0 ......................................... ~ 1.38ms
+  2026-02-26 11:13:37 /js/filament/tables/components/table.js?v=3.3.49.0 .............................. ~ 0.06ms
+  2026-02-26 11:13:37 /favicon.ico .................................................................... ~ 0.05ms
+  2026-02-26 11:13:37 /admin/posts .................................................................... ~ 0.06ms
+  2026-02-26 11:13:37 /css/filament/forms/forms.css?v=3.3.49.0 ........................................ ~ 3.15ms
+  2026-02-26 11:13:37 /css/filament/support/support.css?v=3.3.49.0 .................................... ~ 1.35ms
+  2026-02-26 11:13:37 /css/filament/filament/app.css?v=3.3.49.0 ....................................... ~ 1.32ms
+  2026-02-26 11:13:37 /js/filament/notifications/notifications.js?v=3.3.49.0 .......................... ~ 2.56ms
+  2026-02-26 11:13:37 /js/filament/support/support.js?v=3.3.49.0 ...................................... ~ 3.31ms
+  2026-02-26 11:13:37 /js/filament/filament/echo.js?v=3.3.49.0 ........................................ ~ 0.05ms
+  2026-02-26 11:13:37 /js/filament/filament/app.js?v=3.3.49.0 ......................................... ~ 1.95ms
+  2026-02-26 11:13:37 /js/filament/tables/components/table.js?v=3.3.49.0 .............................. ~ 0.05ms
+  2026-02-26 11:13:37 /favicon.ico .................................................................... ~ 0.04ms
+  2026-02-26 11:13:37 /admin/post-categories .......................................................... ~ 0.49ms
+  2026-02-26 11:13:38 /css/filament/forms/forms.css?v=3.3.49.0 ........................................ ~ 0.22ms
+  2026-02-26 11:13:38 /css/filament/support/support.css?v=3.3.49.0 .................................... ~ 4.14ms
+  2026-02-26 11:13:38 /css/filament/filament/app.css?v=3.3.49.0 ....................................... ~ 0.11ms
+  2026-02-26 11:13:38 /js/filament/notifications/notifications.js?v=3.3.49.0 .......................... ~ 0.14ms
+  2026-02-26 11:13:38 /js/filament/support/support.js?v=3.3.49.0 ...................................... ~ 1.90ms
+  2026-02-26 11:13:38 /js/filament/filament/echo.js?v=3.3.49.0 ........................................ ~ 0.12ms
+  2026-02-26 11:13:38 /js/filament/filament/app.js?v=3.3.49.0 ......................................... ~ 2.35ms
+  2026-02-26 11:13:38 /js/filament/tables/components/table.js?v=3.3.49.0 .............................. ~ 0.06ms
+  2026-02-26 11:13:38 /favicon.ico .................................................................... ~ 0.05ms
+  2026-02-26 11:13:38 /admin/pages .................................................................... ~ 0.30ms
+  2026-02-26 11:13:38 /css/filament/forms/forms.css?v=3.3.49.0 ........................................ ~ 0.29ms
+  2026-02-26 11:13:38 /css/filament/support/support.css?v=3.3.49.0 .................................... ~ 4.38ms
+  2026-02-26 11:13:38 /css/filament/filament/app.css?v=3.3.49.0 ....................................... ~ 7.32ms
+  2026-02-26 11:13:38 /js/filament/notifications/notifications.js?v=3.3.49.0 ......................... ~ 10.45ms
+  2026-02-26 11:13:38 /js/filament/support/support.js?v=3.3.49.0 ...................................... ~ 7.96ms
+  2026-02-26 11:13:38 /js/filament/filament/echo.js?v=3.3.49.0 ........................................ ~ 0.12ms
+  2026-02-26 11:13:38 /js/filament/filament/app.js?v=3.3.49.0 ......................................... ~ 3.33ms
+  2026-02-26 11:13:38 /js/filament/tables/components/table.js?v=3.3.49.0 .............................. ~ 0.13ms
+  2026-02-26 11:13:38 /favicon.ico .................................................................... ~ 2.35ms
+  2026-02-26 11:13:39 /admin .......................................................................... ~ 0.12ms
+  2026-02-26 11:13:39 /css/filament/forms/forms.css?v=3.3.49.0 ........................................ ~ 3.87ms
+  2026-02-26 11:13:39 /css/filament/support/support.css?v=3.3.49.0 .................................... ~ 1.62ms
+  2026-02-26 11:13:39 /css/filament/filament/app.css?v=3.3.49.0 ....................................... ~ 3.00ms
+  2026-02-26 11:13:39 /js/filament/notifications/notifications.js?v=3.3.49.0 .......................... ~ 4.55ms
+  2026-02-26 11:13:39 /js/filament/support/support.js?v=3.3.49.0 ...................................... ~ 3.99ms
+  2026-02-26 11:13:39 /js/filament/filament/echo.js?v=3.3.49.0 ........................................ ~ 0.08ms
+  2026-02-26 11:13:39 /js/filament/filament/app.js?v=3.3.49.0 ......................................... ~ 1.76ms
+  2026-02-26 11:13:39 /favicon.ico .................................................................... ~ 0.05ms
+^C%                                                                                                                tranquangduc@Duc-M3-Pro product-site % php artisan make:controller Frontend/HomeController
+php artisan make:controller Frontend/ProductController
+php artisan make:controller Frontend/PostController
+php artisan make:controller Frontend/PageController
+
+   INFO  Controller [app/Http/Controllers/Frontend/HomeController.php] created successfully.  
+
+
+   INFO  Controller [app/Http/Controllers/Frontend/ProductController.php] created successfully.  
+
+
+   INFO  Controller [app/Http/Controllers/Frontend/PostController.php] created successfully.  
+
+
+   INFO  Controller [app/Http/Controllers/Frontend/PageController.php] created successfully.  
+
+tranquangduc@Duc-M3-Pro product-site % php artisan serve
+
+   INFO  Server running on [http://127.0.0.1:8000].  
+
+  Press Ctrl+C to stop the server
+
+  2026-02-26 11:22:30 /admin ........................................................................ ~ 506.03ms
+  2026-02-26 11:22:30 /css/filament/forms/forms.css?v=3.3.49.0 ...................................... ~ 521.04ms
+  2026-02-26 11:22:30 /css/filament/support/support.css?v=3.3.49.0 .................................... ~ 3.98ms
+  2026-02-26 11:22:30 /css/filament/filament/app.css?v=3.3.49.0 ....................................... ~ 6.95ms
+  2026-02-26 11:22:30 /js/filament/notifications/notifications.js?v=3.3.49.0 .......................... ~ 9.92ms
+  2026-02-26 11:22:30 /js/filament/support/support.js?v=3.3.49.0 ...................................... ~ 0.10ms
+  2026-02-26 11:22:30 /js/filament/filament/echo.js?v=3.3.49.0 ........................................ ~ 0.09ms
+  2026-02-26 11:22:30 /js/filament/filament/app.js?v=3.3.49.0 ......................................... ~ 0.08ms
+  2026-02-26 11:22:30 /favicon.ico .................................................................... ~ 0.11ms
+  2026-02-26 11:22:32 /admin/pages .................................................................... ~ 0.09ms
+  2026-02-26 11:22:32 /css/filament/forms/forms.css?v=3.3.49.0 ........................................ ~ 0.07ms
+  2026-02-26 11:22:32 /css/filament/support/support.css?v=3.3.49.0 .................................... ~ 1.76ms
+  2026-02-26 11:22:32 /css/filament/filament/app.css?v=3.3.49.0 ....................................... ~ 3.13ms
+  2026-02-26 11:22:32 /js/filament/notifications/notifications.js?v=3.3.49.0 .......................... ~ 4.86ms
+  2026-02-26 11:22:32 /js/filament/support/support.js?v=3.3.49.0 ...................................... ~ 4.10ms
+  2026-02-26 11:22:32 /js/filament/filament/echo.js?v=3.3.49.0 ........................................ ~ 0.06ms
+  2026-02-26 11:22:32 /js/filament/filament/app.js?v=3.3.49.0 ......................................... ~ 1.65ms
+  2026-02-26 11:22:32 /js/filament/tables/components/table.js?v=3.3.49.0 .............................. ~ 0.08ms
+  2026-02-26 11:22:32 /favicon.ico .................................................................... ~ 1.58ms
+  2026-02-26 11:22:32 /admin/post-categories ........................................................ ~ 505.94ms
+  2026-02-26 11:22:33 /css/filament/forms/forms.css?v=3.3.49.0 ........................................ ~ 0.39ms
+  2026-02-26 11:22:33 /css/filament/support/support.css?v=3.3.49.0 .................................... ~ 5.60ms
+  2026-02-26 11:22:33 /css/filament/filament/app.css?v=3.3.49.0 ....................................... ~ 8.44ms
+  2026-02-26 11:22:33 /js/filament/notifications/notifications.js?v=3.3.49.0 ......................... ~ 11.29ms
+  2026-02-26 11:22:33 /js/filament/support/support.js?v=3.3.49.0 ...................................... ~ 7.81ms
+  2026-02-26 11:22:33 /js/filament/filament/echo.js?v=3.3.49.0 ........................................ ~ 0.21ms
+  2026-02-26 11:22:33 /js/filament/filament/app.js?v=3.3.49.0 ......................................... ~ 2.70ms
+  2026-02-26 11:22:33 /js/filament/tables/components/table.js?v=3.3.49.0 .............................. ~ 0.05ms
+  2026-02-26 11:22:33 /favicon.ico .................................................................... ~ 0.04ms
+  2026-02-26 11:22:36 / ............................................................................... ~ 0.95ms
+  2026-02-26 11:22:36 /favicon.ico ................................................................... ~ 18.53ms
+  2026-02-26 11:22:42 /products ....................................................................... ~ 0.14ms
+  2026-02-26 11:22:42 /favicon.ico .................................................................... ~ 4.32ms
+  2026-02-26 11:22:48 /admin/post-categories .......................................................... ~ 0.57ms
+  2026-02-26 11:22:48 /favicon.ico ................................................................... ~ 14.98ms
+^C%                                                                                                                tranquangduc@Duc-M3-Pro product-site % php artisan optimize
+php artisan route:cache
+php artisan config:cache
+php artisan view:cache
+
+   INFO  Caching framework bootstrap, configuration, and metadata.  
+
+  config ........................................................................................... 35.56ms DONE
+  events ............................................................................................ 0.82ms DONE
+  routes ........................................................................................... 35.62ms DONE
+  views ........................................................................................... 674.48ms DONE
+  blade-icons ...................................................................................... 22.08ms DONE
+  filament ......................................................................................... 22.17ms DONE
+
+
+   INFO  Routes cached successfully.  
+
+
+   INFO  Configuration cached successfully.  
+
+
+
+   INFO  Blade templates cached successfully.  
+
+tranquangduc@Duc-M3-Pro product-site % php artisan make:seeder ProductCategorySeeder
+php artisan make:seeder ProductSeeder
+php artisan make:seeder PostCategorySeeder
+php artisan make:seeder PostSeeder
+php artisan make:seeder PageSeeder
+php artisan make:seeder SettingSeeder
+
+   INFO  Seeder [database/seeders/ProductCategorySeeder.php] created successfully.  
+
+
+   INFO  Seeder [database/seeders/ProductSeeder.php] created successfully.  
+
+
+   INFO  Seeder [database/seeders/PostCategorySeeder.php] created successfully.  
+
+
+   INFO  Seeder [database/seeders/PostSeeder.php] created successfully.  
+
+
+   INFO  Seeder [database/seeders/PageSeeder.php] created successfully.  
+
+
+   INFO  Seeder [database/seeders/SettingSeeder.php] created successfully.  
+
+tranquangduc@Duc-M3-Pro product-site % php artisan migrate:fresh --seed
+
+  Dropping all tables ............................................................................... 4.83ms DONE
+
+   INFO  Preparing database.  
+
+  Creating migration table .......................................................................... 1.77ms DONE
+
+   INFO  Running migrations.  
+
+  0001_01_01_000000_create_users_table .............................................................. 2.98ms DONE
+  0001_01_01_000001_create_cache_table .............................................................. 0.74ms DONE
+  0001_01_01_000002_create_jobs_table ............................................................... 2.54ms DONE
+  2026_02_26_035203_create_product_categories_table ................................................. 0.77ms DONE
+  2026_02_26_035209_create_products_table ........................................................... 5.02ms DONE
+  2026_02_26_035215_create_post_categories_table .................................................... 0.73ms DONE
+  2026_02_26_035222_create_posts_table .............................................................. 1.08ms DONE
+  2026_02_26_035228_create_pages_table .............................................................. 0.74ms DONE
+  2026_02_26_035234_create_settings_table ........................................................... 0.75ms DONE
+
+
+   INFO  Seeding database.  
+
+  Database\Seeders\ProductCategorySeeder ................................................................ RUNNING  
+  Database\Seeders\ProductCategorySeeder .............................................................. 1 ms DONE  
+
+  Database\Seeders\ProductSeeder ........................................................................ RUNNING  
+  Database\Seeders\ProductSeeder ...................................................................... 7 ms DONE  
+
+  Database\Seeders\PostCategorySeeder ................................................................... RUNNING  
+  Database\Seeders\PostCategorySeeder ................................................................. 1 ms DONE  
+
+  Database\Seeders\PostSeeder ........................................................................... RUNNING  
+  Database\Seeders\PostSeeder ......................................................................... 3 ms DONE  
+
+  Database\Seeders\PageSeeder ........................................................................... RUNNING  
+  Database\Seeders\PageSeeder ......................................................................... 1 ms DONE  
+
+  Database\Seeders\SettingSeeder ........................................................................ RUNNING  
+  Database\Seeders\SettingSeeder ...................................................................... 1 ms DONE  
+
+tranquangduc@Duc-M3-Pro product-site % php artisan db:seed
+
+   INFO  Seeding database.  
+
+
+   Illuminate\Database\UniqueConstraintViolationException 
+
+  SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: users.email (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "updated_at", "created_at") values (Test User, test@example.com, 2026-02-26 04:41:07, $2y$12$p/KxNBQz23lMbiJfoTMqPuphEYHWnMJuLbQ0oiiH/wmhhZZn9fSZe, nTNEkaTRZA, 2026-02-26 04:41:08, 2026-02-26 04:41:08))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:820
+    816▕         // message to include the bindings with SQL, which will make this exception a
+    817▕         // lot more helpful to the developer instead of just the database's errors.
+    818▕         catch (Exception $e) {
+    819▕             if ($this->isUniqueConstraintError($e)) {
+  ➜ 820▕                 throw new UniqueConstraintViolationException(
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+
+      +17 vendor frames 
+
+  18  database/seeders/DatabaseSeeder.php:18
+      Illuminate\Database\Eloquent\Factories\Factory::create(["Test User", "test@example.com"])
+      +23 vendor frames 
+
+  42  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+tranquangduc@Duc-M3-Pro product-site % php artisan db:seed
+
+   INFO  Seeding database.  
+
+  Database\Seeders\ProductCategorySeeder ................................................................ RUNNING  
+
+   Illuminate\Database\UniqueConstraintViolationException 
+
+  SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: product_categories.slug (Connection: sqlite, SQL: insert into "product_categories" ("name", "slug", "status") values (Electronics, electronics, 1), (Furniture, furniture, 1), (Accessories, accessories, 1))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:820
+    816▕         // message to include the bindings with SQL, which will make this exception a
+    817▕         // lot more helpful to the developer instead of just the database's errors.
+    818▕         catch (Exception $e) {
+    819▕             if ($this->isUniqueConstraintError($e)) {
+  ➜ 820▕                 throw new UniqueConstraintViolationException(
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+
+      +11 vendor frames 
+
+  12  database/seeders/ProductCategorySeeder.php:15
+      Illuminate\Database\Eloquent\Model::__callStatic("insert")
+      +8 vendor frames 
+
+  21  database/seeders/DatabaseSeeder.php:22
+      Illuminate\Database\Seeder::call("Database\Seeders\ProductCategorySeeder")
+
+tranquangduc@Duc-M3-Pro product-site % php artisan db:seed
+
+   INFO  Seeding database.  
+
+  Database\Seeders\ProductCategorySeeder ................................................................ RUNNING  
+
+   Illuminate\Database\UniqueConstraintViolationException 
+
+  SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: product_categories.slug (Connection: sqlite, SQL: insert into "product_categories" ("name", "slug", "status") values (Electronics, electronics, 1), (Furniture, furniture, 1), (Accessories, accessories, 1))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:820
+    816▕         // message to include the bindings with SQL, which will make this exception a
+    817▕         // lot more helpful to the developer instead of just the database's errors.
+    818▕         catch (Exception $e) {
+    819▕             if ($this->isUniqueConstraintError($e)) {
+  ➜ 820▕                 throw new UniqueConstraintViolationException(
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+
+      +11 vendor frames 
+
+  12  database/seeders/ProductCategorySeeder.php:15
+      Illuminate\Database\Eloquent\Model::__callStatic("insert")
+      +8 vendor frames 
+
+  21  database/seeders/DatabaseSeeder.php:22
+      Illuminate\Database\Seeder::call("Database\Seeders\ProductCategorySeeder")
+
+tranquangduc@Duc-M3-Pro product-site % php artisan db:seed
+
+   INFO  Seeding database.  
+
+  Database\Seeders\ProductCategorySeeder ................................................................ RUNNING  
+
+   Illuminate\Database\UniqueConstraintViolationException 
+
+  SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: product_categories.slug (Connection: sqlite, SQL: insert into "product_categories" ("name", "slug", "status") values (Electronics, electronics, 1), (Furniture, furniture, 1), (Accessories, accessories, 1))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:820
+    816▕         // message to include the bindings with SQL, which will make this exception a
+    817▕         // lot more helpful to the developer instead of just the database's errors.
+    818▕         catch (Exception $e) {
+    819▕             if ($this->isUniqueConstraintError($e)) {
+  ➜ 820▕                 throw new UniqueConstraintViolationException(
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+
+      +11 vendor frames 
+
+  12  database/seeders/ProductCategorySeeder.php:15
+      Illuminate\Database\Eloquent\Model::__callStatic("insert")
+      +8 vendor frames 
+
+  21  database/seeders/DatabaseSeeder.php:22
+      Illuminate\Database\Seeder::call("Database\Seeders\ProductCategorySeeder")
+
+tranquangduc@Duc-M3-Pro product-site % php artisan db:seed
+
+   INFO  Seeding database.  
+
+  Database\Seeders\ProductCategorySeeder ................................................................ RUNNING  
+  Database\Seeders\ProductCategorySeeder .............................................................. 4 ms DONE  
+
+  Database\Seeders\ProductSeeder ........................................................................ RUNNING  
+
+   Illuminate\Database\UniqueConstraintViolationException 
+
+  SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: products.slug (Connection: sqlite, SQL: insert into "products" ("name", "slug", "short_description", "content", "price", "product_category_id", "status", "published_at", "updated_at", "created_at") values (Electronics Product 1, electronics-product-1, Demo description, <p>Demo product content</p>, 772, 1, 1, 2026-02-26 04:44:22, 2026-02-26 04:44:22, 2026-02-26 04:44:22))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:820
+    816▕         // message to include the bindings with SQL, which will make this exception a
+    817▕         // lot more helpful to the developer instead of just the database's errors.
+    818▕         catch (Exception $e) {
+    819▕             if ($this->isUniqueConstraintError($e)) {
+  ➜ 820▕                 throw new UniqueConstraintViolationException(
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+
+      +18 vendor frames 
+
+  19  database/seeders/ProductSeeder.php:21
+      Illuminate\Database\Eloquent\Model::__callStatic("create")
+      +8 vendor frames 
+
+  28  database/seeders/DatabaseSeeder.php:22
+      Illuminate\Database\Seeder::call("Database\Seeders\ProductSeeder")
+
+tranquangduc@Duc-M3-Pro product-site % php artisan db:seed
+
+   INFO  Seeding database.  
+
+  Database\Seeders\ProductCategorySeeder ................................................................ RUNNING  
+  Database\Seeders\ProductCategorySeeder .............................................................. 5 ms DONE  
+
+  Database\Seeders\ProductSeeder ........................................................................ RUNNING  
+  Database\Seeders\ProductSeeder ...................................................................... 9 ms DONE  
+
+  Database\Seeders\PostCategorySeeder ................................................................... RUNNING  
+  Database\Seeders\PostCategorySeeder ................................................................. 1 ms DONE  
+
+  Database\Seeders\PostSeeder ........................................................................... RUNNING  
+  Database\Seeders\PostSeeder ......................................................................... 5 ms DONE  
+
+  Database\Seeders\PageSeeder ........................................................................... RUNNING  
+  Database\Seeders\PageSeeder ......................................................................... 2 ms DONE  
+
+  Database\Seeders\SettingSeeder ........................................................................ RUNNING  
+  Database\Seeders\SettingSeeder ...................................................................... 1 ms DONE  
+
+tranquangduc@Duc-M3-Pro product-site % php artisan make:provider ViewServiceProvider
+
+   INFO  Provider [app/Providers/ViewServiceProvider.php] created successfully.  
+
+tranquangduc@Duc-M3-Pro product-site % php artisan optimize:clear
+
+   INFO  Clearing cached bootstrap files.  
+
+  cache ............................................................................................ 14.87ms DONE
+  compiled .......................................................................................... 1.20ms DONE
+  config ............................................................................................ 0.74ms DONE
+  events ............................................................................................ 0.51ms DONE
+  routes ............................................................................................ 0.76ms DONE
+  views ............................................................................................ 16.79ms DONE
+  blade-icons ....................................................................................... 0.22ms DONE
+  filament .......................................................................................... 0.76ms DONE
+
+tranquangduc@Duc-M3-Pro product-site % php artisan serve
+
+   INFO  Server running on [http://127.0.0.1:8000].  
+
+  Press Ctrl+C to stop the server
+
+  2026-02-26 11:55:47 /admin/post-categories ........................................................ ~ 504.53ms
+  2026-02-26 11:55:47 /admin/login .................................................................. ~ 515.38ms
+  2026-02-26 11:55:47 /css/filament/forms/forms.css?v=3.3.49.0 ........................................ ~ 0.22ms
+  2026-02-26 11:55:47 /css/filament/support/support.css?v=3.3.49.0 .................................... ~ 3.53ms
+  2026-02-26 11:55:47 /css/filament/filament/app.css?v=3.3.49.0 ....................................... ~ 6.53ms
+  2026-02-26 11:55:47 /js/filament/notifications/notifications.js?v=3.3.49.0 .......................... ~ 9.10ms
+  2026-02-26 11:55:47 /js/filament/filament/echo.js?v=3.3.49.0 ........................................ ~ 7.27ms
+  2026-02-26 11:55:47 /js/filament/support/support.js?v=3.3.49.0 ..................................... ~ 11.85ms
+  2026-02-26 11:55:47 /js/filament/filament/app.js?v=3.3.49.0 ......................................... ~ 6.60ms
+  2026-02-26 11:55:47 /favicon.ico .................................................................... ~ 0.07ms
+  2026-02-26 11:55:51 /livewire/update .............................................................. ~ 505.54ms
+  2026-02-26 11:55:55 /livewire/update .............................................................. ~ 505.83ms
+  2026-02-26 11:55:57 /livewire/update .............................................................. ~ 506.10ms
+  2026-02-26 11:56:12 /admin/login .................................................................... ~ 0.70ms
+  2026-02-26 11:56:12 /css/filament/forms/forms.css?v=3.3.49.0 ....................................... ~ 15.89ms
+  2026-02-26 11:56:12 /css/filament/support/support.css?v=3.3.49.0 .................................... ~ 4.15ms
+  2026-02-26 11:56:12 /css/filament/filament/app.css?v=3.3.49.0 ....................................... ~ 7.14ms
+  2026-02-26 11:56:12 /js/filament/notifications/notifications.js?v=3.3.49.0 ......................... ~ 10.23ms
+  2026-02-26 11:56:12 /js/filament/support/support.js?v=3.3.49.0 ...................................... ~ 7.93ms
+  2026-02-26 11:56:12 /js/filament/filament/echo.js?v=3.3.49.0 ....................................... ~ 10.51ms
+  2026-02-26 11:56:12 /js/filament/filament/app.js?v=3.3.49.0 ......................................... ~ 9.22ms
+  2026-02-26 11:56:12 /favicon.ico .................................................................... ~ 0.07ms
+  2026-02-26 11:56:15 /admin .......................................................................... ~ 0.11ms
+  2026-02-26 11:56:15 /admin/login .................................................................. ~ 508.91ms
+  2026-02-26 11:56:15 /css/filament/forms/forms.css?v=3.3.49.0 ........................................ ~ 0.46ms
+  2026-02-26 11:56:15 /css/filament/support/support.css?v=3.3.49.0 .................................... ~ 5.71ms
+  2026-02-26 11:56:15 /css/filament/filament/app.css?v=3.3.49.0 ....................................... ~ 8.68ms
+  2026-02-26 11:56:15 /js/filament/notifications/notifications.js?v=3.3.49.0 ......................... ~ 12.15ms
+  2026-02-26 11:56:15 /js/filament/support/support.js?v=3.3.49.0 ..................................... ~ 13.98ms
+  2026-02-26 11:56:15 /js/filament/filament/echo.js?v=3.3.49.0 ....................................... ~ 16.53ms
+  2026-02-26 11:56:15 /js/filament/filament/app.js?v=3.3.49.0 ........................................ ~ 14.34ms
+  2026-02-26 11:56:16 /favicon.ico .................................................................... ~ 0.11ms
+  2026-02-26 11:56:25 /livewire/update .............................................................. ~ 505.80ms
+  2026-02-26 11:57:39 /livewire/update ................................................................ ~ 0.52ms
+  2026-02-26 11:57:48 /livewire/update ................................................................ ~ 0.10ms
+  2026-02-26 11:57:48 /admin ........................................................................ ~ 505.73ms
+  2026-02-26 11:57:48 /css/filament/forms/forms.css?v=3.3.49.0 ...................................... ~ 517.22ms
+  2026-02-26 11:57:48 /css/filament/support/support.css?v=3.3.49.0 .................................... ~ 4.42ms
+  2026-02-26 11:57:48 /css/filament/filament/app.css?v=3.3.49.0 ....................................... ~ 7.34ms
+  2026-02-26 11:57:48 /js/filament/notifications/notifications.js?v=3.3.49.0 ......................... ~ 10.59ms
+  2026-02-26 11:57:48 /js/filament/support/support.js?v=3.3.49.0 ...................................... ~ 0.16ms
+  2026-02-26 11:57:48 /js/filament/filament/echo.js?v=3.3.49.0 ........................................ ~ 2.90ms
+  2026-02-26 11:57:48 /js/filament/filament/app.js?v=3.3.49.0 ......................................... ~ 5.83ms
+  2026-02-26 11:57:49 /favicon.ico .................................................................... ~ 0.57ms
+  2026-02-26 11:57:58 /admin/pages .................................................................... ~ 0.10ms
+  2026-02-26 11:57:59 /css/filament/forms/forms.css?v=3.3.49.0 ........................................ ~ 0.10ms
+  2026-02-26 11:57:59 /css/filament/support/support.css?v=3.3.49.0 .................................... ~ 1.63ms
+  2026-02-26 11:57:59 /css/filament/filament/app.css?v=3.3.49.0 ....................................... ~ 2.92ms
+  2026-02-26 11:57:59 /js/filament/notifications/notifications.js?v=3.3.49.0 .......................... ~ 4.36ms
+  2026-02-26 11:57:59 /js/filament/support/support.js?v=3.3.49.0 ...................................... ~ 3.86ms
+  2026-02-26 11:57:59 /js/filament/filament/echo.js?v=3.3.49.0 ........................................ ~ 0.06ms
+  2026-02-26 11:57:59 /js/filament/filament/app.js?v=3.3.49.0 ......................................... ~ 1.41ms
+  2026-02-26 11:57:59 /js/filament/tables/components/table.js?v=3.3.49.0 .............................. ~ 0.05ms
+  2026-02-26 11:57:59 /favicon.ico .................................................................... ~ 0.04ms
+  2026-02-26 11:58:05 / ............................................................................... ~ 0.40ms
+  2026-02-26 11:58:05 /favicon.ico ................................................................... ~ 11.96ms
+  2026-02-26 11:58:07 / ............................................................................... ~ 0.31ms
+  2026-02-26 11:58:07 /favicon.ico ................................................................... ~ 12.23ms
+^C%                                                                                                                tranquangduc@Duc-M3-Pro product-site % php artisan optimize:clear
+
+   INFO  Clearing cached bootstrap files.  
+
+  cache ............................................................................................ 12.27ms DONE
+  compiled .......................................................................................... 0.87ms DONE
+  config ............................................................................................ 0.32ms DONE
+  events ............................................................................................ 0.30ms DONE
+  routes ............................................................................................ 0.28ms DONE
+  views ............................................................................................ 10.70ms DONE
+  blade-icons ....................................................................................... 0.12ms DONE
+  filament .......................................................................................... 0.55ms DONE
+
+tranquangduc@Duc-M3-Pro product-site % php artisan config:clear
+
+   INFO  Configuration cache cleared successfully.  
+
+tranquangduc@Duc-M3-Pro product-site % php artisan cache:clear
+
+   INFO  Application cache cleared successfully.  
+
+tranquangduc@Duc-M3-Pro product-site % php artisan serve
+
+   INFO  Server running on [http://127.0.0.1:8000].  
+
+  Press Ctrl+C to stop the server
+
+  2026-02-26 14:21:32 / ............................................................................. ~ 503.69ms
+  2026-02-26 14:21:32 /css/frontend/bootstrap.scss.css .............................................. ~ 518.04ms
+  2026-02-26 14:21:32 /css/frontend/evo-index.scss.css ................................................ ~ 4.29ms
+  2026-02-26 14:21:32 /css/frontend/evo-main.scss.css ................................................. ~ 9.18ms
+  2026-02-26 14:21:32 /css/frontend/font-awesome.min.css ............................................. ~ 13.39ms
+  2026-02-26 14:21:32 /css/frontend/plugin.scss.css .................................................. ~ 12.76ms
+  2026-02-26 14:21:32 /css/frontend/slick.scss.css ................................................... ~ 16.68ms
+  2026-02-26 14:21:32 /css/frontend/styles__ltr.css .................................................. ~ 14.81ms
+  2026-02-26 14:21:32 /css/fonts/fontawesome-webfont.woff2 ............................................ ~ 0.04ms
+  2026-02-26 14:21:32 /css/fonts/fontawesome-webfont.woff ............................................. ~ 0.06ms
+  2026-02-26 14:21:32 /css/fonts/fontawesome-webfont.ttf .............................................. ~ 0.06ms
+  2026-02-26 14:21:32 /favicon.ico .................................................................. ~ 506.08ms
+  2026-02-26 14:25:13 / ............................................................................... ~ 0.94ms
+  2026-02-26 14:25:13 /favicon.ico .................................................................... ~ 7.42ms
+  2026-02-26 14:27:55 / ............................................................................. ~ 509.34ms
+  2026-02-26 14:27:55 /css/frontend/bootstrap.scss.css .............................................. ~ 513.45ms
+  2026-02-26 14:27:55 /css/frontend/evo-index.scss.css ................................................ ~ 1.91ms
+  2026-02-26 14:27:55 /css/frontend/evo-main.scss.css ................................................. ~ 3.49ms
+  2026-02-26 14:27:55 /css/frontend/font-awesome.min.css .............................................. ~ 5.10ms
+  2026-02-26 14:27:55 /css/frontend/plugin.scss.css ................................................... ~ 4.78ms
+  2026-02-26 14:27:55 /css/frontend/slick.scss.css .................................................... ~ 6.47ms
+  2026-02-26 14:27:55 /css/frontend/styles__ltr.css ................................................... ~ 6.61ms
+  2026-02-26 14:27:55 /css/fonts/fontawesome-webfont.woff2 ............................................ ~ 0.04ms
+  2026-02-26 14:27:55 /css/fonts/fontawesome-webfont.woff ............................................. ~ 0.04ms
+  2026-02-26 14:27:55 /css/fonts/fontawesome-webfont.ttf .............................................. ~ 0.04ms
+  2026-02-26 14:27:56 /favicon.ico .................................................................... ~ 0.52ms
+  2026-02-26 14:37:51 / ............................................................................... ~ 1.42ms
+  2026-02-26 14:37:51 /css/frontend/bootstrap.scss.css ............................................... ~ 11.93ms
+  2026-02-26 14:37:51 /css/frontend/evo-index.scss.css ................................................ ~ 2.05ms
+  2026-02-26 14:37:51 /css/frontend/evo-main.scss.css ................................................. ~ 3.62ms
+  2026-02-26 14:37:51 /css/frontend/font-awesome.min.css .............................................. ~ 6.27ms
+  2026-02-26 14:37:51 /css/frontend/plugin.scss.css ................................................... ~ 6.26ms
+  2026-02-26 14:37:51 /css/frontend/slick.scss.css .................................................... ~ 8.72ms
+  2026-02-26 14:37:51 /css/frontend/styles__ltr.css ................................................... ~ 9.02ms
+  2026-02-26 14:37:51 /css/fonts/fontawesome-webfont.woff2 .......................................... ~ 505.92ms
+  2026-02-26 14:37:51 /css/fonts/fontawesome-webfont.woff ............................................. ~ 0.17ms
+  2026-02-26 14:37:51 /css/fonts/fontawesome-webfont.ttf .............................................. ~ 0.16ms
+  2026-02-26 14:37:51 /favicon.ico .................................................................... ~ 0.11ms
+  2026-02-26 14:41:13 / ............................................................................... ~ 0.85ms
+  2026-02-26 14:41:13 /css/frontend/bootstrap.scss.css ................................................ ~ 0.37ms
+  2026-02-26 14:41:13 /css/frontend/evo-index.scss.css ................................................ ~ 4.00ms
+  2026-02-26 14:41:13 /css/frontend/evo-main.scss.css ................................................. ~ 7.83ms
+  2026-02-26 14:41:13 /css/frontend/font-awesome.min.css ............................................. ~ 11.67ms
+  2026-02-26 14:41:13 /css/frontend/plugin.scss.css .................................................. ~ 11.10ms
+  2026-02-26 14:41:13 /css/frontend/slick.scss.css ................................................... ~ 14.64ms
+  2026-02-26 14:41:13 /css/frontend/styles__ltr.css .................................................. ~ 14.09ms
+  2026-02-26 14:41:13 /css/fonts/fontawesome-webfont.woff2 ............................................ ~ 0.07ms
+  2026-02-26 14:41:13 /css/fonts/fontawesome-webfont.woff ............................................. ~ 0.08ms
+  2026-02-26 14:41:13 /css/fonts/fontawesome-webfont.ttf .............................................. ~ 0.07ms
+  2026-02-26 14:41:13 /favicon.ico .................................................................... ~ 0.09ms
+  2026-02-26 14:41:13 / ............................................................................... ~ 0.50ms
+  2026-02-26 14:41:14 /css/frontend/bootstrap.scss.css ................................................ ~ 0.11ms
+  2026-02-26 14:41:14 /css/frontend/evo-index.scss.css ................................................ ~ 2.73ms
+  2026-02-26 14:41:14 /css/frontend/evo-main.scss.css ................................................. ~ 5.94ms
+  2026-02-26 14:41:14 /css/frontend/font-awesome.min.css .............................................. ~ 8.17ms
+  2026-02-26 14:41:14 /css/frontend/plugin.scss.css .................................................. ~ 10.00ms
+  2026-02-26 14:41:14 /css/frontend/slick.scss.css ................................................... ~ 10.55ms
+  2026-02-26 14:41:14 /css/frontend/styles__ltr.css ................................................... ~ 9.28ms
+  2026-02-26 14:41:14 /css/fonts/fontawesome-webfont.woff2 ............................................ ~ 0.17ms
+  2026-02-26 14:41:14 /css/fonts/fontawesome-webfont.woff ............................................. ~ 0.10ms
+  2026-02-26 14:41:14 /css/fonts/fontawesome-webfont.ttf .............................................. ~ 0.11ms
+  2026-02-26 14:41:14 /favicon.ico .................................................................... ~ 0.12ms
+  2026-02-26 14:42:26 / ............................................................................... ~ 0.22ms
+  2026-02-26 14:42:26 /css/frontend/bootstrap.scss.css ................................................ ~ 5.47ms
+  2026-02-26 14:42:26 /css/frontend/evo-index.scss.css ................................................ ~ 1.69ms
+  2026-02-26 14:42:26 /css/frontend/evo-main.scss.css ................................................. ~ 3.35ms
+  2026-02-26 14:42:26 /css/frontend/font-awesome.min.css .............................................. ~ 5.04ms
+  2026-02-26 14:42:26 /css/frontend/plugin.scss.css ................................................... ~ 5.42ms
+  2026-02-26 14:42:26 /css/frontend/slick.scss.css .................................................... ~ 7.15ms
+  2026-02-26 14:42:26 /css/frontend/styles__ltr.css ................................................... ~ 7.26ms
+  2026-02-26 14:42:26 /css/fonts/fontawesome-webfont.woff2 ............................................ ~ 0.04ms
+  2026-02-26 14:42:26 /css/fonts/fontawesome-webfont.woff ............................................. ~ 0.04ms
+  2026-02-26 14:42:26 /css/fonts/fontawesome-webfont.ttf .............................................. ~ 0.04ms
+  2026-02-26 14:42:26 /favicon.ico .................................................................... ~ 0.04ms
+  2026-02-26 14:44:43 / ............................................................................. ~ 503.59ms
+  2026-02-26 14:44:43 /css/frontend/bootstrap.scss.css .............................................. ~ 517.51ms
+  2026-02-26 14:44:43 /css/frontend/evo-index.scss.css ................................................ ~ 4.82ms
+  2026-02-26 14:44:43 /css/frontend/evo-main.scss.css ................................................. ~ 8.92ms
+  2026-02-26 14:44:43 /css/frontend/font-awesome.min.css ............................................. ~ 12.44ms
+  2026-02-26 14:44:43 /css/frontend/plugin.scss.css .................................................. ~ 10.71ms
+  2026-02-26 14:44:43 /css/frontend/slick.scss.css ................................................... ~ 13.45ms
+  2026-02-26 14:44:43 /css/frontend/styles__ltr.css .................................................. ~ 12.59ms
+  2026-02-26 14:44:43 /js/frontend/jquery-2.2.3.min.js ............................................... ~ 11.61ms
+  2026-02-26 14:44:43 /js/frontend/jquery.form-validator.min.js ...................................... ~ 11.26ms
+  2026-02-26 14:44:43 /js/frontend/api.jquery.js ..................................................... ~ 10.53ms
+  2026-02-26 14:44:43 /js/frontend/api.js ............................................................ ~ 10.02ms
+  2026-02-26 14:44:43 /js/frontend/option_selection.js ............................................... ~ 11.22ms
+  2026-02-26 14:44:43 /js/frontend/beacon.min.js ...................................................... ~ 9.08ms
+  2026-02-26 14:44:43 /js/frontend/cs.script.js ....................................................... ~ 5.41ms
+  2026-02-26 14:44:43 /js/frontend/evo-index-js.js .................................................... ~ 5.78ms
+  2026-02-26 14:44:43 /js/frontend/main.js ............................................................ ~ 8.40ms
+  2026-02-26 14:44:43 /css/fonts/fontawesome-webfont.woff2 ............................................ ~ 0.06ms
+  2026-02-26 14:44:43 /css/fonts/fontawesome-webfont.woff ............................................. ~ 0.05ms
+  2026-02-26 14:44:43 /css/fonts/fontawesome-webfont.ttf .............................................. ~ 0.05ms
+  2026-02-26 14:44:44 /favicon.ico .................................................................... ~ 0.40ms
+^C%                                                                                                                tranquangduc@Duc-M3-Pro product-site % git --version
+git version 2.50.1 (Apple Git-155)
+tranquangduc@Duc-M3-Pro product-site % git status
+fatal: not a git repository (or any of the parent directories): .git
+tranquangduc@Duc-M3-Pro product-site % git init
+Initialized empty Git repository in /Users/tranquangduc/Documents/MyProject/product-site/.git/
+tranquangduc@Duc-M3-Pro product-site % git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.editorconfig
+	.env.example
+	.gitattributes
+	.gitignore
+	README.md
+	app/
+	artisan
+	bootstrap/
+	composer.json
+	composer.lock
+	config/
+	database/
+	package.json
+	phpunit.xml
+	postcss.config.js
+	public/
+	resources/
+	routes/
+	storage/
+	tailwind.config.js
+	tests/
+	vite.config.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+tranquangduc@Duc-M3-Pro product-site % touch .gitignore
+tranquangduc@Duc-M3-Pro product-site % git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.editorconfig
+	.env.example
+	.gitattributes
+	.gitignore
+	README.md
+	app/
+	artisan
+	bootstrap/
+	composer.json
+	composer.lock
+	config/
+	database/
+	package.json
+	phpunit.xml
+	postcss.config.js
+	public/
+	resources/
+	routes/
+	storage/
+	tailwind.config.js
+	tests/
+	vite.config.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+tranquangduc@Duc-M3-Pro product-site % git add .
+git commit -m "Initial commit - Laravel product site with Filament"
+warning: in the working copy of 'public/js/frontend/api.jquery.js', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'public/js/frontend/option_selection.js', CRLF will be replaced by LF the next time Git touches it
+[main (root-commit) f5e6a9e] Initial commit - Laravel product site with Filament
+ 154 files changed, 30848 insertions(+)
+ create mode 100644 .editorconfig
+ create mode 100644 .env.example
+ create mode 100644 .gitattributes
+ create mode 100644 .gitignore
+ create mode 100644 README.md
+ create mode 100644 app/Filament/Resources/PageResource.php
+ create mode 100644 app/Filament/Resources/PageResource/Pages/CreatePage.php
+ create mode 100644 app/Filament/Resources/PageResource/Pages/EditPage.php
+ create mode 100644 app/Filament/Resources/PageResource/Pages/ListPages.php
+ create mode 100644 app/Filament/Resources/PostCategoryResource.php
+ create mode 100644 app/Filament/Resources/PostCategoryResource/Pages/CreatePostCategory.php
+ create mode 100644 app/Filament/Resources/PostCategoryResource/Pages/EditPostCategory.php
+ create mode 100644 app/Filament/Resources/PostCategoryResource/Pages/ListPostCategories.php
+ create mode 100644 app/Filament/Resources/PostResource.php
+ create mode 100644 app/Filament/Resources/PostResource/Pages/CreatePost.php
+ create mode 100644 app/Filament/Resources/PostResource/Pages/EditPost.php
+ create mode 100644 app/Filament/Resources/PostResource/Pages/ListPosts.php
+ create mode 100644 app/Filament/Resources/ProductCategoryResource.php
+ create mode 100644 app/Filament/Resources/ProductCategoryResource/Pages/CreateProductCategory.php
+ create mode 100644 app/Filament/Resources/ProductCategoryResource/Pages/EditProductCategory.php
+ create mode 100644 app/Filament/Resources/ProductCategoryResource/Pages/ListProductCategories.php
+ create mode 100644 app/Filament/Resources/ProductResource.php
+ create mode 100644 app/Filament/Resources/ProductResource/Pages/CreateProduct.php
+ create mode 100644 app/Filament/Resources/ProductResource/Pages/EditProduct.php
+ create mode 100644 app/Filament/Resources/ProductResource/Pages/ListProducts.php
+ create mode 100644 app/Filament/Resources/SettingResource.php
+ create mode 100644 app/Filament/Resources/SettingResource/Pages/CreateSetting.php
+ create mode 100644 app/Filament/Resources/SettingResource/Pages/EditSetting.php
+ create mode 100644 app/Filament/Resources/SettingResource/Pages/ListSettings.php
+ create mode 100644 app/Http/Controllers/Controller.php
+ create mode 100644 app/Http/Controllers/Frontend/HomeController.php
+ create mode 100644 app/Http/Controllers/Frontend/PageController.php
+ create mode 100644 app/Http/Controllers/Frontend/PostController.php
+ create mode 100644 app/Http/Controllers/Frontend/ProductController.php
+ create mode 100644 app/Models/Page.php
+ create mode 100644 app/Models/Post.php
+ create mode 100644 app/Models/PostCategory.php
+ create mode 100644 app/Models/Product.php
+ create mode 100644 app/Models/ProductCategory.php
+ create mode 100644 app/Models/Setting.php
+ create mode 100644 app/Models/User.php
+ create mode 100644 app/Providers/AppServiceProvider.php
+ create mode 100644 app/Providers/Filament/AdminPanelProvider.php
+ create mode 100644 app/Providers/ViewServiceProvider.php
+ create mode 100755 artisan
+ create mode 100644 bootstrap/app.php
+ create mode 100644 bootstrap/cache/.gitignore
+ create mode 100644 bootstrap/providers.php
+ create mode 100644 composer.json
+ create mode 100644 composer.lock
+ create mode 100644 config/app.php
+ create mode 100644 config/auth.php
+ create mode 100644 config/cache.php
+ create mode 100644 config/database.php
+ create mode 100644 config/filesystems.php
+ create mode 100644 config/logging.php
+ create mode 100644 config/mail.php
+ create mode 100644 config/queue.php
+ create mode 100644 config/services.php
+ create mode 100644 config/session.php
+ create mode 100644 database/.gitignore
+ create mode 100644 database/factories/UserFactory.php
+ create mode 100644 database/migrations/0001_01_01_000000_create_users_table.php
+ create mode 100644 database/migrations/0001_01_01_000001_create_cache_table.php
+ create mode 100644 database/migrations/0001_01_01_000002_create_jobs_table.php
+ create mode 100644 database/migrations/2026_02_26_035203_create_product_categories_table.php
+ create mode 100644 database/migrations/2026_02_26_035209_create_products_table.php
+ create mode 100644 database/migrations/2026_02_26_035215_create_post_categories_table.php
+ create mode 100644 database/migrations/2026_02_26_035222_create_posts_table.php
+ create mode 100644 database/migrations/2026_02_26_035228_create_pages_table.php
+ create mode 100644 database/migrations/2026_02_26_035234_create_settings_table.php
+ create mode 100644 database/seeders/DatabaseSeeder.php
+ create mode 100644 database/seeders/PageSeeder.php
+ create mode 100644 database/seeders/PostCategorySeeder.php
+ create mode 100644 database/seeders/PostSeeder.php
+ create mode 100644 database/seeders/ProductCategorySeeder.php
+ create mode 100644 database/seeders/ProductSeeder.php
+ create mode 100644 database/seeders/SettingSeeder.php
+ create mode 100644 package.json
+ create mode 100644 phpunit.xml
+ create mode 100644 postcss.config.js
+ create mode 100644 public/.htaccess
+ create mode 100644 public/css/filament/filament/app.css
+ create mode 100644 public/css/filament/forms/forms.css
+ create mode 100644 public/css/filament/support/support.css
+ create mode 100644 public/css/frontend/bootstrap.scss.css
+ create mode 100644 public/css/frontend/evo-index.scss.css
+ create mode 100644 public/css/frontend/evo-main.scss.css
+ create mode 100644 public/css/frontend/font-awesome.min.css
+ create mode 100644 public/css/frontend/plugin.scss.css
+ create mode 100644 public/css/frontend/slick.scss.css
+ create mode 100644 public/css/frontend/styles__ltr.css
+ create mode 100644 public/favicon.ico
+ create mode 100644 public/index.php
+ create mode 100644 public/js/filament/filament/app.js
+ create mode 100644 public/js/filament/filament/echo.js
+ create mode 100644 public/js/filament/forms/components/color-picker.js
+ create mode 100644 public/js/filament/forms/components/date-time-picker.js
+ create mode 100644 public/js/filament/forms/components/file-upload.js
+ create mode 100644 public/js/filament/forms/components/key-value.js
+ create mode 100644 public/js/filament/forms/components/markdown-editor.js
+ create mode 100644 public/js/filament/forms/components/rich-editor.js
+ create mode 100644 public/js/filament/forms/components/select.js
+ create mode 100644 public/js/filament/forms/components/tags-input.js
+ create mode 100644 public/js/filament/forms/components/textarea.js
+ create mode 100644 public/js/filament/notifications/notifications.js
+ create mode 100644 public/js/filament/support/support.js
+ create mode 100644 public/js/filament/tables/components/table.js
+ create mode 100644 public/js/filament/widgets/components/chart.js
+ create mode 100644 public/js/filament/widgets/components/stats-overview/stat/chart.js
+ create mode 100644 public/js/frontend/api.jquery.js
+ create mode 100644 public/js/frontend/api.js
+ create mode 100644 public/js/frontend/beacon.min.js
+ create mode 100644 public/js/frontend/cs.script.js
+ create mode 100644 public/js/frontend/evo-index-js.js
+ create mode 100644 public/js/frontend/jquery-2.2.3.min.js
+ create mode 100644 public/js/frontend/jquery.form-validator.min.js
+ create mode 100644 public/js/frontend/main.js
+ create mode 100644 public/js/frontend/option_selection.js
+ create mode 100644 public/robots.txt
+ create mode 100644 resources/css/app.css
+ create mode 100644 resources/js/app.js
+ create mode 100644 resources/js/bootstrap.js
+ create mode 100644 resources/views/components/frontend/footer.blade.php
+ create mode 100644 resources/views/components/frontend/header.blade.php
+ create mode 100644 resources/views/frontend/errors/404.blade.php
+ create mode 100644 resources/views/frontend/home.blade.php
+ create mode 100644 resources/views/frontend/layout.blade.php
+ create mode 100644 resources/views/frontend/pages/show.blade.php
+ create mode 100644 resources/views/frontend/posts/index.blade.php
+ create mode 100644 resources/views/frontend/posts/show.blade.php
+ create mode 100644 resources/views/frontend/products/index.blade.php
+ create mode 100644 resources/views/frontend/products/show.blade.php
+ create mode 100644 resources/views/frontend/style/css.blade.php
+ create mode 100644 resources/views/frontend/style/js.blade.php
+ create mode 100644 resources/views/sitemap.blade.php
+ create mode 100644 resources/views/welcome.blade.php
+ create mode 100644 routes/console.php
+ create mode 100644 routes/web.php
+ create mode 100644 storage/app/.gitignore
+ create mode 100644 storage/app/private/.gitignore
+ create mode 100644 storage/app/public/.gitignore
+ create mode 100644 storage/framework/.gitignore
+ create mode 100644 storage/framework/cache/.gitignore
+ create mode 100644 storage/framework/cache/data/.gitignore
+ create mode 100644 storage/framework/sessions/.gitignore
+ create mode 100644 storage/framework/testing/.gitignore
+ create mode 100644 storage/framework/views/.gitignore
+ create mode 100644 storage/logs/.gitignore
+ create mode 100644 tailwind.config.js
+ create mode 100644 tests/Feature/ExampleTest.php
+ create mode 100644 tests/TestCase.php
+ create mode 100644 tests/Unit/ExampleTest.php
+ create mode 100644 vite.config.js
+tranquangduc@Duc-M3-Pro product-site % git remote add origin https://github.com/tranquangduc1999/product-site.git
+tranquangduc@Duc-M3-Pro product-site % git remote -v
+origin	https://github.com/tranquangduc1999/product-site.git (fetch)
+origin	https://github.com/tranquangduc1999/product-site.git (push)
+tranquangduc@Duc-M3-Pro product-site % git branch -M main
+tranquangduc@Duc-M3-Pro product-site % git push -u origin main
+Enumerating objects: 218, done.
+Counting objects: 100% (218/218), done.
+Delta compression using up to 11 threads
+Compressing objects: 100% (184/184), done.
+Writing objects: 100% (218/218), 884.34 KiB | 13.82 MiB/s, done.
+Total 218 (delta 34), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (34/34), done.
+To https://github.com/tranquangduc1999/product-site.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+tranquangduc@Duc-M3-Pro product-site % git branch 
+* main
+tranquangduc@Duc-M3-Pro product-site % git checkout -b develop
+Switched to a new branch 'develop'
+tranquangduc@Duc-M3-Pro product-site % git branch 
+* develop
+  main
+tranquangduc@Duc-M3-Pro product-site % git pull origin main 
+From https://github.com/tranquangduc1999/product-site
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+tranquangduc@Duc-M3-Pro product-site % php artisaan optimize:clear
+Could not open input file: artisaan
+tranquangduc@Duc-M3-Pro product-site % php artisan optimize:clear
+
+   INFO  Clearing cached bootstrap files.  
+
+  cache ............................................................................................ 12.78ms DONE
+  compiled .......................................................................................... 0.91ms DONE
+  config ............................................................................................ 0.33ms DONE
+  events ............................................................................................ 0.29ms DONE
+  routes ............................................................................................ 0.29ms DONE
+  views ............................................................................................ 13.74ms DONE
+  blade-icons ....................................................................................... 0.16ms DONE
+  filament .......................................................................................... 0.59ms DONE
+
+tranquangduc@Duc-M3-Pro product-site % php artisan serve
+
+   INFO  Server running on [http://127.0.0.1:8000].  
+
+  Press Ctrl+C to stop the server
+
+  2026-02-26 15:03:04 / ............................................................................... ~ 0.14ms
+  2026-02-26 15:03:04 /css/frontend/bootstrap.scss.css ................................................ ~ 4.87ms
+  2026-02-26 15:03:04 /css/frontend/evo-index.scss.css ................................................ ~ 2.22ms
+  2026-02-26 15:03:04 /css/frontend/evo-main.scss.css ................................................. ~ 4.24ms
+  2026-02-26 15:03:04 /css/frontend/font-awesome.min.css .............................................. ~ 6.14ms
+  2026-02-26 15:03:04 /css/frontend/plugin.scss.css ................................................... ~ 7.74ms
+  2026-02-26 15:03:04 /css/frontend/slick.scss.css .................................................... ~ 7.41ms
+  2026-02-26 15:03:04 /css/frontend/styles__ltr.css ................................................... ~ 7.26ms
+  2026-02-26 15:03:04 /js/frontend/jquery-2.2.3.min.js ................................................ ~ 0.07ms
+  2026-02-26 15:03:04 /js/frontend/jquery.form-validator.min.js ....................................... ~ 1.69ms
+  2026-02-26 15:03:04 /js/frontend/api.jquery.js ...................................................... ~ 3.09ms

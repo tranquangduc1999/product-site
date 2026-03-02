@@ -11,12 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::dropIfExists('settings');
-
         Schema::create('settings', function (Blueprint $table) {
             $table->id();
 
-            // Thông tin cơ bản
+            // Thông tin chung
             $table->string('site_name')->nullable();
             $table->string('logo')->nullable();
             $table->string('favicon')->nullable();
@@ -30,7 +28,7 @@ return new class extends Migration
             $table->string('facebook')->nullable();
             $table->string('zalo')->nullable();
 
-            // SEO mặc định
+            // SEO
             $table->string('meta_title')->nullable();
             $table->text('meta_description')->nullable();
 
@@ -46,6 +44,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('settings');
     }
 };

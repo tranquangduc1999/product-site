@@ -20,7 +20,9 @@ class PostCategoryResource extends Resource
     protected static ?string $model = PostCategory::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationGroup = 'Bài viết';
 
+    protected static ?string $navigationLabel = 'Danh mục viết';
     public static function form(Form $form): Form
     {
         return $form->schema([

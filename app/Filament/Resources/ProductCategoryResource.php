@@ -20,7 +20,8 @@ class ProductCategoryResource extends Resource
     protected static ?string $model = ProductCategory::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-
+    protected static ?string $navigationGroup = 'Sản phẩm';
+    protected static ?string $navigationLabel = 'Danh mục sản phẩm';
     public static function form(Form $form): Form
     {
         return $form->schema([
