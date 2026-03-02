@@ -13,6 +13,8 @@ class Banner extends Model
         'position',
         'sort_order',
         'status',
+        'description',
+        'seo_title',
     ];
     protected static function booted()
     {

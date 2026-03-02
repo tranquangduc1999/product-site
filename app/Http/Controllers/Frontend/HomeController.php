@@ -8,6 +8,7 @@ use App\Models\Post;
 use App\Models\ProductCategory;
 use App\Models\Setting;
 use App\Models\Banner;
+use App\Models\Testimonial;
 use PhpOffice\PhpSpreadsheet\Calculation\Category;
 
 class HomeController extends Controller
@@ -42,12 +43,19 @@ class HomeController extends Controller
             ->where('status', true)
             ->orderBy('sort_order')
             ->get();
-
+        $handover = Banner::where('position', 'handover')
+            ->where('status', true)
+            ->orderBy('sort_order')
+            ->get();
+        $testimonials = Testimonial::where('status', true)
+            ->orderBy('sort_order','asc')->get();
         return view('frontend.home', compact(
             'categoriesWithProducts',
             'posts',
             'banners',
             'categories',
+            'testimonials',
+            'handover',
             'sliders'
         ));
     }

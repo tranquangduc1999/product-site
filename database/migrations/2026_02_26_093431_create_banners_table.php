@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('position')->default('homepage');
             $table->integer('sort_order')->default(0);
             $table->boolean('status')->default(true);
+            $table->text('description')->nullable();
+            $table->string('seo_title')->nullable();
             $table->timestamps();
         });
     }

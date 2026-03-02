@@ -8,6 +8,7 @@ use App\Models\Banner;
 use Filament\Forms;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Form;
@@ -29,11 +30,13 @@ class BannerResource extends Resource
     public static function form(Form $form): Form
     {
         return $form->schema([
+
             TextInput::make('title')
                 ->label('Tiêu đề'),
 
             FileUpload::make('image')
                 ->image()
+                ->disk('public')
                 ->directory('banners')
                 ->required(),
 
@@ -46,12 +49,22 @@ class BannerResource extends Resource
                     'slider' => 'Slider',
                     'about' => 'About Page',
                     'sidebar' => 'Sidebar',
+                    'handover' => 'handover photo',
                 ])
                 ->required(),
 
             TextInput::make('sort_order')
                 ->numeric()
                 ->default(0),
+
+            Textarea::make('description')
+                ->label('Mô tả')
+                ->rows(3)
+                ->columnSpanFull(),
+
+            TextInput::make('seo_title')
+                ->label('SEO Title')
+                ->maxLength(255),
 
             Toggle::make('status')
                 ->default(true),
@@ -64,6 +77,8 @@ class BannerResource extends Resource
             ->columns([
                 ImageColumn::make('image'),
                 TextColumn::make('title'),
+                TextColumn::make('seo_title'),
+                TextColumn::make('description'),
                 TextColumn::make('position'),
                 TextColumn::make('sort_order'),
                 IconColumn::make('status')->boolean(),

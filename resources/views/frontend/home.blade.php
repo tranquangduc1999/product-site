@@ -113,7 +113,7 @@
                                 class="col-md-{{$value->sort_order==2 ? '6' :'3'}} col-sm-{{$value->sort_order==2 ? '6' :'3'}} box box{{$key+1}}">
                                 <div class="box-inner">
                                     <a href="#">
-                                        <img src="{{@$value->image}}" data-lazyload="{{@$value->image}}"
+                                        <img src="{{image_url($value->image)}}" data-lazyload="{{image_url($value->image)}}"
                                              alt="{{@$value->title}}">
                                     </a>
                                     <div class="text">
@@ -352,106 +352,22 @@
                             </div>
                             <div class="wrap_views">
                                 <div class="content_views owl-carousel not-dqowl owl-loaded owl-drag review">
-                                    <div class="item">
-                                        <div class="image_reviews">
-                                            <img
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/customer_image_2.png?v=230"
-                                                alt="Nguyễn Ngọc Huyền">
-                                            <p class="description_review">Lần đầu tham quan showroom, tôi đã
-                                                thật sự ngạc nhiên trước sự rộng lớn của showroom Ant
-                                                Furniture. Ant Furniture có rất nhiều bộ sưu tập đẹp từ cổ
-                                                điển cho đến hiện đại. Ngoài ra thì công ty còn có nhà máy
-                                                với máy móc hiện đại. Tôi hài lòng với thiết kế của nội thất
-                                                Ant Furniture: rất đẹp, hài hòa với căn nhà và phù hợp với
-                                                phong cách của tôi.</p>
-                                            <div class="info_reviews">
-                                                <p>Nguyễn Ngọc Huyền</p>
-                                                <span>-</span>
-                                                <span>Nhân viên ngân hàng</span>
+                                    @foreach($testimonials as $value)
+                                        <div class="item">
+                                            <div class="image_reviews">
+                                                <img
+                                                    src="{{image_url($value->image)}}"
+                                                    data-lazyload="{{image_url($value->image)}}"
+                                                    alt="{{$value->name}}">
+                                                <p class="description_review">{{$value->content}}</p>
+                                                <div class="info_reviews">
+                                                    <p>{{$value->name}}</p>
+                                                    <span>-</span>
+                                                    <span>{{$value->position}}</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="image_reviews">
-                                            <img
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/customer_image_2.png?v=230"
-                                                alt="Nguyễn Ngọc Huyền">
-                                            <p class="description_review">Lần đầu tham quan showroom, tôi đã
-                                                thật sự ngạc nhiên trước sự rộng lớn của showroom Ant
-                                                Furniture. Ant Furniture có rất nhiều bộ sưu tập đẹp từ cổ
-                                                điển cho đến hiện đại. Ngoài ra thì công ty còn có nhà máy
-                                                với máy móc hiện đại. Tôi hài lòng với thiết kế của nội thất
-                                                Ant Furniture: rất đẹp, hài hòa với căn nhà và phù hợp với
-                                                phong cách của tôi.</p>
-                                            <div class="info_reviews">
-                                                <p>Nguyễn Ngọc Huyền</p>
-                                                <span>-</span>
-                                                <span>Nhân viên ngân hàng</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="image_reviews">
-                                            <img
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/customer_image_2.png?v=230"
-                                                alt="Nguyễn Ngọc Huyền">
-                                            <p class="description_review">Lần đầu tham quan showroom, tôi đã
-                                                thật sự ngạc nhiên trước sự rộng lớn của showroom Ant
-                                                Furniture. Ant Furniture có rất nhiều bộ sưu tập đẹp từ cổ
-                                                điển cho đến hiện đại. Ngoài ra thì công ty còn có nhà máy
-                                                với máy móc hiện đại. Tôi hài lòng với thiết kế của nội thất
-                                                Ant Furniture: rất đẹp, hài hòa với căn nhà và phù hợp với
-                                                phong cách của tôi.</p>
-                                            <div class="info_reviews">
-                                                <p>Nguyễn Ngọc Huyền</p>
-                                                <span>-</span>
-                                                <span>Nhân viên ngân hàng</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="image_reviews">
-                                            <img
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/customer_image_2.png?v=230"
-                                                alt="Nguyễn Ngọc Huyền">
-                                            <p class="description_review">Lần đầu tham quan showroom, tôi đã
-                                                thật sự ngạc nhiên trước sự rộng lớn của showroom Ant
-                                                Furniture. Ant Furniture có rất nhiều bộ sưu tập đẹp từ cổ
-                                                điển cho đến hiện đại. Ngoài ra thì công ty còn có nhà máy
-                                                với máy móc hiện đại. Tôi hài lòng với thiết kế của nội thất
-                                                Ant Furniture: rất đẹp, hài hòa với căn nhà và phù hợp với
-                                                phong cách của tôi.</p>
-                                            <div class="info_reviews">
-                                                <p>Nguyễn Ngọc Huyền</p>
-                                                <span>-</span>
-                                                <span>Nhân viên ngân hàng</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="image_reviews">
-                                            <img
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                                                data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/customer_image_2.png?v=230"
-                                                alt="Nguyễn Ngọc Huyền">
-                                            <p class="description_review">Lần đầu tham quan showroom, tôi đã
-                                                thật sự ngạc nhiên trước sự rộng lớn của showroom Ant
-                                                Furniture. Ant Furniture có rất nhiều bộ sưu tập đẹp từ cổ
-                                                điển cho đến hiện đại. Ngoài ra thì công ty còn có nhà máy
-                                                với máy móc hiện đại. Tôi hài lòng với thiết kế của nội thất
-                                                Ant Furniture: rất đẹp, hài hòa với căn nhà và phù hợp với
-                                                phong cách của tôi.</p>
-                                            <div class="info_reviews">
-                                                <p>Nguyễn Ngọc Huyền</p>
-                                                <span>-</span>
-                                                <span>Nhân viên ngân hàng</span>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
@@ -469,6 +385,30 @@
                                     <div class="owl-stage-outer">
                                         <div class="owl-stage">
                                             <div class="owl-item cloned">
+                                                <div class="item-inner clearfix">
+                                                    <div class="blog-image">
+                                                        <a href="javascript:void(0)">
+                                                            <img
+                                                                src="//file.hstatic.net/1000343108/article/shapeimage-9_grande.png"
+                                                                data-lazyload="//file.hstatic.net/1000343108/article/shapeimage-9_grande.png"
+                                                                alt="Những thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt đẹp"
+                                                                class="img-responsive center-block">
+                                                        </a>
+                                                    </div>
+                                                    <div class="blog-content">
+                                                        <div class="blog-content-inner">
+                                                            <h3 class="blog-title">
+                                                                <a href="javascript:void(0)"
+                                                                   title="Những thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt đẹp">Những
+                                                                    thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt
+                                                                    đẹp</a>
+                                                            </h3>
+                                                            <p class="short-des">Gỗ là vật liệu phổ biến được sử dụng
+                                                                nhiều nhất trong thiết kế nhà đẹp nhà bếp. Bên cạnh
+                                                                những thiết kế truyền thống ...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="item-inner clearfix">
                                                     <div class="blog-image">
                                                         <a href="javascript:void(0)">
