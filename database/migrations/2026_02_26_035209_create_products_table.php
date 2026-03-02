@@ -27,6 +27,8 @@ return new class extends Migration
             $table->text('meta_description')->nullable();
             $table->boolean('has_variants')->default(false);
             $table->integer('stock')->default(0);
+            $table->string('warranty_period')->nullable();
+            $table->text('warranty_policy')->nullable();
             $table->timestamps();
 
             $table->index(['status', 'published_at']);

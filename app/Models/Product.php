@@ -21,6 +21,8 @@ class Product extends Model
         'meta_title',
         'meta_description',
         'stock',
+        'warranty_period',
+        'warranty_policy',
         'has_variants',
     ];
 

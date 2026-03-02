@@ -3,101 +3,176 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\ProductResource\Pages;
-use App\Filament\Resources\ProductResource\RelationManagers;
 use App\Models\Product;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-use Filament\Forms\Components\{TextInput, Textarea, Select, Toggle, RichEditor, FileUpload, DateTimePicker, Section,Repeater};
-use Filament\Tables\Columns\{TextColumn, IconColumn, ImageColumn};
+use Filament\Forms\Components\{
+    TextInput,
+    Textarea,
+    Select,
+    Toggle,
+    RichEditor,
+    FileUpload,
+    DateTimePicker,
+    Section,
+    Repeater
+};
+use Filament\Tables\Columns\{
+    TextColumn,
+    IconColumn,
+    ImageColumn
+};
 use Filament\Tables\Filters\TernaryFilter;
+use Illuminate\Support\Str;
+
 class ProductResource extends Resource
 {
     protected static ?string $model = Product::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-shopping-bag';
+    protected static ?string $navigationGroup = 'Sản phẩm';
+    protected static ?string $navigationLabel = 'Sản phẩm';
 
     public static function form(Form $form): Form
     {
         return $form->schema([
 
-            Section::make('Thông tin chính')->schema([
+            /*
+            |--------------------------------------------------------------------------
+            | THÔNG TIN CHÍNH
+            |--------------------------------------------------------------------------
+            */
 
-                TextInput::make('name')
-                    ->required()
-                    ->live(onBlur: true)
-                    ->afterStateUpdated(fn ($state, callable $set) =>
-                    $set('slug', \Illuminate\Support\Str::slug($state))
-                    ),
+            Section::make('Thông tin chính')
+                ->schema([
 
-                TextInput::make('slug')
-                    ->required()
-                    ->unique(ignoreRecord: true),
+                    TextInput::make('name')
+                        ->required()
+                        ->live(onBlur: true)
+                        ->afterStateUpdated(fn ($state, callable $set) =>
+                        $set('slug', Str::slug($state))
+                        ),
 
-                Select::make('product_category_id')
-                    ->relationship('category', 'name')
-                    ->required()
-                    ->searchable(),
+                    TextInput::make('slug')
+                        ->required()
+                        ->unique(ignoreRecord: true),
 
-                Textarea::make('short_description'),
+                    Select::make('product_category_id')
+                        ->relationship('category', 'name')
+                        ->required()
+                        ->searchable(),
 
-                RichEditor::make('content')
-                    ->columnSpanFull(),
+                    Textarea::make('short_description')
+                        ->rows(3),
 
-                TextInput::make('price')
-                    ->numeric()
-                    ->prefix('₫'),
+                    RichEditor::make('content')
+                        ->columnSpanFull(),
 
-                FileUpload::make('thumbnail')
-                    ->image()
-                    ->directory('products'),
+                    TextInput::make('price')
+                        ->numeric()
+                        ->prefix('₫')
+                        ->required(),
 
-                FileUpload::make('gallery')
-                    ->multiple()
-                    ->image()
-                    ->directory('products/gallery'),
+                    FileUpload::make('thumbnail')
+                        ->image()
+                        ->directory('products')
+                        ->disk('public'),
 
-                Toggle::make('status')
-                    ->default(true),
-                Toggle::make('has_variants')
-                    ->label('Có biến thể')
-                    ->default(false)
-                    ->live(),
-                TextInput::make('stock')
-                    ->numeric()
-                    ->visible(fn ($get) => !$get('has_variants')),
-                Repeater::make('variants')
-                    ->relationship()
-                    ->schema([
-                        TextInput::make('sku')
-                            ->label('SKU'),
+                    FileUpload::make('gallery')
+                        ->multiple()
+                        ->image()
+                        ->directory('products/gallery')
+                        ->disk('public'),
 
-                        TextInput::make('price')
-                            ->numeric()
-                            ->label('Giá'),
+                    Toggle::make('status')
+                        ->label('Hiển thị')
+                        ->default(true),
 
-                        TextInput::make('stock')
-                            ->numeric()
-                            ->label('Tồn kho'),
+                    DateTimePicker::make('published_at'),
 
-                        Toggle::make('is_default')
-                            ->label('Mặc định'),
-                    ])
-                    ->visible(fn ($get) => $get('has_variants'))
-                    ->columns(2)
-                    ->columnSpanFull(),
+                ])
+                ->columns(2),
 
-                DateTimePicker::make('published_at'),
-            ])->columns(2),
+            /*
+            |--------------------------------------------------------------------------
+            | BIẾN THỂ & TỒN KHO
+            |--------------------------------------------------------------------------
+            */
 
-            Section::make('SEO')->schema([
-                TextInput::make('meta_title'),
-                Textarea::make('meta_description'),
-            ])
+            Section::make('Tồn kho & Biến thể')
+                ->schema([
+
+                    Toggle::make('has_variants')
+                        ->label('Có biến thể')
+                        ->default(false)
+                        ->live(),
+
+                    TextInput::make('stock')
+                        ->label('Tồn kho')
+                        ->numeric()
+                        ->default(0)
+                        ->visible(fn ($get) => !$get('has_variants')),
+
+                    Repeater::make('variants')
+                        ->relationship()
+                        ->schema([
+                            TextInput::make('sku')
+                                ->label('SKU'),
+
+                            TextInput::make('price')
+                                ->numeric()
+                                ->label('Giá'),
+
+                            TextInput::make('stock')
+                                ->numeric()
+                                ->label('Tồn kho'),
+
+                            Toggle::make('is_default')
+                                ->label('Mặc định'),
+                        ])
+                        ->visible(fn ($get) => $get('has_variants'))
+                        ->columns(2)
+                        ->columnSpanFull(),
+                ])
+                ->columns(2),
+
+            /*
+            |--------------------------------------------------------------------------
+            | BẢO HÀNH
+            |--------------------------------------------------------------------------
+            */
+
+            Section::make('Bảo hành')
+                ->schema([
+
+                    TextInput::make('warranty_period')
+                        ->label('Thời gian bảo hành')
+                        ->placeholder('Ví dụ: 12 tháng'),
+
+                    Textarea::make('warranty_policy')
+                        ->label('Chính sách bảo hành')
+                        ->rows(4)
+                        ->columnSpanFull(),
+                ])
+                ->columns(2),
+
+            /*
+            |--------------------------------------------------------------------------
+            | SEO
+            |--------------------------------------------------------------------------
+            */
+
+            Section::make('SEO')
+                ->schema([
+                    TextInput::make('meta_title'),
+                    Textarea::make('meta_description')
+                        ->rows(3),
+                ])
+                ->columns(2),
+
         ]);
     }
 
@@ -105,30 +180,38 @@ class ProductResource extends Resource
     {
         return $table
             ->columns([
-                ImageColumn::make('thumbnail'),
-                TextColumn::make('name')->searchable(),
-                TextColumn::make('category.name'),
-                IconColumn::make('status')->boolean(),
-                TextColumn::make('published_at')->dateTime(),
+
+                ImageColumn::make('thumbnail')
+                    ->label('Ảnh'),
+
+                TextColumn::make('name')
+                    ->searchable()
+                    ->sortable(),
+
+                TextColumn::make('category.name')
+                    ->label('Danh mục'),
+
+                TextColumn::make('price')
+                    ->money('VND', true),
+
+                IconColumn::make('status')
+                    ->boolean(),
+
+                TextColumn::make('published_at')
+                    ->dateTime('d/m/Y H:i'),
             ])
             ->filters([
                 TernaryFilter::make('status'),
-            ]);
-    }
-
-    public static function getRelations(): array
-    {
-        return [
-            //
-        ];
+            ])
+            ->defaultSort('created_at', 'desc');
     }
 
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListProducts::route('/'),
+            'index'  => Pages\ListProducts::route('/'),
             'create' => Pages\CreateProduct::route('/create'),
-            'edit' => Pages\EditProduct::route('/{record}/edit'),
+            'edit'   => Pages\EditProduct::route('/{record}/edit'),
         ];
     }
 }

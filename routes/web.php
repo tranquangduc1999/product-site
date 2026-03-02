@@ -6,6 +6,8 @@ use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\ProductController;
 use App\Http\Controllers\Frontend\PostController;
 use App\Http\Controllers\Frontend\PageController;
+use App\Http\Controllers\Frontend\WarrantyLookupController;
+use App\Http\Controllers\SitemapController;
 use App\Models\Product;
 use App\Models\Post;
 use App\Models\Page;
@@ -21,19 +23,9 @@ Route::post('/checkout', [CartController::class, 'checkout'])->name('checkout.po
 Route::get('/order-success/{id}', [CartController::class, 'success'])->name('order.success');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+Route::get('/tra-cuu-bao-hanh', [WarrantyLookupController::class, 'index'])->name('warranty.lookup');
+Route::post('/tra-cuu-bao-hanh', [WarrantyLookupController::class, 'search'])->name('warranty.search');
 Route::get('/{slug}', [PageController::class, 'show']);
 
 //SITEMAP AUTO GENERATE
-Route::get('/sitemap.xml', function () {
-
-    $products = Product::published()->get();
-    $posts = Post::published()->get();
-    $pages = Page::published()->get();
-
-    return response()->view('sitemap', compact(
-        'products',
-        'posts',
-        'pages'
-    ))->header('Content-Type', 'text/xml');
-
-});
+Route::get('/sitemap.xml', [SitemapController::class, 'index']);
