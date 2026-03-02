@@ -9,16 +9,16 @@
                     <a href="#" class="clearfix">
                         <picture>
                             <source media="(min-width: 1200px)"
-                                    srcset="{{ asset('storage/' . $value->image) }}">
+                                    srcset="{{ image_url($value->image) }}">
                             <source media="(min-width: 992px)"
-                                    srcset="{{ asset('storage/' . $value->image) }}">
+                                    srcset="{{ image_url($value->image) }}">
                             <source media="(min-width: 569px)"
-                                    srcset="{{ asset('storage/' . $value->image) }}">
+                                    srcset="{{ image_url($value->image) }}">
                             <source media="(min-width: 480px)"
-                                    srcset="{{ asset('storage/' . $value->image) }}">
+                                    srcset="{{ image_url($value->image) }}">
                             <source media="(min-width: 319px)"
-                                    srcset="{{ asset('storage/' . $value->image) }}">
-                            <img src="{{ asset('storage/' . $value->image) }}" alt=""
+                                    srcset="{{ image_url($value->image) }}">
+                            <img src="{{ image_url($value->image) }}" alt=""
                                  class="img-responsive center-block">
                         </picture>
                     </a>
@@ -381,70 +381,32 @@
                                 </h2>
                             </div>
                             <div class="ant-image-handover">
-                                <div class="content_views owl-carousel not-dqowl owl-loaded owl-drag">
-                                    <div class="owl-stage-outer">
-                                        <div class="owl-stage">
-                                            <div class="owl-item cloned">
-                                                <div class="item-inner clearfix">
-                                                    <div class="blog-image">
-                                                        <a href="javascript:void(0)">
-                                                            <img
-                                                                src="//file.hstatic.net/1000343108/article/shapeimage-9_grande.png"
-                                                                data-lazyload="//file.hstatic.net/1000343108/article/shapeimage-9_grande.png"
-                                                                alt="Những thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt đẹp"
-                                                                class="img-responsive center-block">
-                                                        </a>
-                                                    </div>
-                                                    <div class="blog-content">
-                                                        <div class="blog-content-inner">
-                                                            <h3 class="blog-title">
-                                                                <a href="javascript:void(0)"
-                                                                   title="Những thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt đẹp">Những
-                                                                    thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt
-                                                                    đẹp</a>
-                                                            </h3>
-                                                            <p class="short-des">Gỗ là vật liệu phổ biến được sử dụng
-                                                                nhiều nhất trong thiết kế nhà đẹp nhà bếp. Bên cạnh
-                                                                những thiết kế truyền thống ...</p>
-                                                        </div>
-                                                    </div>
+                                <div class="content_views owl-carousel">
+                                    @foreach($testimonials as $value)
+                                        <div class="item">
+                                            <div class="item-inner clearfix">
+                                                <div class="blog-image">
+                                                    <a href="javascript:void(0)">
+                                                        <img
+                                                            src="{{image_url($value->image)}}"
+                                                            data-lazyload="{{image_url($value->image)}}"
+                                                            alt="{{$value->name}}"
+                                                            class="img-responsive center-block">
+                                                    </a>
                                                 </div>
-                                                <div class="item-inner clearfix">
-                                                    <div class="blog-image">
-                                                        <a href="javascript:void(0)">
-                                                            <img
-                                                                src="//file.hstatic.net/1000343108/article/shapeimage-9_grande.png"
-                                                                data-lazyload="//file.hstatic.net/1000343108/article/shapeimage-9_grande.png"
-                                                                alt="Những thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt đẹp"
-                                                                class="img-responsive center-block">
-                                                        </a>
-                                                    </div>
-                                                    <div class="blog-content">
-                                                        <div class="blog-content-inner">
-                                                            <h3 class="blog-title">
-                                                                <a href="javascript:void(0)"
-                                                                   title="Những thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt đẹp">Những
-                                                                    thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt
-                                                                    đẹp</a>
-                                                            </h3>
-                                                            <p class="short-des">Gỗ là vật liệu phổ biến được sử dụng
-                                                                nhiều nhất trong thiết kế nhà đẹp nhà bếp. Bên cạnh
-                                                                những thiết kế truyền thống ...</p>
-                                                        </div>
+                                                <div class="blog-content">
+                                                    <div class="blog-content-inner">
+                                                        <h3 class="blog-title">
+                                                            <a href="javascript:void(0)"
+                                                               title="{{$value->name}}">
+                                                                {{$value->name}}</a>
+                                                        </h3>
+                                                        <p class="short-des">{{$value->description}}</p>
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </div>
-                                    </div>
-                                    <div class="owl-nav disabled">
-                                        <div class="owl-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
-                                        <div class="owl-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-                                    </div>
-                                    <div class="owl-dots">
-                                        <div class="owl-dot active"><span></span></div>
-                                        <div class="owl-dot"><span></span></div>
-                                    </div>
+                                    @endforeach
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
@@ -477,8 +439,8 @@
                                                 <div class="blog-image">
                                                     <a href="/blog/{{$value->slug}}">
                                                         <img
-                                                            src="{{$value->featured_image}}"
-                                                            data-lazyload="{{$value->featured_image}}"
+                                                            src="{{image_url($value->thumbnail)}}"
+                                                            data-lazyload="{{image_url($value->thumbnail)}}"
                                                             alt="{{$value->title}}"
                                                             class="img-responsive center-block">
                                                     </a>
