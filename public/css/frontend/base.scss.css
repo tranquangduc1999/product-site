@@ -122,7 +122,7 @@
   top: 50%;
   margin-left: -40px;
   margin-top: -40px;
-  background: url(owl.video.play.png) no-repeat;
+  background: url(owl.video.play.html) no-repeat;
   cursor: pointer;
   z-index: 1;
   -webkit-backface-visibility: hidden;
@@ -212,7 +212,7 @@ Last update: 1/1/2017
 1. MIXIN
 2. TYPOGRAPHY VARIABLE
 3. VARIABLE
-4. RESERT	
+4. RESERT
 4.1 Gerenal
 4.2 Partials | Typography styles
 4.3 Use em() Sass function to declare font-size
@@ -228,10 +228,10 @@ Last update: 1/1/2017
 4.13 Error styles
 4.14 Input Group
 4.15 Module | Rich Text Editor
-5. HELP		
+5. HELP
 6. BUTTON
-7. POPUP		
-8. SWATCH VARIANT		
+7. POPUP
+8. SWATCH VARIANT
 9. CUSTOM OWL CAROUSEL
 10. TAB
 11. ACCORDION
@@ -294,13 +294,13 @@ input[type="tel"] {
 a {
   color: #575454; }
   a:hover {
-    color: #ed1b24; }
+    color: #1d7ed8; }
 
 .remove {
   color: #999;
   font-size: 1em; }
   .remove:hover {
-    color: #ed1b24; }
+    color: #1d7ed8; }
 
 .dropdown-menu {
   box-shadow: none; }
@@ -631,7 +631,7 @@ select {
   -moz-appearance: none;
   appearance: none;
   background-position: right center;
-  background-image: url("//theme.hstatic.net/1000343108/1000435493/14/ico-selects.png?v=214");
+  background-image: url("ico-selects9153.png?v=214");
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-color: #fff !important;
@@ -1979,7 +1979,7 @@ label.error {
     background: #9e9e9e;
     color: #fff; }
     .btn.btn-gray:hover, input.btn-gray[type="submit"]:hover {
-      background: #ed1b24; }
+      background: #1d7ed8; }
     .btn.btn-gray a, input.btn-gray[type="submit"] a {
       color: #fff; }
   .btn.btn-full, input.btn-full[type="submit"] {
@@ -1988,7 +1988,7 @@ label.error {
 
 .btn-link {
   line-height: 40px;
-  color: #ed1b24; }
+  color: #1d7ed8; }
   .btn-link:hover {
     text-decoration: underline; }
 
@@ -2100,7 +2100,7 @@ label.error {
     display: block;
     font-size: 1.42857em;
     line-height: 25px;
-    color: #ed1b24; }
+    color: #1d7ed8; }
 
 .awe-popup.loading {
   z-index: 9998; }
@@ -2143,7 +2143,7 @@ label.error {
     margin-right: 5px; }
 
 .product-popup .product-name {
-  color: #ed1b24; }
+  color: #1d7ed8; }
 
 .product-popup .product-info p.total-money {
   margin-bottom: 15px; }
@@ -2189,7 +2189,7 @@ label.error {
 /*============================================================================
 8. SWATCH VARIANT
 ==============================================================================*/
-/* 
+/*
 Swatches Styles
 */
 .swatch {
@@ -2248,7 +2248,7 @@ Swatches Styles
 
 .swatch .color input:checked + label {
   position: relative;
-  border: 1px solid #ed1b24; }
+  border: 1px solid #1d7ed8; }
   .swatch .color input:checked + label:after {
     content: "\f00c";
     font-family: FontAwesome;
@@ -2314,7 +2314,7 @@ Swatches Styles
 
 .swatch .tooltip {
   text-align: center;
-  background: #ed1b24;
+  background: #1d7ed8;
   color: #fff;
   bottom: 100%;
   padding: 10px;
@@ -2361,7 +2361,7 @@ Swatches Styles
   .swatch .tooltip:after {
     border-left: solid transparent 10px;
     border-right: solid transparent 10px;
-    border-top: solid #ed1b24 10px;
+    border-top: solid #1d7ed8 10px;
     bottom: -10px;
     content: " ";
     height: 0;
@@ -2469,7 +2469,7 @@ Swatches Styles
   margin: 0 3px; }
 
 .owl-carousel .owl-dots .owl-dot.active {
-  background: #ed1b24; }
+  background: #1d7ed8; }
 
 .owl-carousel-inset .owl-nav .owl-prev {
   left: 0; }
@@ -2591,7 +2591,7 @@ ul.tabs li {
     color: #000;
     font-size: 18px; }
     #quickview .product-name a:hover, #quickview .product-name a:focus {
-      color: #ed1b24;
+      color: #1d7ed8;
       text-decoration: none; }
 
 #quickview button.btn.btn-close.btn-default {
@@ -2614,7 +2614,7 @@ ul.tabs li {
 #quickview .modal-body {
   position: relative;
   padding: 20px;
-  border: 2px solid #ed1b24;
+  border: 2px solid #1d7ed8;
   border-radius: 7px; }
 
 #quickview .modal-dialog {
@@ -2629,7 +2629,7 @@ ul.tabs li {
 #quickview .inventory {
   display: inline-block;
   padding: 0 5px;
-  color: #ed1b24; }
+  color: #1d7ed8; }
 
 #quickview .selector-wrapper select {
   height: 40px; }
@@ -2645,7 +2645,7 @@ ul.tabs li {
       font-weight: normal; }
 
 #quickview span.discount {
-  color: #ed1b24; }
+  color: #1d7ed8; }
 
 #quickview .product-price {
   font-size: 1.42857em;
@@ -2656,7 +2656,7 @@ ul.tabs li {
   padding-bottom: 10px;
   border-bottom: 1px solid #ebebeb; }
   #quickview .price-box .special-price span {
-    color: #ed1b24; }
+    color: #1d7ed8; }
   #quickview .price-box .old-price {
     display: block;
     color: #bbb;
@@ -2786,14 +2786,14 @@ ul.tabs li {
     padding: 0 45px;
     border-radius: 3px;
     display: inline-block;
-    background-color: #ed1b24;
+    background-color: #1d7ed8;
     color: #fff;
-    border: 1px solid #ed1b24;
+    border: 1px solid #1d7ed8;
     text-transform: uppercase;
     float: left; }
     #quickview .quantity_wanted_p .btn:hover, #quickview .quantity_wanted_p input[type="submit"]:hover, #quickview .quantity_wanted_p .btn:focus, #quickview .quantity_wanted_p input[type="submit"]:focus {
       background-color: #fff;
-      color: #ed1b24; }
+      color: #1d7ed8; }
 
 #quickview .swatch {
   display: none;
@@ -2952,7 +2952,7 @@ ul.tabs li {
       border-radius: 50%; }
 
 .filter-item--green *:hover {
-  color: #ed1b24; }
+  color: #1d7ed8; }
 
 .filter-item--half {
   display: inline-block;
@@ -2994,8 +2994,8 @@ ul.tabs li {
   left: 2px; }
 
 .filter-item--check-box input:checked + .fa:before {
-  border-color: #ed1b24;
-  background: #ed1b24; }
+  border-color: #1d7ed8;
+  background: #1d7ed8; }
 
 #sort-by {
   float: right;
@@ -3065,7 +3065,7 @@ ul.tabs li {
     #sort-by li:hover {
       background-color: #fff; }
     #sort-by li li:hover {
-      background-color: #ed1b24;
+      background-color: #1d7ed8;
       color: #fff; }
       #sort-by li li:hover a {
         color: #fff; }
@@ -3134,7 +3134,7 @@ ul.tabs li {
     padding-right: 15px;
     font-weight: 500;
     padding: 10px;
-    background: #ed1b24;
+    background: #1d7ed8;
     color: #fff; }
     #popup-cart-desktop .title-popup-cart i {
       color: #fff; }
@@ -3147,7 +3147,7 @@ ul.tabs li {
     font-weight: 500;
     padding: 10px; }
     #popup-cart-desktop .title-quantity-popup .fa-shopping-cart {
-      color: #ed1b24;
+      color: #1d7ed8;
       font-size: 25px; }
     #popup-cart-desktop .title-quantity-popup .fa-caret-right {
       font-size: 14px; }
@@ -3212,7 +3212,7 @@ ul.tabs li {
           font-weight: 500;
           font-size: 14px; }
           #popup-cart-desktop .content-popup-cart .tbody-popup .item-popup .item-info .item-name a:hover {
-            color: #ed1b24; }
+            color: #1d7ed8; }
         #popup-cart-desktop .content-popup-cart .tbody-popup .item-popup .item-info .variant-title-popup {
           font-size: 13px;
           margin-bottom: 5px;
@@ -3291,7 +3291,7 @@ ul.tabs li {
         padding-bottom: 0;
         margin-bottom: 0; }
         #popup-cart-desktop .content-popup-cart .tfoot-popup .tfoot-popup-1 .popup-total p .total-price {
-          color: #ed1b24; }
+          color: #1d7ed8; }
       #popup-cart-desktop .content-popup-cart .tfoot-popup .tfoot-popup-1 .popupcon a:hover, #popup-cart-desktop .content-popup-cart .tfoot-popup .tfoot-popup-1 .popupcon a:focus {
         cursor: pointer; }
     #popup-cart-desktop .content-popup-cart .tfoot-popup .tfoot-popup-2 {
@@ -3302,13 +3302,13 @@ ul.tabs li {
         background: #f6f7f9;
         font-size: 14px;
         float: left;
-        border: 1px solid #ed1b24;
+        border: 1px solid #1d7ed8;
         outline: none;
-        color: #ed1b24;
+        color: #1d7ed8;
         padding: 10px;
         width: 160px; }
       #popup-cart-desktop .content-popup-cart .tfoot-popup .tfoot-popup-2 .button.btn-proceed-checkout {
-        background: #ed1b24;
+        background: #1d7ed8;
         font-size: 14px;
         display: block;
         padding: 10px;
@@ -3348,7 +3348,7 @@ ul.tabs li {
   outline: 0; }
 
 .modal-header {
-  background-color: #ed1b24;
+  background-color: #1d7ed8;
   color: #fff;
   padding: 15px;
   border-bottom: 1px solid #e5e5e5;
@@ -3405,7 +3405,7 @@ button.close {
     font-size: 23px;
     text-align: center;
     line-height: 44px;
-    color: #ed1b24;
+    color: #1d7ed8;
     position: absolute;
     left: 0;
     top: 0;
@@ -3422,18 +3422,18 @@ button.close {
 
 .btn-outline-red {
   background: #fff;
-  color: #ed1b24 !important;
+  color: #1d7ed8 !important;
   font-size: 17px;
   line-height: normal;
   padding: 0px 15px;
   border-radius: 3px;
-  border: 1px solid #ed1b24;
+  border: 1px solid #1d7ed8;
   text-align: center;
   margin-top: 1.5rem; }
 
 .btn-red {
-  background: #ed1b24;
-  border: 1px solid #ed1b24;
+  background: #1d7ed8;
+  border: 1px solid #1d7ed8;
   color: #fff !important;
   font-size: 17px;
   line-height: 40px;

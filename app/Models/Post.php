@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
-
+use Illuminate\Support\Facades\Storage;
 class Post extends Model
 {
     protected $fillable = [
@@ -36,12 +36,33 @@ class Post extends Model
             ->whereNotNull('published_at')
             ->where('published_at', '<=', now());
     }
-
     protected static function booted()
     {
+        // Tạo slug tự động
         static::creating(function ($model) {
             if (!$model->slug) {
                 $model->slug = Str::slug($model->title);
+            }
+        });
+
+        // Khi update thumbnail
+        static::updating(function ($post) {
+
+            if ($post->isDirty('thumbnail')) {
+
+                $oldThumbnail = $post->getOriginal('thumbnail');
+
+                if ($oldThumbnail && Storage::disk('public')->exists($oldThumbnail)) {
+                    Storage::disk('public')->delete($oldThumbnail);
+                }
+            }
+        });
+
+        // Khi xóa post
+        static::deleting(function ($post) {
+
+            if ($post->thumbnail && Storage::disk('public')->exists($post->thumbnail)) {
+                Storage::disk('public')->delete($post->thumbnail);
             }
         });
     }

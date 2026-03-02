@@ -43,6 +43,7 @@ class BannerResource extends Resource
             Select::make('position')
                 ->options([
                     'homepage' => 'Homepage',
+                    'slider' => 'Slider',
                     'about' => 'About Page',
                     'sidebar' => 'Sidebar',
                 ])
