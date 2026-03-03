@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('hotline')->nullable();
             $table->string('email')->nullable();
             $table->string('address')->nullable();
+            $table->text('google_map_embed')->nullable();
 
             // Mạng xã hội
             $table->string('facebook')->nullable();

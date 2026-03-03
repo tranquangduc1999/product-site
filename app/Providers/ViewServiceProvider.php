@@ -18,7 +18,6 @@ class ViewServiceProvider extends ServiceProvider
             $settings = Cache::rememberForever('site_settings', function () {
                 return Setting::first();
             });
-
             // ✅ Load menu
             $headerMenu = Cache::rememberForever('header_menu', function () {
                 return Menu::where('location', 'header')
@@ -35,7 +34,6 @@ class ViewServiceProvider extends ServiceProvider
                     ->with('items')
                     ->first();
             });
-
             $view->with([
                 'settings' => $settings,
                 'headerMenu' => $headerMenu,

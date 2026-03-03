@@ -22,15 +22,13 @@
     $menuPages = \App\Models\Page::published()->get();
     $siteName = $settings['site_name'] ?? config('app.name');
     $logo = $settings['logo'] ?? null;
-    $footerContent = $settings['footer_content'] ?? null;
 @endphp
 
 <body class="index">
     <x-frontend.header :site-name="$siteName" :logo="$logo" :menu-pages="$menuPages" />
 
     @yield('content')
-
-    <x-frontend.footer :footer-content="$footerContent" />
+    <x-frontend.footer :footer-content="$settings" />
     @include('frontend.style.js')
     @stack('scripts')
 </body>

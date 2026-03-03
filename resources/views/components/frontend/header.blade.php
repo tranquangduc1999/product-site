@@ -157,7 +157,7 @@
 
 
 
-                            <li class="nav-item "><a class="nav-link" href="/pages/about-us">Giới thiệu</a></li>
+                            <li class="nav-item "><a class="nav-link" href="/pages/gioi-thieu">Giới thiệu</a></li>
 
 
 

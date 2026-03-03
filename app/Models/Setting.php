@@ -13,6 +13,7 @@ class Setting extends Model
         'hotline',
         'email',
         'address',
+        'google_map_embed',
         'facebook',
         'zalo',
         'meta_title',

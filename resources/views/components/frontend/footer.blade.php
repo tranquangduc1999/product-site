@@ -11,10 +11,10 @@
                         </div>
                         <div class="footer-content" bis_skin_checked="1">
                             <ul class="info">
-                                <li>Địa chỉ: 175 Lý Thường Kiệt, Phường 6, Quận Tân Bình, TP Hồ Chí Minh</li>
-                                <li>Điện thoại: <a href="tel:0123456789">0123 456 789</a></li>
-                                <li>Website: <a href="https://ant-furniture.myharavan.com">https://ant-furniture.myharavan.com</a></li>
-                                <li>Email: <a href="mailto:baotrung304@gmail.com">baotrung304@gmail.com</a></li>
+                                <li>Địa chỉ: {{@$settings['address']}}</li>
+                                <li>Điện thoại: <a href="tel:{{@$settings['hotline']}}">{{@$settings['hotline']}}</a></li>
+                                <li>Website: <a href="https://giadungalpha.com/">https://giadungalpha.com/</a></li>
+                                <li>Email: <a href="mailto:{{@$settings['hotline']}}">{{@$settings['hotline']}}</a></li>
                             </ul>
                             <div class="social-icons" bis_skin_checked="1">
                                 <ul>
@@ -46,11 +46,11 @@
 
                                 <li><a href="/">Trang chủ</a></li>
 
-                                <li><a href="/pages/about-us">Giới thiệu</a></li>
+                                <li><a href="#">Giới thiệu</a></li>
 
-                                <li><a href="/collections/all">Sản phẩm</a></li>
+                                <li><a href="/products">Sản phẩm</a></li>
 
-                                <li><a href="/blogs/news">Tin tức</a></li>
+                                <li><a href="/blogs">Tin tức</a></li>
 
                                 <li><a href="/pages/lien-he">Liên hệ</a></li>
 
@@ -66,11 +66,11 @@
 
                                 <li><a href="/">Trang chủ</a></li>
 
-                                <li><a href="/pages/about-us">Giới thiệu</a></li>
+                                <li><a href="#">Giới thiệu</a></li>
 
-                                <li><a href="/collections/all">Sản phẩm</a></li>
+                                <li><a href="/products">Sản phẩm</a></li>
 
-                                <li><a href="/blogs/news">Tin tức</a></li>
+                                <li><a href="/blogs">Tin tức</a></li>
 
                                 <li><a href="/pages/lien-he">Liên hệ</a></li>
 

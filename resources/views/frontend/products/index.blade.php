@@ -474,7 +474,7 @@
                                 <a class="nav-link" href="/" title="Trang chủ">Trang chủ</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="/pages/about-us" title="Giới thiệu">Giới thiệu</a>
+                                <a class="nav-link" href="/pages/gioi-thieu" title="Giới thiệu">Giới thiệu</a>
                             </li>
                             <li class="nav-item active">
                                 <a href="/collections/all" class="nav-link" title="Sản phẩm">Sản phẩm</a>

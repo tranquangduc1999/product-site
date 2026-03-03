@@ -57,6 +57,11 @@ class ManageSetting extends Page implements HasForms
                         TextInput::make('address'),
                     ])
                     ->columns(2),
+                Textarea::make('google_map_embed')
+                    ->label('Google Map Iframe')
+                    ->rows(5)
+                    ->columnSpanFull()
+                    ->helperText('Dán iframe từ Google Maps'),
 
                 Section::make('SEO mặc định')
                     ->schema([
