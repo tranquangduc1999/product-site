@@ -1,10 +1,10 @@
 @extends('frontend.layout')
-<style>
-    .aside-item.collection-category .nav-item.active > a{
-        color: #ed1b24;
-    }
-</style>
 @section('content')
+    <style>
+        .aside-item.collection-category .nav-item.active > a{
+            color: #ed1b24;
+        }
+    </style>
     <section class="bread-crumb margin-bottom-10">
         <div class="container">
             <div class="row">
@@ -31,46 +31,39 @@
                              alt="Tất cả sản phẩm" class="img-responsive center-block">
                     </div>
                 </div>
-                {{--                <div class="group-category">--}}
-                {{--                    <div class="section-tour-owl-2 products products-view-grid owl-carousel">--}}
-                {{--                        @if(!empty($categories))--}}
-                {{--                            @foreach($categories as $value)--}}
-                {{--                                <div class="item">--}}
-                {{--                                    <div class="category-item">--}}
-                {{--                                        <a href="#" title="{{$value->name}}">--}}
-                {{--                                            <div class="group-category-image">--}}
-                {{--                                                <img class="img-fluid"--}}
-                {{--                                                     src="{{$value->image}}"--}}
-                {{--                                                     alt="{{$value->name}}">--}}
-                {{--                                            </div>--}}
-                {{--                                            <h6>{{$value->name}}</h6>--}}
-                {{--                                        </a>--}}
-                {{--                                    </div>--}}
-                {{--                                </div>--}}
-                {{--                            @endforeach--}}
-                {{--                        @endif--}}
-                {{--                    </div>--}}
-
-                {{--                </div>--}}
                 <div class="category-products products category-products-grids">
                     <div class="sort-cate clearfix margin-top-10 margin-bottom-10">
                         <div class="sort-cate-left hidden-xs">
                             <h3>Ưu tiên theo:</h3>
                             <ul>
                                 <li class="btn-quick-sort alpha-asc">
-                                    <a href="javascript:;" onclick="sortby('alpha-asc')"><i></i>Tên A-Z</a>
+                                    <a href="javascript:;" class="filter-sort" data-sort="name_asc">
+                                        <i></i>Tên A-Z
+                                    </a>
                                 </li>
+
                                 <li class="btn-quick-sort alpha-desc">
-                                    <a href="javascript:;" onclick="sortby('alpha-desc')"><i></i>Tên Z-A</a>
+                                    <a href="javascript:;" class="filter-sort" data-sort="name_desc">
+                                        <i></i>Tên Z-A
+                                    </a>
                                 </li>
+
                                 <li class="btn-quick-sort position-desc">
-                                    <a href="javascript:;" onclick="sortby('created-desc')"><i></i>Hàng mới</a>
+                                    <a href="javascript:;" class="filter-sort" data-sort="newest">
+                                        <i></i>Hàng mới
+                                    </a>
                                 </li>
+
                                 <li class="btn-quick-sort price-asc">
-                                    <a href="javascript:;" onclick="sortby('price-asc')"><i></i>Giá thấp đến cao</a>
+                                    <a href="javascript:;" class="filter-sort" data-sort="price_asc">
+                                        <i></i>Giá thấp đến cao
+                                    </a>
                                 </li>
+
                                 <li class="btn-quick-sort price-desc">
-                                    <a href="javascript:;" onclick="sortby('price-desc')"><i></i>Giá cao xuống thấp</a>
+                                    <a href="javascript:;" class="filter-sort" data-sort="price_desc">
+                                        <i></i>Giá cao xuống thấp
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -315,7 +308,10 @@
         </div>
     </div>
     <script>
+
         $(document).ready(function(){
+
+            // Owl carousel
             $('.section-tour-owl-2').owlCarousel({
                 items: 4,
                 loop: true,
@@ -329,17 +325,22 @@
                     1000:{items:5}
                 }
             });
+
         });
+
         let currentSort = '';
-        function loadProducts(extraParams = {}) {
+
+        function loadProducts(page = 1) {
 
             let slug = $('.category-link.active').data('slug') || '';
             let categoryId = $('.category-link.active').data('id') || '';
 
+            // brand
             let brands = $('.filter-brand:checked').map(function () {
                 return $(this).val();
             }).get();
 
+            // price
             let prices = $('.filter-price:checked').map(function () {
                 return $(this).val();
             }).get();
@@ -367,47 +368,124 @@
                     brands: brands,
                     price_min: minPrice,
                     price_max: maxPrice,
-                    sort: currentSort
+                    sort: currentSort,
+                    page: page
                 },
 
                 success: function (response) {
+
                     $('#product-list').html(response);
+
+                },
+
+                error: function (xhr) {
+
+                    console.log(xhr.responseText);
+
                 }
 
             });
+
         }
 
-        // Click chọn danh mục
+
+
+
+
+
+        // ========================
+        // CATEGORY
+        // ========================
+
         $(document).on('click', '.category-link', function (e) {
+
             e.preventDefault();
+
             $('.category-link').removeClass('active');
+
             $(this).addClass('active');
+
             loadProducts();
+
         });
 
-        // Click chọn thương hiệu
+
+
+
+
+
+        // ========================
+        // BRAND
+        // ========================
+
         $(document).on('change', '.filter-brand', function () {
+
             loadProducts();
+
         });
+
+
+
+
+
+
+        // ========================
+        // PRICE
+        // ========================
+
         $(document).on('change', '.filter-price', function () {
+
             if ($(this).is(':checked')) {
 
-                // bỏ check tất cả checkbox khác
                 $('.filter-price').not(this).prop('checked', false);
 
             }
+
             loadProducts();
+
         });
-        $(document).on('click', '.filter-sort', function () {
+
+
+
+
+
+
+        // ========================
+        // SORT
+        // ========================
+
+        $(document).on('click', '.filter-sort', function (e) {
+
+            e.preventDefault();
+
+            $('.btn-quick-sort').removeClass('active');
+
+            $(this).closest('li').addClass('active');
+
             currentSort = $(this).data('sort');
+
             loadProducts();
+
         });
-        // Click phân trang
-        // $(document).on('click', '.pagination a', function (e) {
-        //     e.preventDefault();
-        //     let page = $(this).attr('href').split('page=')[1];
-        //     loadProducts({page: page});
-        // });
+
+
+
+
+
+
+        // ========================
+        // PAGINATION AJAX
+        // ========================
+
+        $(document).on('click', '.pagination a', function (e) {
+
+            e.preventDefault();
+
+            let page = $(this).attr('href').split('page=')[1];
+
+            loadProducts(page);
+
+        });
 
     </script>
 @endsection
