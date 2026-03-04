@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Brand;
 use App\Models\Product;
 use App\Models\ProductCategory;
+use PhpOffice\PhpSpreadsheet\Calculation\Category;
 
 class ProductController extends Controller
 {
@@ -18,8 +20,9 @@ class ProductController extends Controller
         }
 
         $products = $query->latest('published_at')->paginate(12);
-
-        return view('frontend.products.index', compact('products'));
+        $categories=ProductCategory::all();
+        $brands=Brand::all();
+        return view('frontend.products.index', compact('products','brands','categories'));
     }
 
     public function show($slug)
@@ -28,13 +31,13 @@ class ProductController extends Controller
             ->where('slug', $slug)
             ->with('category')
             ->firstOrFail();
-
+        $newProducts = Product::published()->orderBy('id','DESC')->take(4)->get();
         $related = Product::published()
             ->where('product_category_id', $product->product_category_id)
             ->where('id', '!=', $product->id)
             ->take(4)
             ->get();
 
-        return view('frontend.products.show', compact('product', 'related'));
+        return view('frontend.products.show', compact('product', 'related','newProducts'));
     }
 }

@@ -166,7 +166,7 @@
 
 
                             <li class="nav-item  has-mega">
-                                <a href="/collections/all" class="nav-link">Sản phẩm <i class="fa fa-angle-right" data-toggle="dropdown"></i></a>
+                                <a href="/products" class="nav-link">Sản phẩm <i class="fa fa-angle-right" data-toggle="dropdown"></i></a>
 
                                 <div class="mega-content" bis_skin_checked="1">
                                     <div class="level0-wrapper2" bis_skin_checked="1">
@@ -268,7 +268,7 @@
 
 
 
-                            <li class="nav-item "><a class="nav-link" href="/blogs/news">Tin tức</a></li>
+                            <li class="nav-item "><a class="nav-link" href="/blogs">Tin tức</a></li>
 
 
 

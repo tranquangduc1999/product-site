@@ -29,6 +29,10 @@ return new class extends Migration
             $table->integer('stock')->default(0);
             $table->string('warranty_period')->nullable();
             $table->text('warranty_policy')->nullable();
+            $table->foreignId('brand_id')
+                ->nullable()
+                ->constrained('brands')
+                ->nullOnDelete();
             $table->timestamps();
 
             $table->index(['status', 'published_at']);

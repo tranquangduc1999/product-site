@@ -18,8 +18,8 @@ class PostController extends Controller
         }
 
         $posts = $query->latest('published_at')->paginate(10);
-
-        return view('frontend.posts.index', compact('posts'));
+        $postCategory=PostCategory::all();
+        return view('frontend.posts.index', compact('posts','postCategory'));
     }
 
     public function show($slug)
@@ -28,13 +28,13 @@ class PostController extends Controller
             ->where('slug', $slug)
             ->with('category')
             ->firstOrFail();
-
+        $listPost = Post::published()->get();
         $related = Post::published()
             ->where('post_category_id', $post->post_category_id)
             ->where('id', '!=', $post->id)
             ->take(4)
             ->get();
 
-        return view('frontend.posts.show', compact('post', 'related'));
+        return view('frontend.posts.show', compact('post', 'related','listPost'));
     }
 }

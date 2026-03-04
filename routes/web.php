@@ -16,7 +16,7 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/products', [ProductController::class, 'index']);
 Route::get('/products/{slug}', [ProductController::class, 'show']);
 
-Route::get('/blog', [PostController::class, 'index']);
+Route::get('/blogs', [PostController::class, 'index']);
 Route::get('/blog/{slug}', [PostController::class, 'show']);
 Route::get('/checkout', [CartController::class, 'showCheckout'])->name('checkout');
 Route::post('/checkout', [CartController::class, 'checkout'])->name('checkout.post');
@@ -26,6 +26,10 @@ Route::post('/contact', [ContactController::class, 'store'])->name('contact.stor
 Route::get('/tra-cuu-bao-hanh', [WarrantyLookupController::class, 'index'])->name('warranty.lookup');
 Route::post('/tra-cuu-bao-hanh', [WarrantyLookupController::class, 'search'])->name('warranty.search');
 Route::get('/{slug}', [PageController::class, 'show']);
-
+Route::get('/pages/gioi-thieu',function (){
+    return view('frontend.about.about');
+});
+Route::get('/products/filter', [ProductController::class, 'filter'])
+    ->name('products.filter');
 //SITEMAP AUTO GENERATE
 Route::get('/sitemap.xml', [SitemapController::class, 'index']);

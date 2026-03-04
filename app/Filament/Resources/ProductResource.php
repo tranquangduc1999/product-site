@@ -66,6 +66,11 @@ class ProductResource extends Resource
                         ->relationship('category', 'name')
                         ->required()
                         ->searchable(),
+                    Select::make('brand_id')
+                        ->relationship('brand', 'name')
+                        ->searchable()
+                        ->preload()
+                        ->nullable(),
 
                     Textarea::make('short_description')
                         ->rows(3),
@@ -208,7 +213,8 @@ class ProductResource extends Resource
                     ->label('Trạng thái')
                     ->trueLabel('Hiển thị')
                     ->falseLabel('Ẩn'),
-
+                SelectFilter::make('brand')
+                    ->relationship('brand', 'name'),
                 // Lọc theo danh mục
                 SelectFilter::make('product_category_id')
                     ->label('Danh mục')
