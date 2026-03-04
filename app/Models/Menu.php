@@ -8,11 +8,13 @@ class Menu extends Model
 {
     protected $fillable = [
         'name',
-        'location',
+        'location'
     ];
 
     public function items()
     {
-        return $this->hasMany(MenuItem::class)->orderBy('sort_order');
+        return $this->hasMany(MenuItem::class, 'menu_id')
+            ->whereNull('parent_id')
+            ->orderBy('sort_order');
     }
 }

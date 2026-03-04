@@ -8,15 +8,17 @@ class MenuItem extends Model
 {
     protected $fillable = [
         'menu_id',
+        'parent_id',
         'title',
         'url',
-        'sort_order',
+        'sort_order'
     ];
 
     public function menu()
     {
         return $this->belongsTo(Menu::class);
     }
+
     public function parent()
     {
         return $this->belongsTo(MenuItem::class, 'parent_id');
