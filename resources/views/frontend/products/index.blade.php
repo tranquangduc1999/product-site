@@ -1,4 +1,9 @@
 @extends('frontend.layout')
+<style>
+    .aside-item.collection-category .nav-item.active > a{
+        color: #ed1b24;
+    }
+</style>
 @section('content')
     <section class="bread-crumb margin-bottom-10">
         <div class="container">
