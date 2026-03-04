@@ -13,6 +13,7 @@ class Product extends Model
         'short_description',
         'content',
         'price',
+        'sale_price',
         'thumbnail',
         'gallery',
         'product_category_id',

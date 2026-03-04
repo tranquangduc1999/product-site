@@ -18,6 +18,7 @@ return new class extends Migration
             $table->text('short_description')->nullable();
             $table->longText('content')->nullable();
             $table->decimal('price', 15, 2)->nullable();
+            $table->decimal('sale_price', 12, 2)->nullable();
             $table->string('thumbnail')->nullable();
             $table->json('gallery')->nullable();
             $table->foreignId('product_category_id')->constrained()->cascadeOnDelete();

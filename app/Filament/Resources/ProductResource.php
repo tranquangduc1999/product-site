@@ -83,6 +83,11 @@ class ProductResource extends Resource
                         ->prefix('₫')
                         ->required(),
 
+                    TextInput::make('sale_price')
+                        ->numeric()
+                        ->prefix('₫')
+                        ->required(),
+
                     FileUpload::make('thumbnail')
                         ->image()
                         ->directory('products')
@@ -199,6 +204,9 @@ class ProductResource extends Resource
                     ->label('Danh mục'),
 
                 TextColumn::make('price')
+                    ->money('VND', true),
+
+                TextColumn::make('sale_price')
                     ->money('VND', true),
 
                 IconColumn::make('status')

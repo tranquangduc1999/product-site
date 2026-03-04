@@ -25,11 +25,12 @@ Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 Route::get('/tra-cuu-bao-hanh', [WarrantyLookupController::class, 'index'])->name('warranty.lookup');
 Route::post('/tra-cuu-bao-hanh', [WarrantyLookupController::class, 'search'])->name('warranty.search');
-Route::get('/{slug}', [PageController::class, 'show']);
+Route::get('/page/{slug}', [PageController::class, 'show']);
 Route::get('/pages/gioi-thieu',function (){
     return view('frontend.about.about');
 });
 Route::get('/products/filter', [ProductController::class, 'filter'])
     ->name('products.filter');
+Route::get('/products-by-filter', [ProductController::class, 'getProductsByCategory'])->name('product.byCategory');
 //SITEMAP AUTO GENERATE
 Route::get('/sitemap.xml', [SitemapController::class, 'index']);

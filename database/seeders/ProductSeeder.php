@@ -21,6 +21,11 @@ class ProductSeeder extends Seeder
 
                 $name = $category->name . ' Product ' . $i;
                 $slug = Str::slug($category->name . '-product-' . $i);
+                $price = rand(200000, 2000000);
+
+                $salePrice = rand(0, 1)
+                    ? $price - rand(10000, 100000)
+                    : null;
 
                 Product::updateOrCreate(
                     ['slug' => $slug],
@@ -28,7 +33,8 @@ class ProductSeeder extends Seeder
                         'name' => $name,
                         'short_description' => 'Demo description',
                         'content' => '<p>Demo product content</p>',
-                        'price' => rand(100, 1000),
+                        'price' => $price,
+                        'sale_price' => $salePrice,
                         'product_category_id' => $category->id,
                         'status' => true,
                         'published_at' => now(),

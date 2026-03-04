@@ -327,34 +327,48 @@
         });
         let currentSort = '';
         function loadProducts(extraParams = {}) {
+
             let slug = $('.category-link.active').data('slug') || '';
             let categoryId = $('.category-link.active').data('id') || '';
+
             let brands = $('.filter-brand:checked').map(function () {
                 return $(this).val();
             }).get();
+
             let prices = $('.filter-price:checked').map(function () {
                 return $(this).val();
             }).get();
+
             let minPrice = '';
             let maxPrice = '';
+
             if (prices.length > 0) {
-                let range = prices[0].split('-'); // Lấy checkbox đầu tiên được chọn
+
+                let range = prices[0].split('-');
+
                 minPrice = range[0];
-                maxPrice = range[1] || ''; // Nếu không có max thì để rỗng (trường hợp >1.000.000)
+                maxPrice = range[1] || '';
+
             }
+
             $.ajax({
+
                 url: '/products-by-filter',
                 type: 'GET',
+
                 data: {
                     slug: slug,
                     id: categoryId,
                     brands: brands,
-                    min_price: minPrice,
-                    max_price: maxPrice
+                    price_min: minPrice,
+                    price_max: maxPrice,
+                    sort: currentSort
                 },
+
                 success: function (response) {
                     $('#product-list').html(response);
                 }
+
             });
         }
 
@@ -371,6 +385,12 @@
             loadProducts();
         });
         $(document).on('change', '.filter-price', function () {
+            if ($(this).is(':checked')) {
+
+                // bỏ check tất cả checkbox khác
+                $('.filter-price').not(this).prop('checked', false);
+
+            }
             loadProducts();
         });
         $(document).on('click', '.filter-sort', function () {

@@ -1,13 +1,13 @@
-<script src="{{ asset('js/frontend/jquery-2.2.3.min.js') }}"></script>
-<script src="{{ asset('js/frontend/bootstrap.min.js') }}"></script>
-<script src="{{ asset('js/frontend/jquery.form-validator.min.js') }}"></script>
-<script src="{{ asset('js/frontend/owl.carousel.min.js') }}"></script>
-<script src="{{ asset('js/frontend/appear.js') }}"></script>
-<script src="{{ asset('js/frontend/bootstrap-notify.js') }}"></script>
-<script src="{{ asset('js/frontend/api.jquery.js') }}"></script>
-<script src="{{ asset('js/frontend/option_selection.js') }}"></script>
-<script src="{{ asset('js/frontend/beacon.min.js') }}"></script>
-<script src="{{ asset('js/frontend/main.js') }}"></script>
+{{--<script src="{{ asset('js/frontend/jquery-2.2.3.min.js') }}"></script>--}}
+{{--<script src="{{ asset('js/frontend/bootstrap.min.js') }}"></script>--}}
+{{--<script src="{{ asset('js/frontend/jquery.form-validator.min.js') }}"></script>--}}
+{{--<script src="{{ asset('js/frontend/owl.carousel.min.js') }}"></script>--}}
+{{--<script src="{{ asset('js/frontend/appear.js') }}"></script>--}}
+{{--<script src="{{ asset('js/frontend/bootstrap-notify.js') }}"></script>--}}
+{{--<script src="{{ asset('js/frontend/api.jquery.js') }}"></script>--}}
+{{--<script src="{{ asset('js/frontend/option_selection.js') }}"></script>--}}
+{{--<script src="{{ asset('js/frontend/beacon.min.js') }}"></script>--}}
+{{--<script src="{{ asset('js/frontend/main.js') }}"></script>--}}
 <script>
     $(document).ready(function(){
         $('.home-slider').owlCarousel({

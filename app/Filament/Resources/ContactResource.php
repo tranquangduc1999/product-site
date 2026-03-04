@@ -27,7 +27,7 @@ class ContactResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-envelope';
     protected static ?string $navigationLabel = 'Liên hệ';
-    protected static ?string $navigationGroup = 'Quản lý';
+    protected static ?string $navigationGroup = 'Khách hàng';
 
     public static function form(Form $form): Form
     {
