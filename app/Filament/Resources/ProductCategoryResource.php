@@ -35,7 +35,10 @@ class ProductCategoryResource extends Resource
             TextInput::make('slug')
                 ->required()
                 ->unique(ignoreRecord: true),
-
+            TextInput::make('sort_order')
+                ->label('Thứ tự')
+                ->numeric()
+                ->default(0),
             Select::make('parent_id')
                 ->relationship('parent', 'name')
                 ->searchable()
@@ -55,6 +58,9 @@ class ProductCategoryResource extends Resource
                 TextColumn::make('name')->searchable(),
                 TextColumn::make('parent.name'),
                 IconColumn::make('status')->boolean(),
+                TextColumn::make('sort_order')
+                    ->label('Thứ tự')
+                    ->sortable(),
                 TextColumn::make('created_at')->dateTime(),
             ])
             ->filters([
