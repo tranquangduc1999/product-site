@@ -13,6 +13,9 @@ use Filament\Forms\Components\Toggle;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\ImageColumn;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
@@ -59,25 +62,46 @@ class BrandResource extends Resource
     {
         return $table
             ->columns([
-                //
+
+                ImageColumn::make('logo')
+                    ->label('Logo')
+                    ->size(40),
+
+                TextColumn::make('name')
+                    ->label('Tên')
+                    ->searchable()
+                    ->sortable(),
+
+                TextColumn::make('slug')
+                    ->label('Slug')
+                    ->searchable(),
+
+                IconColumn::make('is_active')
+                    ->label('Trạng thái')
+                    ->boolean(),
+
+                TextColumn::make('created_at')
+                    ->label('Ngày tạo')
+                    ->dateTime('d/m/Y H:i')
+                    ->sortable(),
+
             ])
             ->filters([
-                //
+
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
             ])
             ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
-                ]),
-            ]);
+                Tables\Actions\DeleteBulkAction::make(),
+            ])
+            ->defaultSort('created_at', 'desc');
     }
 
     public static function getRelations(): array
     {
         return [
-            //
+
         ];
     }
 
