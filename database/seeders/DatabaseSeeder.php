@@ -12,10 +12,10 @@ class DatabaseSeeder extends Seeder
     {
         // Tạo admin mặc định (không bị duplicate)
         User::firstOrCreate(
-            ['email' => 'admin@example.com'],
+            ['email' => 'vutienhung@email.com'],
             [
                 'name' => 'Admin',
-                'password' => Hash::make('password'),
+                'password' => Hash::make('tienhung99'),
             ]
         );
 
