@@ -15,13 +15,6 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $categoriesWithProducts = ProductCategory::where('status', true)
-            ->with(['products' => function ($query) {
-                $query->published()
-                    ->latest('published_at')
-                    ->take(6);
-            }])
-            ->get();
         $categories = ProductCategory::where('status', true)
             ->with(['products' => function ($query) {
                 $query->published()
@@ -29,6 +22,18 @@ class HomeController extends Controller
                     ->limit(8);
             }])
             ->get();
+        $firstCategory = $categories->first();
+        $listProduct = $firstCategory
+            ? Product::where('product_category_id', $firstCategory->id)->get()
+            : collect();
+        $categoriesWithProducts = ProductCategory::where('status', true)
+            ->with(['products' => function ($query) {
+                $query->published()
+                    ->latest('published_at')
+                    ->take(6);
+            }])
+            ->get();
+
         $posts = Post::published()
             ->latest('published_at')
             ->take(3)
@@ -56,6 +61,7 @@ class HomeController extends Controller
             'categories',
             'testimonials',
             'handover',
+            'listProduct',
             'sliders'
         ));
     }

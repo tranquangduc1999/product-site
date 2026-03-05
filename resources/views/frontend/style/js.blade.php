@@ -8,6 +8,8 @@
 {{--<script src="{{ asset('js/frontend/option_selection.js') }}"></script>--}}
 {{--<script src="{{ asset('js/frontend/beacon.min.js') }}"></script>--}}
 {{--<script src="{{ asset('js/frontend/main.js') }}"></script>--}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
     $(document).ready(function(){
         $('.home-slider').owlCarousel({

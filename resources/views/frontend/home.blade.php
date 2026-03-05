@@ -133,59 +133,49 @@
         <div class="section_product">
             <div class="container">
                 <div class="row">
-
-                    <!-- LEFT CATEGORY -->
                     <div class="col-md-3 hidden-sm hidden-xs">
                         <div class="mainmenu">
-                            <span><i class="fa fa-dashcube"></i> Danh mục sản phẩm</span>
+                            <span class="edit-span"><i class="fa fa-dashcube" aria-hidden="true"></i> Danh mục sản phẩm</span>
                             <div class="nav-cate">
                                 <ul id="menu2017">
-                                    @foreach($categories as $key => $category)
-                                        <li class="category-item {{ $key == 0 ? 'active' : '' }}"
-                                            data-target="cat-{{ $category->id }}">
-                                            <a href="javascript:void(0)">
-                                                {{ $category->name }}
-                                            </a>
+                                    @foreach($categories as $value)
+                                        <li class="dropdown menu-item-count category-item" data-id="{{ $value->id }}">
+                                            <h3>
+                                                <img
+                                                    src="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-2.png?v=230"
+                                                    data-lazyload="//theme.hstatic.net/1000343108/1000435493/14/index-cate-icon-2.png?v=230"
+                                                    alt="{{ @$value->name }}">
+                                                <a href="javascript:void(0)">
+                                                    {{ @$value->name }}
+                                                </a>
+                                            </h3>
                                         </li>
                                     @endforeach
                                 </ul>
                             </div>
                         </div>
                     </div>
-
-                    <!-- RIGHT PRODUCTS -->
                     <div class="col-md-9">
-                        <div class="section-head">
-                            <h2>Sản phẩm theo danh mục</h2>
-                        </div>
-
-                        @foreach($categories as $key => $category)
-                            <div class="category-content"
-                                 id="cat-{{ $category->id }}"
-                                 style="{{ $key == 0 ? '' : 'display:none' }}">
-
-                                <div class="row">
-                                    @forelse($category->products as $product)
-                                        <div class="col-md-3 col-sm-6">
-                                            <div class="product-item">
-                                                <img src="{{ image_url($product->thumbnail) }}"
-                                                     class="img-responsive"
-                                                     alt="{{ $product->name }}">
-
-                                                <h4>{{ $product->name }}</h4>
-                                                <p>{{ number_format($product->price) }} đ</p>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-head">
+                                    <span class="group-icon"><i class="fa fa-dashcube" aria-hidden="true"></i></span>
+                                    <h2>Sản phẩm nổi bật</h2>
+                                </div>
+                            </div>
+                            <div class="col-md-12 e-tabs not-dqtab ajax-tab-1" data-section="ajax-tab-1">
+                                <div class="content">
+                                    <div>
+                                        <div class="tab-1 tab-content current">
+                                            <div
+                                                class="section-tour-owl2 products products-view-grid owl-carousel owl-loaded owl-drag product-category">
+                                                @include('components.frontend.productCategoryHome', ['listProduct' => $listProduct])
                                             </div>
                                         </div>
-                                    @empty
-                                        <div class="col-md-12">
-                                            <p>Không có sản phẩm.</p>
-                                        </div>
-                                    @endforelse
+                                    </div>
                                 </div>
-
                             </div>
-                        @endforeach
-
+                        </div>
                     </div>
                 </div>
             </div>
@@ -476,33 +466,39 @@
         </section>
     </section>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        $(document).ready(function () {
+            $('.category-item').on('click', function () {
+                let categoryId = $(this).data('id');
+                $.ajax({
+                    url: '/products-by-category/' + categoryId,
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (res) {
+                        if (res.status) {
+                            let $container = $('.product-category');
+                            $container.trigger('destroy.owl.carousel'); // Xóa instance cũ
+                            $container.html(res.html); // Thay HTML mới
 
-            const menuItems = document.querySelectorAll('.category-item');
-            const contents = document.querySelectorAll('.category-content');
-
-            menuItems.forEach(item => {
-                item.addEventListener('click', function() {
-
-                    const target = this.getAttribute('data-target');
-
-                    // Remove active class
-                    menuItems.forEach(el => el.classList.remove('active'));
-                    this.classList.add('active');
-
-                    // Hide all content
-                    contents.forEach(content => {
-                        content.style.display = 'none';
-                    });
-
-                    // Show selected content
-                    const activeContent = document.getElementById(target);
-                    if (activeContent) {
-                        activeContent.style.display = 'block';
+                            // Khởi tạo lại carousel
+                            $container.owlCarousel({
+                                loop: true,
+                                margin: 10,
+                                nav: true,
+                                dots: false,
+                                responsive: {
+                                    0: {items: 1},
+                                    600: {items: 3},
+                                    1000: {items: 5}
+                                }
+                            });
+                        }
+                    },
+                    error: function () {
+                        alert('Lỗi tải sản phẩm!');
                     }
                 });
             });
-
         });
+
     </script>
 @endsection

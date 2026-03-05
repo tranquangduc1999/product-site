@@ -34,3 +34,4 @@ Route::get('/products/filter', [ProductController::class, 'filter'])
 Route::get('/products-by-filter', [ProductController::class, 'getProductsByCategory'])->name('product.byCategory');
 //SITEMAP AUTO GENERATE
 Route::get('/sitemap.xml', [SitemapController::class, 'index']);
+Route::get('/products-by-category/{id}', [ProductController::class, 'getByCategory'])->name('product.byCategory');

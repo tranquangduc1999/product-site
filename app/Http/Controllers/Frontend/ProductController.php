@@ -41,6 +41,16 @@ class ProductController extends Controller
 
         return view('frontend.products.show', compact('product', 'related','newProducts'));
     }
+    public function getByCategory($categoryId)
+    {
+        $listProduct = Product::where('product_category_id', $categoryId)
+            ->get();
+        $html = view('components.frontend.productCategoryHome',compact('listProduct'))->render();
+        return response()->json([
+            'status' => true,
+            'html' => $html
+        ]);
+    }
     public function getProductsByCategory(Request $request)
     {
         $slug = $request->get('slug');
