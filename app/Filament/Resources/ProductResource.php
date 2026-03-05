@@ -57,11 +57,15 @@ class ProductResource extends Resource
                         ->afterStateUpdated(fn ($state, callable $set) =>
                         $set('slug', Str::slug($state))
                         ),
-
+                    TextInput::make('sku')
+                        ->label('Mã sản phẩm')
+                        ->unique(ignoreRecord: true),
                     TextInput::make('slug')
                         ->required()
                         ->unique(ignoreRecord: true),
-
+                    TextInput::make('origin')
+                        ->label('Xuất xứ')
+                        ->placeholder('Ví dụ: Nhật Bản'),
                     Select::make('product_category_id')
                         ->relationship('category', 'name')
                         ->required()
@@ -87,7 +91,9 @@ class ProductResource extends Resource
                         ->numeric()
                         ->prefix('₫')
                         ->required(),
-
+                    Toggle::make('show_price')
+                        ->label('Hiển thị giá')
+                        ->default(true),
                     FileUpload::make('thumbnail')
                         ->image()
                         ->directory('products')
@@ -199,15 +205,21 @@ class ProductResource extends Resource
                 TextColumn::make('name')
                     ->searchable()
                     ->sortable(),
-
+                TextColumn::make('sku')
+                    ->label('SKU')
+                    ->searchable(),
                 TextColumn::make('category.name')
                     ->label('Danh mục'),
-
+                TextColumn::make('origin')
+                    ->label('Xuất xứ'),
                 TextColumn::make('price')
                     ->money('VND', true),
 
                 TextColumn::make('sale_price')
                     ->money('VND', true),
+                IconColumn::make('show_price')
+                    ->label('Hiện giá')
+                    ->boolean(),
 
                 IconColumn::make('status')
                     ->boolean(),

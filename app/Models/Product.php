@@ -25,6 +25,9 @@ class Product extends Model
         'warranty_period',
         'warranty_policy',
         'has_variants',
+        'sku',
+        'origin',
+        'show_price',
     ];
 
     protected $casts = [
