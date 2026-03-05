@@ -10,8 +10,8 @@
                                    class="product-item-photo">
                                     <img
                                         class="product-image-photo img-responsive center-block"
-                                        src="{{image_url($value->image)}}"
-                                        data-lazyload="{{image_url($value->image)}}"
+                                        src="{{image_url($value->thumbnail)}}"
+                                        data-lazyload="{{image_url($value->thumbnail)}}"
                                         alt="{{@$value->name}}">
                                 </a>
                             </div>
