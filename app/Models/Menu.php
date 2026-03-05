@@ -10,7 +10,10 @@ class Menu extends Model
         'name',
         'location'
     ];
-
+    const LOCATIONS = [
+        'header' => 'Header',
+        'footer' => 'Footer',
+    ];
     public function items()
     {
         return $this->hasMany(MenuItem::class, 'menu_id')
