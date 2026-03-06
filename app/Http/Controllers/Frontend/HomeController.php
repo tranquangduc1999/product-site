@@ -20,7 +20,7 @@ class HomeController extends Controller
                 $query->published()
                     ->latest('published_at')
                     ->limit(8);
-            }])
+            }])->orderBy('sort_order',"ASC")
             ->get();
         $firstCategory = $categories->first();
         $listProduct = $firstCategory

@@ -346,8 +346,8 @@
                                         <div class="item">
                                             <div class="image_reviews">
                                                 <img
-                                                    src="{{image_url($value->image)}}"
-                                                    data-lazyload="{{image_url($value->image)}}"
+                                                    src="{{image_url($value->avatar)}}"
+                                                    data-lazyload="{{image_url($value->avatar)}}"
                                                     alt="{{$value->name}}">
                                                 <p class="description_review">{{$value->content}}</p>
                                                 <div class="info_reviews">
@@ -363,42 +363,111 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="project_reviews">
-                            <div class="heading">
+                        <div class="project_reviews" bis_skin_checked="1">
+                            <div class="heading" bis_skin_checked="1">
                                 <span class="group-icon"><i class="fa fa-dashcube" aria-hidden="true"></i></span>
                                 <h2 class="title-head">
                                     <span>Ảnh bàn giao khách hàng</span>
                                 </h2>
                             </div>
-                            <div class="ant-image-handover">
-                                <div class="content_views owl-carousel">
-                                    @foreach($testimonials as $value)
-                                        <div class="item">
-                                            <div class="item-inner clearfix">
-                                                <div class="blog-image">
-                                                    <a href="javascript:void(0)">
-                                                        <img
-                                                            src="{{image_url($value->image)}}"
-                                                            data-lazyload="{{image_url($value->image)}}"
-                                                            alt="{{$value->name}}"
-                                                            class="img-responsive center-block">
-                                                    </a>
+                            <div class="ant-image-handover" bis_skin_checked="1">
+                                <div class="content_views owl-carousel not-dqowl owl-loaded owl-drag" bis_skin_checked="1">
+                                    <div class="owl-stage-outer" bis_skin_checked="1">
+                                        <div class="owl-stage" style="width: 2925px; transform: translate3d(-1170px, 0px, 0px); transition: all;" bis_skin_checked="1"><div class="owl-item cloned" bis_skin_checked="1" style="width: 565px; margin-right: 20px;">
+                                                <div class="item-inner clearfix" bis_skin_checked="1">
+                                                    <div class="blog-image" bis_skin_checked="1">
+                                                        <a href="javascript:void(0)">
+                                                            <img src="//file.hstatic.net/1000343108/article/shapeimage-9_grande.png" data-lazyload="//file.hstatic.net/1000343108/article/shapeimage-9_grande.png" alt="Những thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt đẹp" class="img-responsive center-block">
+                                                        </a>
+                                                    </div>
+                                                    <div class="blog-content" bis_skin_checked="1">
+                                                        <div class="blog-content-inner" bis_skin_checked="1">
+                                                            <h3 class="blog-title">
+                                                                <a href="javascript:void(0)" title="Những thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt đẹp">Những
+                                                                    thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt
+                                                                    đẹp</a>
+                                                            </h3>
+                                                            <p class="short-des">Gỗ là vật liệu phổ biến được sử dụng
+                                                                nhiều nhất trong thiết kế nhà đẹp nhà bếp. Bên cạnh
+                                                                những thiết kế truyền thống ...</p>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="blog-content">
-                                                    <div class="blog-content-inner">
-                                                        <h3 class="blog-title">
-                                                            <a href="javascript:void(0)"
-                                                               title="{{$value->name}}">
-                                                                {{$value->name}}</a>
-                                                        </h3>
-                                                        <p class="short-des">{{$value->description}}</p>
+                                            </div><div class="owl-item cloned" bis_skin_checked="1" style="width: 565px; margin-right: 20px;">
+                                                <div class="item-inner clearfix" bis_skin_checked="1">
+                                                    <div class="blog-image" bis_skin_checked="1">
+                                                        <a href="javascript:void(0)">
+                                                            <img src="//file.hstatic.net/1000343108/article/shapeimage-9_grande.png" data-lazyload="//file.hstatic.net/1000343108/article/shapeimage-9_grande.png" alt="Những thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt đẹp" class="img-responsive center-block">
+                                                        </a>
+                                                    </div>
+                                                    <div class="blog-content" bis_skin_checked="1">
+                                                        <div class="blog-content-inner" bis_skin_checked="1">
+                                                            <h3 class="blog-title">
+                                                                <a href="javascript:void(0)" title="Những thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt đẹp">Những
+                                                                    thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt
+                                                                    đẹp</a>
+                                                            </h3>
+                                                            <p class="short-des">Gỗ là vật liệu phổ biến được sử dụng
+                                                                nhiều nhất trong thiết kế nhà đẹp nhà bếp. Bên cạnh
+                                                                những thiết kế truyền thống ...</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    @endforeach
-                                </div>
-                                <div class="clearfix"></div>
+
+
+                                            <div class="owl-item cloned" bis_skin_checked="1" style="width: 565px; margin-right: 20px;">
+                                                <div class="item-inner clearfix" bis_skin_checked="1">
+                                                    <div class="blog-image" bis_skin_checked="1">
+                                                        <a href="javascript:void(0)">
+                                                            <img src="//file.hstatic.net/1000343108/article/shapeimage-9_grande.png" data-lazyload="//file.hstatic.net/1000343108/article/shapeimage-9_grande.png" alt="Những thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt đẹp" class="img-responsive center-block">
+                                                        </a>
+                                                    </div>
+                                                    <div class="blog-content" bis_skin_checked="1">
+                                                        <div class="blog-content-inner" bis_skin_checked="1">
+                                                            <h3 class="blog-title">
+                                                                <a href="javascript:void(0)" title="Những thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt đẹp">Những
+                                                                    thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt
+                                                                    đẹp</a>
+                                                            </h3>
+                                                            <p class="short-des">Gỗ là vật liệu phổ biến được sử dụng
+                                                                nhiều nhất trong thiết kế nhà đẹp nhà bếp. Bên cạnh
+                                                                những thiết kế truyền thống ...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><div class="owl-item cloned active" bis_skin_checked="1" style="width: 565px; margin-right: 20px;">
+                                                <div class="item-inner clearfix" bis_skin_checked="1">
+                                                    <div class="blog-image" bis_skin_checked="1">
+                                                        <a href="javascript:void(0)">
+                                                            <img src="//file.hstatic.net/1000343108/article/shapeimage-9_grande.png" data-lazyload="//file.hstatic.net/1000343108/article/shapeimage-9_grande.png" alt="Những thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt đẹp" class="img-responsive center-block">
+                                                        </a>
+                                                    </div>
+                                                    <div class="blog-content" bis_skin_checked="1">
+                                                        <div class="blog-content-inner" bis_skin_checked="1">
+                                                            <h3 class="blog-title">
+                                                                <a href="javascript:void(0)" title="Những thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt đẹp">Những
+                                                                    thiết kế nội thất nhà bếp với chất liệu gỗ tuyệt
+                                                                    đẹp</a>
+                                                            </h3>
+                                                            <p class="short-des">Gỗ là vật liệu phổ biến được sử dụng
+                                                                nhiều nhất trong thiết kế nhà đẹp nhà bếp. Bên cạnh
+                                                                những thiết kế truyền thống ...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div></div>
+                                    </div>
+                                    <div class="owl-nav disabled" bis_skin_checked="1">
+                                        <div class="owl-prev" bis_skin_checked="1"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+                                        <div class="owl-next" bis_skin_checked="1"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                                    </div>
+                                    <div class="owl-dots" bis_skin_checked="1">
+                                        <div class="owl-dot active" bis_skin_checked="1"><span></span></div>
+                                        <div class="owl-dot" bis_skin_checked="1"><span></span></div>
+                                    </div>
+                                    <div class="owl-nav disabled" bis_skin_checked="1"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled" bis_skin_checked="1"></div></div>
+                                <div class="clearfix" bis_skin_checked="1"></div>
                             </div>
                         </div>
                     </div>
