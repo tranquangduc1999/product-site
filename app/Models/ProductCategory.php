@@ -10,6 +10,7 @@ class ProductCategory extends Model
     protected $fillable = [
         'name',
         'slug',
+        'sort_order',
         'description',
         'parent_id',
         'status',
