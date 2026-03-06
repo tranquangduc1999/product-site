@@ -4626,7 +4626,7 @@ a:hover, a:focus {
         top: 0; }
   .section_customer .customer_reviews .wrap_views {
     padding: 10px 15px;
-    background-image: url(customer_bg9153.png?v=214);
+      background-image: url("/images/bg1.png");
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
